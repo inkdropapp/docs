@@ -2,7 +2,9 @@
 title: Getting started
 ---
 
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
+Welcome to Inkdrop!{% .lead %}
+
+On this page, you'll find all the necessary information to start crafting notes with Inkdrop. There're 3 steps to take:{% .lead %}
 
 {% quick-links %}
 
@@ -16,78 +18,111 @@ Learn how to get CacheAdvance set up in your project in under thirty minutes or 
 
 {% /quick-links %}
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
+Let's get started.
 
 ---
 
-## Quick start
+## Create Inkdrop account
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+First, you need to create an Inkdrop account. Your account serves many purposes and helps you to:
 
-### Installing dependencies
+- Manage your personal information, including account credentials.
+- Keep track of authenticated devices and IP addresses.
+- Manage payments.
+- Browse and publish plugins.
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+To create an account, go to the [Inkdrop's sign-up](https://my.inkdrop.app/signup) page.
+
+## Download the app
+
+Once you've created an account, Inkdrop sends a verification link to the specified email. What you need to do:
+
+{% callout type="warning" title="For Windows users" %}
+There're 2 options for Windows users: installer and zip archive. Prefer the installer option as it automatically updates the app once the new versions are released.
+{% /callout %}
+
+1. Go to the link to verify the account.  
+   You're redirected to the Inkdrop website.
+2. Select **Download the client app**.
+3. Select an installer appropriate for your operating system.  
+   The download will start.
+
+Alternatively, you can sign in to your Inkdrop account and select **Download app** as shown in the image below:
+
+![Download](/images/quick-start-guide_download.png)
+
+Then select an installer appropriate for your operating system.
+
+![Download](/images/quick-start-guide_download2.png)
+
+## Install Inkdrop
+
+### macOS
+
+Once you downloaded the `Inkdrop-x.y.z-Mac.zip` file:
+
+1. Double-click the downloaded file to extract the application.
+2. Drag extracted application into your **Applications** folder.
+
+### Windows
+
+Once you've downloaded the `Setup.exe` file, double-click it and follow the installation instruction.
+
+### Linux
+
+You can install Inkdrop via Snap or package.
+
+#### via Snap
+
+{% callout title="" %}
+If you don't have `snapd` yet, please [install it](https://snapcraft.io/docs/core/install) beforehand.
+{% /callout %}
+
+The app is available in [Snap Store](https://snapcraft.io/inkdrop). To install Inkdrop using snap, run the following command in the terminal:
 
 ```shell
-npm install @tailwindlabs/cache-advance
+sudo snap install inkdrop
+# Allow the app to access your keyring
+sudo snap connect inkdrop:password-manager-service
 ```
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+You can easily update the app by running the command below:
 
-{% callout type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /callout %}
-
-### Configuring the library
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
-
-```js
-// cache-advance.config.js
-export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
-}
+```shell
+sudo snap refresh inkdrop
 ```
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+#### via Package
 
-{% callout title="You should know!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /callout %}
+To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
 
----
+<div class="ui warning message">
+These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the <a href="https://forum.inkdrop.app/c/announcements"><b>What's new page</b></a> to keep up with the latest bug fixes and improvements.
+</div>
 
-## Basic usage
+##### Debian, Ubuntu, or related systems
 
-Praesentium laudantium magni. Consequatur reiciendis aliquid nihil iusto ut in et. Quisquam ut et aliquid occaecati. Culpa veniam aut et voluptates amet perspiciatis. Qui exercitationem in qui. Vel qui dignissimos sit quae distinctio.
+```bash
+wget https://api.inkdrop.app/download/linux/deb -O /tmp/inkdrop.deb && sudo dpkg -i /tmp/inkdrop.deb && rm /tmp/inkdrop.deb
 
-### Your first cache
+# Install Inkdrop's dependencies if they are missing
+sudo apt-get -f install
+```
 
-Minima vel non iste debitis. Consequatur repudiandae et quod accusamus sit molestias consequatur aperiam. Et sequi ipsa eum voluptatibus ipsam. Et quisquam ut.
+##### RedHat, Fedora, or related systems
 
-Qui quae esse aspernatur fugit possimus. Quam sed molestiae temporibus. Eum perferendis dignissimos provident ea et. Et repudiandae quasi accusamus consequatur dolore nobis. Quia reiciendis necessitatibus a blanditiis iste quia. Ut quis et amet praesentium sapiente.
+```bash
+wget https://api.inkdrop.app/download/linux/rpm -O /tmp/inkdrop.rpm && sudo yum install /tmp/inkdrop.rpm && rm /tmp/inkdrop.rpm
+```
 
-Atque eos laudantium. Optio odit aspernatur consequuntur corporis soluta quidem sunt aut doloribus. Laudantium assumenda commodi.
+## Sign in to your account
 
-### Clearing the cache
+Once you've installed Inkdrop, sign in to your account. To do that:
 
-Vel aut velit sit dolor aut suscipit at veritatis voluptas. Laudantium tempore praesentium. Qui ut voluptatem.
+1. Open the app. You'll see a login screen.
+2. Enter your credentials and select **LOG IN**.
 
-Ea est autem fugiat velit esse a alias earum. Dolore non amet soluta eos libero est. Consequatur qui aliquam qui odit eligendi ut impedit illo dignissimos.
-
-Ut dolore qui aut nam. Natus temporibus nisi voluptatum labore est ex error vel officia. Vero repellendus ut. Suscipit voluptate et placeat. Eius quo corporis ab et consequatur quisquam. Nihil officia facere dolorem occaecati alias deleniti deleniti in.
-
-### Adding middleware
-
-Officia nobis tempora maiores id iusto magni reprehenderit velit. Quae dolores inventore molestiae perspiciatis aut. Quis sequi officia quasi rem officiis officiis. Nesciunt ut cupiditate. Sunt aliquid explicabo enim ipsa eum recusandae. Vitae sunt eligendi et non beatae minima aut.
-
-Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet error amet totam exercitationem aut corporis accusantium dolorum. Perspiciatis aut animi et. Sed unde error ut aut rerum.
-
-Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat. Soluta et fuga amet alias temporibus quasi velit. Laudantium voluptatum perspiciatis doloribus quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.
+![Login](/images/quick-start-guide_login.png)
 
 ---
 

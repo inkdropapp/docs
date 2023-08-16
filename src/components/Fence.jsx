@@ -1,11 +1,15 @@
 'use client'
 
 import { Fragment } from 'react'
-import { Highlight } from 'prism-react-renderer'
+import { Highlight, defaultProps, Prism } from 'prism-react-renderer'
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+require('prismjs/components/prism-bash')
 
 export function Fence({ children, language }) {
   return (
     <Highlight
+      Prism={Prism}
+      {...defaultProps}
       code={children.trimEnd()}
       language={language}
       theme={{ plain: {}, styles: [] }}
