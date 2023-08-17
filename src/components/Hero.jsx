@@ -49,7 +49,7 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Never miss the cache again.
+                Unleash your coding productivity.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Cache every single thing your app could ever do ahead of time,
