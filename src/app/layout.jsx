@@ -22,11 +22,11 @@ const lexend = localFont({
 
 export const metadata = {
   title: {
-    template: '%s - Docs',
-    default: 'Inkdrop - Organizing your tech notes made simple.',
+    template: '%s - Inkdrop User Manual',
+    default: 'Inkdrop User Manual',
   },
   description:
-    'Unleash your coding productivity with the robust Markdown editor, 100+ plugins, cross-platform and encrypted data sync support.',
+    'Guides and references on how to unleash your coding productivity with Inkdrop',
 }
 
 export default function RootLayout({ children }) {
