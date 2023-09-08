@@ -26,7 +26,7 @@ export const metadata = {
     default: 'Inkdrop User Manual',
   },
   description:
-    'Guides and references on how to unleash your coding productivity with Inkdrop',
+    'Help, tutorials & documentation on how to unleash your coding productivity with Inkdrop',
 }
 
 export default function RootLayout({ children }) {
