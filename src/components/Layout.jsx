@@ -27,6 +27,7 @@ export const navigation = [
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
       { title: 'Search and filter notes', href: '/reference/search-and-filter-notes' },
+      { title: 'Customize keybindings', href: '/reference/key-customizations' },
     ],
   },
   {

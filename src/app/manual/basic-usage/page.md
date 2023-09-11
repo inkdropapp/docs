@@ -113,7 +113,7 @@ Note that this workaround doesn't break browser navigation with the gestures.
 
 ### Set custom keyboard shortcuts
 
-You can [set custom keyboard shortcuts](/manual/customizing-keybindings) for navigation through the visited notes. The commands for the navigation are:
+You can [set custom keyboard shortcuts](reference/key-customizations) for navigation through the visited notes. The commands for the navigation are:
 
 - <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
 - <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
