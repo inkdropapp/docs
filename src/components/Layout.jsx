@@ -14,49 +14,25 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 
 export const navigation = [
   {
-    title: 'Introduction',
+    title: 'New to Inkdrop',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'Getting started', href: '/manual' },
+      { title: 'What is Markdown?', href: '/manual/what-is-markdown' },
+      { title: 'Basic usage', href: '/manual/basic-usage' },
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'Reference',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'User data directory', href: '/reference/user-data-directory' },
+      { title: 'Data backup', href: '/reference/data-backup' },
+      { title: 'Search and filter notes', href: '/reference/search-and-filter-notes' },
     ],
   },
   {
     title: 'Advanced guides',
     links: [
       { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
     ],
   },
   {
