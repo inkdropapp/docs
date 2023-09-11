@@ -24,8 +24,8 @@ const iconStyles = {
 }
 
 export function Icon({ color = 'blue', icon, className, ...props }) {
-  let id = useId()
-  let IconComponent = icons[icon]
+  const id = useId()
+  const IconComponent = icons[icon]
 
   return (
     <svg

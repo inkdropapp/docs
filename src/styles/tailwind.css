@@ -8,3 +8,10 @@
     display: none;
   }
 }
+
+.prose :where(code):not(:where([class~="not-prose"] *))::before {
+  opacity: 0.4;
+}
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  opacity: 0.4;
+}

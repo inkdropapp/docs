@@ -1,5 +1,7 @@
 import { Callout } from '@/components/Callout'
+import { Kbd } from '@/components/Kbd'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
+import { SvgIcon } from '@/components/SvgIcon'
 
 const tags = {
   callout: {
@@ -42,6 +44,15 @@ const tags = {
       href: { type: String },
     },
   },
+  kbd: {
+    render: Kbd
+  },
+  icon: {
+    attributes: {
+      name: { type: String },
+    },
+    render: SvgIcon
+  }
 }
 
 export default tags
