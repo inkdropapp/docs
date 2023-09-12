@@ -16,9 +16,9 @@ export const navigation = [
   {
     title: 'New to Inkdrop',
     links: [
-      { title: 'Getting started', href: '/manual' },
-      { title: 'What is Markdown?', href: '/manual/what-is-markdown' },
-      { title: 'Basic usage', href: '/manual/basic-usage' },
+      { title: 'Getting started', href: '/start-guide' },
+      { title: 'What is Markdown?', href: '/start-guide/what-is-markdown' },
+      { title: 'Basic usage', href: '/start-guide/basic-usage' },
     ],
   },
   {

@@ -1,6 +1,4 @@
 import { useId } from 'react'
-import clsx from 'clsx'
-
 import PencilWrite from '@/components/icons/pencil-write.svg'
 import AddCircle from '@/components/icons/add-circle.svg'
 import Cog from '@/components/icons/cog.svg'

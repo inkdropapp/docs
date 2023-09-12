@@ -2,6 +2,7 @@ import { Callout } from '@/components/Callout'
 import { Kbd } from '@/components/Kbd'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { SvgIcon } from '@/components/SvgIcon'
+import { SnippetWindow } from '@/components/SnippetWindow'
 
 const tags = {
   callout: {
@@ -52,6 +53,13 @@ const tags = {
       name: { type: String },
     },
     render: SvgIcon
+  },
+  snippet: {
+    attributes: {
+      filename: { type: String },
+      lang: { type: String },
+    },
+    render: SnippetWindow
   }
 }
 
