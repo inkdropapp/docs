@@ -5,6 +5,10 @@ nextjs:
   metadata:
     title: Create a notebook
     description: How to organize notes with notebooks
+    openGraph:
+      images: [
+        'https://inkdrop-user-guide.vercel.app/images/basic-usage_cover.png'
+      ]
 ---
 
 Notebooks are a core feature in Inkdrop that help you manage and organize your notes. They work just like folders in filesystem. You can nest notebooks in one another as deeply as needed. Let's explain what they are and how they can help you level up your workspace.{% .lead %}

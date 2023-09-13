@@ -33,12 +33,6 @@ export const navigation = [
     ],
   },
   {
-    title: 'Advanced guides',
-    links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-    ],
-  },
-  {
     title: 'Contributing',
     links: [
       { title: 'How to contribute', href: '/docs/how-to-contribute' },

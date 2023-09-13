@@ -5,6 +5,10 @@ nextjs:
   metadata:
     title: What and why is Markdown?
     description: What is Markdown and why it is used
+    openGraph:
+      images: [
+        'https://inkdrop-user-guide.vercel.app/images/what-is-markdown_cover.png'
+      ]
 ---
 
 After installing Inkdrop, you may notice that the example notes in the app are written in a format called Markdown. If you're new to this, don't worry. We're here to introduce you to the world of Markdown and explain why it's such a favorite among developers and tech enthusiasts.{% .lead %}
