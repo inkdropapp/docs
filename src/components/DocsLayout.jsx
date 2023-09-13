@@ -50,7 +50,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
   return sections
 }
 
-export function DocsLayout({ children, frontmatter: { title }, ast }) {
+export function DocsLayout({ children, frontmatter: { title, coverImage }, ast }) {
   let tableOfContents = collectHeadings(ast.children)
 
   return (
@@ -58,6 +58,9 @@ export function DocsLayout({ children, frontmatter: { title }, ast }) {
       <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
         <article>
           <DocsHeader title={title} />
+          <div>
+            {coverImage && <img src={coverImage} alt='cover image' className='rounded-lg mb-6 border' />}
+          </div>
           <Prose>{children}</Prose>
         </article>
         <PrevNextLinks />

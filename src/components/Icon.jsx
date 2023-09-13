@@ -7,6 +7,7 @@ import { PluginsIcon } from '@/components/icons/PluginsIcon'
 import { PresetsIcon } from '@/components/icons/PresetsIcon'
 import { ThemingIcon } from '@/components/icons/ThemingIcon'
 import { WarningIcon } from '@/components/icons/WarningIcon'
+import { ExternalIcon } from '@/components/icons/ExternalIcon'
 
 const icons = {
   installation: InstallationIcon,
@@ -15,6 +16,7 @@ const icons = {
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
+  external: ExternalIcon
 }
 
 const iconStyles = {

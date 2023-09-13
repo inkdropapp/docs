@@ -16,9 +16,11 @@ export const navigation = [
   {
     title: 'New to Inkdrop',
     links: [
-      { title: 'Getting started', href: '/start-guide' },
-      { title: 'What is Markdown?', href: '/start-guide/what-is-markdown' },
-      { title: 'Basic usage', href: '/start-guide/basic-usage' },
+      { title: 'Getting started', href: '/start-guide', cover: '/images/quick-start-guide_cover.png' },
+      { title: 'What is Markdown?', href: '/start-guide/what-is-markdown', cover: '/images/what-is-markdown_cover.png' },
+      { title: 'Create your first note', href: '/start-guide/create-your-first-note', cover: '/images/basic-usage_cover.png' },
+      { title: 'Create a notebook', href: '/start-guide/create-a-notebook', cover: '/images/basic-usage_cover.png' },
+      { title: 'Main user interface', href: '/start-guide/basic-usage', cover: '/images/basic-usage_cover.png' },
     ],
   },
   {
@@ -110,7 +112,7 @@ export function Layout({ children }) {
 
       {isHomePage && <Hero />}
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div className="relative mx-auto flex w-full max-w-[100rem] flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />

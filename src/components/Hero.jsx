@@ -57,8 +57,8 @@ export function Hero() {
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
-                  View on GitHub
+                <Button href="https://forum.inkdrop.app/" variant="secondary">
+                  Visit the User Forum
                 </Button>
               </div>
             </div>

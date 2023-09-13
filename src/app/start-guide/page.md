@@ -1,22 +1,25 @@
 ---
 title: Getting started
+coverImage: '/images/quick-start-guide_cover.png'
+nextjs:
+  metadata:
+    title: Getting started
+    description: Quick start guide for Inkdrop
+    openGraph:
+      images: [
+        'https://inkdrop-user-guide.vercel.app/images/quick-start-guide_cover.png'
+      ]
 ---
 
 Welcome to Inkdrop!{% .lead %}
 
-On this page, you'll find all the necessary information to start crafting notes with Inkdrop. There're 3 steps to take:{% .lead %}
+On this page, you'll find all the necessary information to start crafting notes with Inkdrop.{% .lead %}
 
-{% quick-links %}
+There're 3 steps to take:
 
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
-
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
-
-{% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
-
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
-
-{% /quick-links %}
+1. Create an Inkdrop account.
+1. Download the app.
+1. Install the app on your device.
 
 Let's get started.
 

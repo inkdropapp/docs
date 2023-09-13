@@ -5,6 +5,8 @@ import Cog from '@/components/icons/cog.svg'
 import DatabaseSync from '@/components/icons/database-sync.svg'
 import Search from '@/components/icons/search.svg'
 import Filter1 from '@/components/icons/filter-1.svg'
+import View1 from '@/components/icons/view-1.svg'
+import LayoutTwoColumns from '@/components/icons/layout-two-columns.svg'
 
 const svgIcons = {
   'pencil-write': PencilWrite,
@@ -12,7 +14,9 @@ const svgIcons = {
   'cog': Cog,
   'database-sync': DatabaseSync,
   'search': Search,
-  'filter-1': Filter1
+  'filter-1': Filter1,
+  'view-1': View1,
+  'layout-two-columns': LayoutTwoColumns
 }
 
 export function SvgIcon(props) {
@@ -22,7 +26,7 @@ export function SvgIcon(props) {
   console.log('SvgIcon?:', name, SvgIcon, props)
 
   return (
-    <span className='inline-flex text-black dark:text-white'>
+    <span className='inline-flex text-black dark:text-white my-0'>
       <SvgIcon aria-hidden="true" width={18} height={18} />
     </span>
   )

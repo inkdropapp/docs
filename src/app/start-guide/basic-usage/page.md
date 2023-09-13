@@ -1,5 +1,6 @@
 ---
-title: Basic usage
+title: Get acquainted with Inkdrop interface
+coverImage: '/images/basic-usage_cover.png'
 nextjs:
   metadata:
     title: Basic usage
@@ -9,8 +10,6 @@ nextjs:
 ## Get acquainted with Inkdrop interface
 
 Inkdrop interface is broken up into 3 main sections.
-
-![Layout](/images/basic-usage_screen.png)
 
 - **Sidebar** is the leftmost section. It lists notebooks, statuses, and tags.
   - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.

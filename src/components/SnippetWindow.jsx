@@ -15,8 +15,8 @@ function TrafficLightsIcon(props) {
 
 export function SnippetWindow(props) {
   const { children, lang, filename } = props
-  const code = children.props.children.trim()
-  const tabs = [{ name: filename, isActive: true }, { name: 'package.json', isActive: false }]
+  const code = children.props.children.trim().split('\n').map(line => line.startsWith('\\') ? line.substring(1) : line).join('\n')
+  const tabs = [{ name: filename, isActive: true }]
 
   return (
     <div className="relative not-prose">
@@ -26,8 +26,8 @@ export function SnippetWindow(props) {
         <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0" />
         <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
         <div className="pl-4 pt-4">
-          <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
-          <div className="mt-4 flex space-x-2 text-xs">
+          <div className="flex space-x-2 text-xs items-center">
+            <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30 mr-4" />
             {tabs.map((tab) => (
               <div
                 key={tab.name}
@@ -49,7 +49,7 @@ export function SnippetWindow(props) {
               </div>
             ))}
           </div>
-          <div className="mt-6 flex items-start px-1 text-sm">
+          <div className="mt-4 flex items-start px-1 text-sm">
             <div
               aria-hidden="true"
               className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
