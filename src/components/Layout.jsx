@@ -19,7 +19,7 @@ export const navigation = [
       { title: 'Getting started', href: '/start-guide', cover: '/images/quick-start-guide_cover.png' },
       { title: 'What is Markdown?', href: '/start-guide/what-is-markdown', cover: '/images/what-is-markdown_cover.png' },
       { title: 'Create your first note', href: '/start-guide/create-your-first-note', cover: '/images/basic-usage_cover.png' },
-      { title: 'Create a notebook', href: '/start-guide/create-a-notebook', cover: '/images/basic-usage_cover.png' },
+      { title: 'Create a notebook', href: '/start-guide/create-a-notebook', cover: '/images/create-a-notebook_cover.png' },
       { title: 'Main user interface', href: '/start-guide/basic-usage', cover: '/images/basic-usage_cover.png' },
     ],
   },

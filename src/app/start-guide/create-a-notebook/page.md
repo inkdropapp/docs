@@ -1,13 +1,13 @@
 ---
 title: Create a notebook
-coverImage: '/images/basic-usage_cover.png'
+coverImage: '/images/create-a-notebook_cover.png'
 nextjs:
   metadata:
     title: Create a notebook
     description: How to organize notes with notebooks
     openGraph:
       images: [
-        'https://inkdrop-user-guide.vercel.app/images/basic-usage_cover.png'
+        'https://inkdrop-user-guide.vercel.app/images/create-a-notebook_cover.png'
       ]
 ---
 
