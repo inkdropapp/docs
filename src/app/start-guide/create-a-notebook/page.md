@@ -13,56 +13,35 @@ nextjs:
 
 Notebooks are a core feature in Inkdrop that help you manage and organize your notes. They work just like folders in filesystem. You can nest notebooks in one another as deeply as needed. Let's explain what they are and how they can help you level up your workspace.{% .lead %}
 
-## Add a note
+## Use your sidebar
+
+![sidebar](/images/create-a-notebook_sidebar.png)
+
+The sidebar is the leftmost section of the app.
+it displays a tree view of notebooks.
+Each notebook item has a number badge on the right side that indicates the number of notes in the notebook.
+If a notebook has sub-notebook(s), it has a triangle icon on the left side that you can click to expand or collapse the notebook.
+
+## Add a notebook
+
+To create a new notebook, click the {% icon name="add-circle" /%} icon next to the **Notebooks** title:
+
+![Add notebook](/images/create-a-notebook_add.png)
+
+To create a sub notebook:
+
+1. Right-click the notebook, which will be the parent, and select **New Sub Notebook..**.
+2. Provide a title for the nested notebook.
+3. Click **Create**.  
+   The newly created notebook will appear inside the parent one.
 
 To create a new note, you can either click the {% icon name="pencil-write" /%} icon on the right top of the note list or use the {% kbd %}Command+N{% /kbd %} / {% kbd %}Ctrl+N{% /kbd %} shortcut.
 
-![AddNote](/images/basic-usage_addnote.png)
+## Configure the default notebook
 
-A brand new note will appear in the rightmost **Editor** section.
-After editing, the newly created note will appear in the **Note list** section.
+When creating a new note in the **All Notes** section, it will be created in the default notebook.
+You may want to change it after creating notebooks.
+It can be changed from **Inkdrop** > **Preferences** > **General** > **Default notebook**.
 
-![New note](/images/create-your-first-note_new-note.png)
-
-## Start writing Markdown
-
-Begin typing whatever you want. If you are new to Markdown, you can press the buttons of the editor toolbar to make text bold, italic, or add a link.
-
-![Use Toolbar](/images/create-your-first-note_toolbar.png)
-
-### Distraction Free Mode
-
-You may notice that the sidebar and note list bar are hidden in the above screenshot.
-That is 'Distraction Free Mode' — It lets you focus on the writing process by hiding the sidebar and note list.
-
-To toggle the 'Distraction Free Mode':
-
-- Use {% kbd s="Command+Shift+D" /%} / {% kbd s="Ctrl+Shift+D" /%}.
-
-You can even hide the toolbar with controls for quick formatting. For this, take the following steps:
-
-1. Open **Preferences** by clicking the {% icon name="cog" /%} icon in the upper right corner of the sidebar.  
-   You can also use {% kbd s="Command+," /%} / {% kbd s="Ctrl+," /%}.
-2. Go to **Editing** and clear the **Toolbar** checkbox.  
-   The toolbar is hidden.
-### Live preview
-
-Inkdrop lets you preview notes to see what they eventually look like.
-
-To preview a note:
-
-- Open a note and use {% kbd s="Command+P" /%} / {% kbd s="Ctrl+P" /%}.  
-   The note and its preview are displayed side-by-side.  
-  ![SideBySide](/images/writing-note_sidebyside.png)
-
-There're 2 more ways to toggle preview. In the lower right corner of the editor:
-
-- Click {% icon name="view-1" /%} to switch between the note and its preview.
-- Click {% icon name="layout-two-columns" /%} to toggle note and its preview side-by-side.
-
-![Toggle buttons](/images/writing-note_toggle_buttons.png)
-
-{% callout %}
-Note that the icons are hidden by default. Hover the mouse cursor over the editor and icons will appear in the lower right corner of the editor.
-{% /callout %}
+![preferences](/images/create-a-notebook_default-notebook.png)
 
