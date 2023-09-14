@@ -8,6 +8,7 @@ import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 import hackingDogImage from '@/images/hacking-dog.png'
+import heroImage from '@/images/hero.png'
 
 const codeLanguage = 'javascript'
 const code = `export default {
@@ -49,10 +50,10 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent font-proxyma">
                 Help, tutorials & documentation.
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-slate-400">
+              <p className="mt-3 text-2xl tracking-tight text-slate-400 font-proxyma">
                 Learn how to unleash your coding productivity by taking and organizing tech notes with Inkdrop.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
@@ -86,7 +87,7 @@ export function Hero() {
                 unoptimized
                 priority
               />
-              <Image src={hackingDogImage} alt="A dog hacking Inkdrop" priority />
+              <Image src={heroImage} alt="A dog hacking Inkdrop" priority className="scale-150" />
             </div>
           </div>
         </div>

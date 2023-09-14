@@ -23,7 +23,6 @@ export function ThumbLink({ title, href, cover }) {
 }
 
 export function ThumbLinks({ children, category }) {
-  console.log('category:', category)
   const links = navigation[Number(category)].links
   return (
     <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">

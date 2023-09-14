@@ -22,6 +22,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-inter)',
         display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+        proxyma: 'proxima-soft, var(--font-lexend)'
       },
       maxWidth: {
         '8xl': '88rem',

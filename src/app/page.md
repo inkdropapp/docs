@@ -4,7 +4,7 @@ title:
 
 {% quick-links %}
 
-{% quick-link title="Start guide" icon="installation" href="/" description="Start here to learn and get help" /%}
+{% quick-link title="Start guide" icon="installation" href="/start-guide" description="Start here to learn and get help" /%}
 
 {% quick-link title="Reference" icon="presets" href="/" description="Learn how the internals work and contribute" /%}
 

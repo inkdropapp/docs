@@ -23,7 +23,6 @@ export function SvgIcon(props) {
   const id = useId()
   const { name } = props
   const SvgIcon = svgIcons[name]
-  console.log('SvgIcon?:', name, SvgIcon, props)
 
   return (
     <span className='inline-flex text-black dark:text-white my-0'>
