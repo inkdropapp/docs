@@ -23,7 +23,7 @@ const tabs = [
   { name: 'package.json', isActive: false },
 ]
 
-function TrafficLightsIcon(props) {
+function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
       <circle cx="5" cy="5" r="4.5" />

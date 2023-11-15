@@ -1,6 +1,12 @@
 import { DarkMode, Gradient, LightMode } from '@/components/Icon'
 
-export function PresetsIcon({ id, color }) {
+export function PresetsIcon({
+  id,
+  color,
+}: {
+  id: string
+  color?: React.ComponentProps<typeof Gradient>['color']
+}) {
   return (
     <>
       <defs>

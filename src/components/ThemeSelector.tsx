@@ -9,7 +9,7 @@ const themes = [
   { name: 'System', value: 'system', icon: SystemIcon },
 ]
 
-function LightIcon(props) {
+function LightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -21,7 +21,7 @@ function LightIcon(props) {
   )
 }
 
-function DarkIcon(props) {
+function DarkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -33,7 +33,7 @@ function DarkIcon(props) {
   )
 }
 
-function SystemIcon(props) {
+function SystemIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -45,7 +45,9 @@ function SystemIcon(props) {
   )
 }
 
-export function ThemeSelector(props) {
+export function ThemeSelector(
+  props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>,
+) {
   let { theme, setTheme } = useTheme()
   let [mounted, setMounted] = useState(false)
 
@@ -67,13 +69,13 @@ export function ThemeSelector(props) {
         <LightIcon
           className={clsx(
             'h-4 w-4 dark:hidden',
-            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
+            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400',
           )}
         />
         <DarkIcon
           className={clsx(
             'hidden h-4 w-4 dark:block',
-            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400'
+            theme === 'system' ? 'fill-slate-400' : 'fill-sky-400',
           )}
         />
       </Listbox.Button>
@@ -90,7 +92,7 @@ export function ThemeSelector(props) {
                   'text-slate-900 dark:text-white': active && !selected,
                   'text-slate-700 dark:text-slate-400': !active && !selected,
                   'bg-slate-100 dark:bg-slate-900/40': active,
-                }
+                },
               )
             }
           >
@@ -102,7 +104,7 @@ export function ThemeSelector(props) {
                       'h-4 w-4',
                       selected
                         ? 'fill-sky-400 dark:fill-sky-400'
-                        : 'fill-slate-400'
+                        : 'fill-slate-400',
                     )}
                   />
                 </div>

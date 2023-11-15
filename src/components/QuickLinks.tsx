@@ -1,8 +1,7 @@
 import Link from 'next/link'
-
 import { Icon } from '@/components/Icon'
 
-export function QuickLinks({ children }) {
+export function QuickLinks({ children }: { children: React.ReactNode }) {
   return (
     <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       {children}
@@ -10,12 +9,22 @@ export function QuickLinks({ children }) {
   )
 }
 
-export function QuickLink({ title, description, href, icon }) {
+export function QuickLink({
+  title,
+  description,
+  href,
+  icon,
+}: {
+  title: string
+  description: string
+  href: string
+  icon: React.ComponentProps<typeof Icon>['icon']
+}) {
   const isExternal = href.startsWith('http')
   return (
     <div className="group relative rounded-xl border border-slate-200 dark:border-slate-800">
       <div className="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]" />
-      <div className="relative overflow-hidden rounded-xl p-6 flex items-center gap-4">
+      <div className="relative flex items-center gap-4 overflow-hidden rounded-xl p-6">
         <div>
           <Icon icon={icon} className="h-8 w-8" />
         </div>
@@ -25,7 +34,11 @@ export function QuickLink({ title, description, href, icon }) {
               <span className="absolute -inset-px rounded-xl" />
               {title}
               {isExternal && (
-                <Icon icon='external' color='currentColor' className='inline w-3 ml-1 align-middle' />
+                <Icon
+                  icon="external"
+                  color="currentColor"
+                  className="ml-1 inline w-3 align-middle"
+                />
               )}
             </Link>
           </h2>

@@ -8,7 +8,7 @@ import { Dialog } from '@headlessui/react'
 import { Logomark } from '@/components/Logo'
 import { Navigation } from '@/components/Navigation'
 
-function MenuIcon(props) {
+function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       aria-hidden="true"
@@ -23,7 +23,7 @@ function MenuIcon(props) {
   )
 }
 
-function CloseIcon(props) {
+function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       aria-hidden="true"
@@ -38,7 +38,7 @@ function CloseIcon(props) {
   )
 }
 
-function CloseOnNavigation({ close }) {
+function CloseOnNavigation({ close }: { close: () => void }) {
   let pathname = usePathname()
   let searchParams = useSearchParams()
 
@@ -49,11 +49,11 @@ function CloseOnNavigation({ close }) {
   return null
 }
 
-export function MobileNavigation({ navigation }) {
+export function MobileNavigation() {
   let [isOpen, setIsOpen] = useState(false)
   let close = useCallback(() => setIsOpen(false), [setIsOpen])
 
-  function onLinkClick(event) {
+  function onLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
     let link = event.currentTarget
     if (
       link.pathname + link.search + link.hash ===
@@ -95,11 +95,7 @@ export function MobileNavigation({ navigation }) {
               <Logomark className="h-9 w-9" />
             </Link>
           </div>
-          <Navigation
-            navigation={navigation}
-            className="mt-5 px-1"
-            onLinkClick={onLinkClick}
-          />
+          <Navigation className="mt-5 px-1" onLinkClick={onLinkClick} />
         </Dialog.Panel>
       </Dialog>
     </>

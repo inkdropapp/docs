@@ -18,11 +18,21 @@ const styles = {
 }
 
 const icons = {
-  note: (props) => <Icon icon="lightbulb" {...props} />,
-  warning: (props) => <Icon icon="warning" color="amber" {...props} />,
+  note: (props: { className?: string }) => <Icon icon="lightbulb" {...props} />,
+  warning: (props: { className?: string }) => (
+    <Icon icon="warning" color="amber" {...props} />
+  ),
 }
 
-export function Callout({ type = 'note', title, children }) {
+export function Callout({
+  title,
+  children,
+  type = 'note',
+}: {
+  title: string
+  children: React.ReactNode
+  type?: keyof typeof styles
+}) {
   let IconComponent = icons[type]
 
   return (

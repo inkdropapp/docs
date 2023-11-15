@@ -5,7 +5,13 @@ import { Highlight, defaultProps, Prism } from 'prism-react-renderer'
 ;(typeof global !== 'undefined' ? global : window).Prism = Prism
 require('prismjs/components/prism-bash')
 
-export function Fence({ children, language }) {
+export function Fence({
+  children,
+  language,
+}: {
+  children: string
+  language: string
+}) {
   return (
     <Highlight
       Prism={Prism}
