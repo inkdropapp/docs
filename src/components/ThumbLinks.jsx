@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { navigation } from '@/components/Layout'
+import { navigation } from '@/lib/navigation'
 
 export function ThumbLink({ title, href, cover }) {
   return (

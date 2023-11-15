@@ -1,48 +1,49 @@
 export const navigation = [
   {
-    title: 'Introduction',
+    title: 'New to Inkdrop',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
-    ],
-  },
-  {
-    title: 'Core concepts',
-    links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
+        title: 'Getting started',
+        href: '/start-guide',
+        cover: '/images/quick-start-guide_cover.png',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
       {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
+        title: 'What is Markdown?',
+        href: '/start-guide/what-is-markdown',
+        cover: '/images/what-is-markdown_cover.png',
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
-    ],
-  },
-  {
-    title: 'Advanced guides',
-    links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
       {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
+        title: 'Create your first note',
+        href: '/start-guide/create-your-first-note',
+        cover: '/images/basic-usage_cover.png',
+      },
+      {
+        title: 'Create a notebook',
+        href: '/start-guide/create-a-notebook',
+        cover: '/images/create-a-notebook_cover.png',
+      },
+      {
+        title: 'Issue-driven tech note-taking',
+        href: '/start-guide/issue-driven-note-taking',
+        cover: '/images/issue-driven-note-taking_cover.png',
+      },
+      {
+        title: 'Main user interface',
+        href: '/start-guide/basic-usage',
+        cover: '/images/basic-usage_cover.png',
       },
     ],
   },
   {
-    title: 'API reference',
+    title: 'Reference',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'User data directory', href: '/reference/user-data-directory' },
+      { title: 'Data backup', href: '/reference/data-backup' },
+      {
+        title: 'Search and filter notes',
+        href: '/reference/search-and-filter-notes',
+      },
+      { title: 'Customize keybindings', href: '/reference/key-customizations' },
     ],
   },
   {
