@@ -3,7 +3,13 @@
 import { Fragment } from 'react'
 import { Highlight } from 'prism-react-renderer'
 
-export function Fence({ children, language }) {
+export function Fence({
+  children,
+  language,
+}: {
+  children: string
+  language: string
+}) {
   return (
     <Highlight
       code={children.trimEnd()}

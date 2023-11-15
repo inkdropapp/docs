@@ -22,7 +22,7 @@ const tabs = [
   { name: 'package.json', isActive: false },
 ]
 
-function TrafficLightsIcon(props) {
+function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
       <circle cx="5" cy="5" r="4.5" />
@@ -101,13 +101,13 @@ export function Hero() {
                           'flex h-6 rounded-full',
                           tab.isActive
                             ? 'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
-                            : 'text-slate-500'
+                            : 'text-slate-500',
                         )}
                       >
                         <div
                           className={clsx(
                             'flex items-center rounded-full px-2.5',
-                            tab.isActive && 'bg-slate-800'
+                            tab.isActive && 'bg-slate-800',
                           )}
                         >
                           {tab.name}
@@ -144,7 +144,7 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6'
+                            'flex overflow-x-auto pb-6',
                           )}
                           style={style}
                         >

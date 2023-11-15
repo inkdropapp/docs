@@ -1,6 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+import typographyPlugin from '@tailwindcss/typography'
+import { type Config } from 'tailwindcss'
+
+export default {
+  content: ['./src/**/*.{js,jsx,ts,tsx,md}'],
   darkMode: 'class',
   theme: {
     fontSize: {
@@ -28,5 +30,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
-}
+  plugins: [typographyPlugin],
+} satisfies Config

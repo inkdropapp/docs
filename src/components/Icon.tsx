@@ -23,7 +23,15 @@ const iconStyles = {
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
 }
 
-export function Icon({ color = 'blue', icon, className, ...props }) {
+export function Icon({
+  icon,
+  color = 'blue',
+  className,
+  ...props
+}: {
+  color?: keyof typeof iconStyles
+  icon: keyof typeof icons
+} & Omit<React.ComponentPropsWithoutRef<'svg'>, 'color'>) {
   let id = useId()
   let IconComponent = icons[icon]
 
@@ -52,7 +60,12 @@ const gradients = {
   ],
 }
 
-export function Gradient({ color = 'blue', ...props }) {
+export function Gradient({
+  color = 'blue',
+  ...props
+}: {
+  color?: keyof typeof gradients
+} & Omit<React.ComponentPropsWithoutRef<'radialGradient'>, 'color'>) {
   return (
     <radialGradient
       cx={0}
@@ -68,10 +81,16 @@ export function Gradient({ color = 'blue', ...props }) {
   )
 }
 
-export function LightMode({ className, ...props }) {
+export function LightMode({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<'g'>) {
   return <g className={clsx('dark:hidden', className)} {...props} />
 }
 
-export function DarkMode({ className, ...props }) {
+export function DarkMode({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<'g'>) {
   return <g className={clsx('hidden dark:inline', className)} {...props} />
 }

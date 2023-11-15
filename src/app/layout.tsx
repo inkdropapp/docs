@@ -1,3 +1,4 @@
+import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
@@ -20,7 +21,7 @@ const lexend = localFont({
   variable: '--font-lexend',
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     template: '%s - Docs',
     default: 'CacheAdvance - Never miss the cache again.',
@@ -29,7 +30,11 @@ export const metadata = {
     'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html
       lang="en"
