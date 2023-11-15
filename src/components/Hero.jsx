@@ -7,7 +7,6 @@ import { Button } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
-import hackingDogImage from '@/images/hacking-dog.png'
 import heroImage from '@/images/hero.png'
 
 const codeLanguage = 'javascript'
@@ -50,11 +49,12 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent font-proxyma">
+              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display font-proxyma text-5xl tracking-tight text-transparent">
                 Help, tutorials & documentation.
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-slate-400 font-proxyma">
-                Learn how to unleash your coding productivity by taking and organizing tech notes with Inkdrop.
+              <p className="mt-3 font-proxyma text-2xl tracking-tight text-slate-400">
+                Learn how to unleash your coding productivity by taking and
+                organizing tech notes with Inkdrop.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
@@ -87,7 +87,12 @@ export function Hero() {
                 unoptimized
                 priority
               />
-              <Image src={heroImage} alt="A dog hacking Inkdrop" priority className="scale-150" />
+              <Image
+                src={heroImage}
+                alt="A dog hacking Inkdrop"
+                priority
+                className="scale-150"
+              />
             </div>
           </div>
         </div>

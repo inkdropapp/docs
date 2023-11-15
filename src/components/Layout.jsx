@@ -20,7 +20,7 @@ export const navigation = [
       { title: 'What is Markdown?', href: '/start-guide/what-is-markdown', cover: '/images/what-is-markdown_cover.png' },
       { title: 'Create your first note', href: '/start-guide/create-your-first-note', cover: '/images/basic-usage_cover.png' },
       { title: 'Create a notebook', href: '/start-guide/create-a-notebook', cover: '/images/create-a-notebook_cover.png' },
-      { title: 'Issue-driven tech note-taking', href: '/start-guide/issue-driven-note-taking', cover: '/images/create-a-notebook_cover.png' },
+      { title: 'Issue-driven tech note-taking', href: '/start-guide/issue-driven-note-taking', cover: '/images/issue-driven-note-taking_cover.png' },
       { title: 'Main user interface', href: '/start-guide/basic-usage', cover: '/images/basic-usage_cover.png' },
     ],
   },

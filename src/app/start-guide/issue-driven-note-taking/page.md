@@ -1,13 +1,13 @@
 ---
 title: Issue-driven tech note-taking
-coverImage: '/images/create-a-notebook_cover.png'
+coverImage: '/images/issue-driven-note-taking_cover.png'
 nextjs:
   metadata:
     title: Issue-driven tech note-taking
     description: When and what to write notes
     openGraph:
       images: [
-        'https://inkdrop-user-guide.vercel.app/images/create-a-notebook_cover.png'
+        'https://inkdrop-user-guide.vercel.app/images/issue-driven-note-taking_cover.png'
       ]
 ---
 
