@@ -1,4 +1,6 @@
-export function LogomarkDefs(props) {
+import { SVGProps } from 'react'
+
+export function LogomarkDefs(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       aria-hidden="true"
