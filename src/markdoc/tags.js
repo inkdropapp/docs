@@ -4,6 +4,7 @@ import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
 import { SvgIcon } from '@/components/SvgIcon'
 import { SnippetWindow } from '@/components/SnippetWindow'
+import { EmbeddedVideo } from '@/components/EmbeddedVideo'
 
 const tags = {
   callout: {
@@ -50,7 +51,7 @@ const tags = {
     render: ThumbLinks,
     attributes: {
       category: { type: Number },
-    }
+    },
   },
   'thumb-link': {
     selfClosing: true,
@@ -65,21 +66,28 @@ const tags = {
     attributes: {
       s: { type: String },
     },
-    render: Kbd
+    render: Kbd,
   },
   icon: {
     attributes: {
       name: { type: String },
     },
-    render: SvgIcon
+    render: SvgIcon,
   },
   snippet: {
     attributes: {
       filename: { type: String },
       lang: { type: String },
     },
-    render: SnippetWindow
-  }
+    render: SnippetWindow,
+  },
+  video: {
+    attributes: {
+      src: { type: String },
+    },
+    type: { type: String },
+    render: EmbeddedVideo,
+  },
 }
 
 export default tags
