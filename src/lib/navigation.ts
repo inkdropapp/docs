@@ -44,6 +44,36 @@ export const navigation = [
         href: '/reference/search-and-filter-notes',
       },
       { title: 'Customize keybindings', href: '/reference/key-customizations' },
+      { title: 'Note statuses', href: '/reference/note-statuses' },
+      { title: 'Pin notes to the top', href: '/reference/pin-notes-to-top' },
+      {
+        title: 'Note synchronization',
+        href: '/reference/note-synchronization',
+      },
+      {
+        title: 'Use behind web proxy',
+        href: '/reference/use-behind-web-proxy',
+      },
+      {
+        title: 'Share notes on the web',
+        href: '/reference/share-notes-on-the-web',
+      },
+      {
+        title: 'Clip web pages from browser',
+        href: '/reference/clip-web-pages-from-browser',
+      },
+      {
+        title: 'Import notes from Evernote',
+        href: '/reference/import-from-evernote',
+      },
+      {
+        title: 'Restore previous revisions of note',
+        href: '/reference/revision-history',
+      },
+      {
+        title: 'Resize images',
+        href: '/reference/resize-images',
+      },
     ],
   },
   {
