@@ -6,18 +6,29 @@ nextjs:
     title: What and why is Markdown?
     description: What is Markdown and why it is used
     openGraph:
-      images: [
-        'https://inkdrop-user-guide.vercel.app/images/what-is-markdown_cover.png'
-      ]
+      images:
+        [
+          'https://inkdrop-user-guide.vercel.app/images/what-is-markdown_cover.png',
+        ]
 ---
 
 After installing Inkdrop, you may notice that the example notes in the app are written in a format called Markdown. If you're new to this, don't worry. We're here to introduce you to the world of Markdown and explain why it's such a favorite among developers and tech enthusiasts.{% .lead %}
 
+## Inkdrop is like a drafting table for programmers
+
+Imagine you're an architect. You have ideas brimming in your mind, designs waiting to take shape.
+Now, you could sketch these on any piece of paper, but you choose a drafting table.
+Why? Because it's tailored for your work.
+It has the right tools and features that make designing more efficient, precise, and effective.
+This is similar to why you should choose Markdown for writing your notes, instead of sticking to plain text.
+And, Inkdrop is the best drafting table for taking tech notes in Markdown.
+
 ## Markdown is great for tech note-taking
 
-At its core, Markdown is a lightweight markup language, designed to be easily readable and writeable by humans. Think of it as a simpler cousin to HTML. Instead of using intricate tags and attributes like HTML, Markdown uses plain text symbols. For instance, wrapping a word in `*` asterisks `*` will make it *italicized*, while using `**` double asterisks `**` will make it **bold**.
+At its core, Markdown is a lightweight markup language, designed to be easily readable and writeable by humans. Think of it as a simpler cousin to HTML. Instead of using intricate tags and attributes like HTML, Markdown uses plain text symbols. For instance, wrapping a word in `*` asterisks `*` will make it _italicized_, while using `**` double asterisks `**` will make it **bold**.
 
 {% snippet lang="md" filename="example.md" %}
+
 ```
 Hello, **World**!
 This is *Italic*.
@@ -26,6 +37,7 @@ Please visit [my homepage](https://www.craftz.dog/)
 - List item 1
 - List item 2
 ```
+
 {% /snippet %}
 
 But if you're a programmer or diving into the tech world, you might often hear about "[GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" or GFM for short. This is a particular style of Markdown with some added features tailored specifically for the needs of developers:
@@ -38,7 +50,8 @@ But if you're a programmer or diving into the tech world, you might often hear a
 For example:
 
 {% snippet lang="md" filename="github-flavored.md" %}
-```
+
+````
 \```js
 function helloWorld() {
   console.log("Hello, world!");
@@ -57,7 +70,8 @@ graph TD;
 \```math
 E = mc^2
 \```
-```
+````
+
 {% /snippet %}
 
 It yields:
@@ -77,11 +91,8 @@ Using Markdown is like unlocking the door to a universal language of digital not
 3. **Versatility**: As you dive deeper into the tech world, you'll discover that Markdown is almost everywhere:
 
    - **Code Hosting Platforms**: GitHub and GitLab, where millions of developers host their projects, use Markdown for README files, comments, and documentation.
-   
    - **Communication Tools**: Apps like Slack and Discord allow you to format messages with Markdown.
-   
    - **Forums**: Discourse, a popular forum software, adopts Markdown for its posts.
-   
    - **Websites and Blogs**: Many modern website generators like Ghost, Jekyll, and Gatsby use Markdown as their primary content format.
 
 4. **Consistency**: Since Markdown renders uniformly across platforms, what you write is what you get. Whether you're viewing your note in Inkdrop, on GitHub, or any other Markdown-supporting platform, the presentation remains consistent.
@@ -96,5 +107,4 @@ Moreover, as you progress in your software development journey (if that's a path
 
 ## Conclusion
 
-While Inkdrop offers a plethora of features to enhance your note-taking experience, the use of Markdown is at its heart. Embrace it, experiment with it, and soon, you'll wonder how you ever wrote without it. Whether or not Inkdrop becomes your go-to note-taking app, the world of Markdown is vast and worth exploring. Happy writing! 
-
+While Inkdrop offers a plethora of features to enhance your note-taking experience, the use of Markdown is at its heart. Embrace it, experiment with it, and soon, you'll wonder how you ever wrote without it. Whether or not Inkdrop becomes your go-to note-taking app, the world of Markdown is vast and worth exploring. Happy writing!
