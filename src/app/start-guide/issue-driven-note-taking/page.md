@@ -52,7 +52,7 @@ You can still show closed issues by clicking the **Closed** tab, which is handy 
 ![GitHub Issues closed issues](/images/issue-driven-note-taking_github-closed-issues.png)
 
 Similarly, Inkdrop can have several statuses for your notes, including 'Active', 'On Hold', 'Completed', and 'Dropped'.
-And the notes with 'Completed' and 'Dropped' statuses are hidden in the note list by default when you view them via a notebook so you can focus on the active tasks.
+And the notes with 'Completed' and 'Dropped' statuses are hidden in the note list by default when you view them via a notebook so you can focus on the active issues.
 You can view them by clicking the **Completed** and **Dropped** tabs on the sidebar.
 
 ![Note status](/images/issue-driven-note-taking_note_status.png)
@@ -72,4 +72,8 @@ To add a status to a note:
 
 Watch a video showing a basic use case:
 
-{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" %}
+{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" /%}
+
+---
+
+Overall, the key to effective note-taking in Inkdrop is the disciplined approach of 'One note per issue' coupled with the strategic use of note statuses. This method not only keeps your project notes organized and manageable but also aligns your engineering process with best practices in software development.
