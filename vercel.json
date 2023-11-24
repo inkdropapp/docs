@@ -25,12 +25,12 @@
     },
     {
       "source": "/manual/writing-note",
-      "destination": "/reference/start-guide/create-your-first-note",
+      "destination": "/start-guide/create-your-first-note",
       "permanent": true
     },
     {
       "source": "/manual/write-notes",
-      "destination": "/reference/start-guide/create-your-first-note",
+      "destination": "/start-guide/create-your-first-note",
       "permanent": true
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "source": "/manual/basic-usage",
-      "destination": "/????",
+      "destination": "/reference/main-user-interface",
       "permanent": true
     },
     {

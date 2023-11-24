@@ -31,12 +31,12 @@ const svgIcons = {
 
 export function SvgIcon(props) {
   const id = useId()
-  const { name } = props
+  const { name, className, width, height } = props
   const SvgIcon = svgIcons[name]
 
   return (
-    <span className="my-0 inline-flex text-black dark:text-white">
-      <SvgIcon aria-hidden="true" width={18} height={18} />
+    <span className={`inline-flex ${className}`}>
+      <SvgIcon aria-hidden="true" width={width || 18} height={height || 18} />
     </span>
   )
 }

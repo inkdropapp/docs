@@ -27,16 +27,16 @@ export const navigation = [
         href: '/start-guide/issue-driven-note-taking',
         cover: '/images/issue-driven-note-taking_cover.png',
       },
-      {
-        title: 'Main user interface',
-        href: '/start-guide/basic-usage',
-        cover: '/images/basic-usage_cover.png',
-      },
     ],
   },
   {
     title: 'Reference',
     links: [
+      {
+        title: 'Main user interface',
+        href: '/reference/main-user-interface',
+        cover: '/images/basic-usage_cover.png',
+      },
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
       {
