@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { Highlight } from 'prism-react-renderer'
+import { SvgIcon } from '@/components/SvgIcon'
 
 import { Button } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
@@ -57,9 +58,15 @@ export function Hero() {
                 organizing tech notes with Inkdrop.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
-                <Button href="https://forum.inkdrop.app/" variant="secondary">
-                  Visit the User Forum
+                <Button
+                  href="https://my.inkdrop.app/"
+                  className="inline-flex items-center justify-center gap-1"
+                >
+                  <SvgIcon name="login" />
+                  Log in
+                </Button>
+                <Button href="https://www.inkdrop.app/" variant="secondary">
+                  What is Inkdrop?
                 </Button>
               </div>
             </div>

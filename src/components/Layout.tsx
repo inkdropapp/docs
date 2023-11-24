@@ -11,6 +11,7 @@ import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
+import { Footer } from './Footer'
 
 function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -58,7 +59,11 @@ function Header() {
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com" className="group" aria-label="GitHub">
+        <Link
+          href="https://github.com/inkdropapp/docs"
+          className="group"
+          aria-label="GitHub"
+        >
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
       </div>
@@ -73,9 +78,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex w-full flex-col">
       <Header />
-
       {isHomePage && <Hero />}
-
       <div className="relative mx-auto flex w-full max-w-[100rem] flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
@@ -87,6 +90,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

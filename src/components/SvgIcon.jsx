@@ -11,6 +11,7 @@ import History from '@/components/icons/history.svg'
 import NavigationMenuVertical from '@/components/icons/navigation-menu-vertical.svg'
 import InfoCircle from '@/components/icons/information-circle.svg'
 import ArchiveRestore from '@/components/icons/archive-restore.svg'
+import Login from '@/components/icons/login-1.svg'
 
 const svgIcons = {
   'pencil-write': PencilWrite,
@@ -25,6 +26,7 @@ const svgIcons = {
   'navigation-menu-vertical': NavigationMenuVertical,
   'info-circle': InfoCircle,
   'archive-restore': ArchiveRestore,
+  login: Login,
 }
 
 export function SvgIcon(props) {

@@ -34,7 +34,7 @@ Inkdrop collects data about you:
 - when you use the Inkdrop client app for macOS, Windows, Linux, iOS or Android
 - when you send support, privacy, legal, and other requests to us
 - when working with and researching current and potential customers
-- when you use [`ipm` command](/referenec/extend-with-plugins) to publish plugins for Inkdrop
+- when you use [`ipm` command](/reference/extend-with-plugins) to publish plugins for Inkdrop
 - when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.app/)
 
 When researching potential customers, we sometimes search the public World Wide Web or paid business databases. Otherwise, we don't buy or receive data about you from data brokers or other private services.

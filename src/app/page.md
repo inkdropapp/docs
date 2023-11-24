@@ -1,12 +1,12 @@
 ---
-title: 
+title:
 ---
 
 {% quick-links %}
 
-{% quick-link title="Start guide" icon="installation" href="/start-guide" description="Start here to learn and get help" /%}
+{% quick-link title="Start guide" icon="installation" href="/start-guide" description="Quickly begin your Inkdrop journey with essential setup and feature guidance" /%}
 
-{% quick-link title="Reference" icon="presets" href="/" description="Learn how the internals work and contribute" /%}
+{% quick-link title="User Forum" icon="presets" href="https://forum.inkdrop.app/" description="Join discussions, get help, and share app insights" /%}
 
 {% quick-link title="Plugins" icon="plugins" href="https://my.inkdrop.app/plugins" description="Extend Inkdrop with third-party plugins" /%}
 
@@ -18,6 +18,3 @@ title:
 
 {% thumb-links category="0" %}
 {% /thumb-links %}
-
-## Reference
-

@@ -69,4 +69,4 @@ We will migrate your payment information and delete the old account.
 
 - [FAQ - I forgot my password. How to reset my password?](/faq#i-forgot-my-password-how-to-reset-my-password)
 - [Troubleshooting - I can't login](/reference/troubleshooting#i-can-t-log-in-sync-not-working)
-- [Recovering Your Password](/referene/recover-password)
+- [Recovering Your Password](/reference/recover-password)
