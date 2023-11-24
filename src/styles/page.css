@@ -1,0 +1,8 @@
+article img[alt$='#cover'] {
+  width: 200px;
+}
+
+article img[alt$='#circle-cover'] {
+  width: 200px;
+  border-radius: 100px;
+}

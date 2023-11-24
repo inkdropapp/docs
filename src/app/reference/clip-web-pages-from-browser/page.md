@@ -25,7 +25,7 @@ Please check out the following guide:
 
 ## Set up Web Clipper
 
-The web clipper needs to know how to access your local database server [configured in your `config.json`](/manual/accessing-the-local-database/#accessing-via-http-advanced).
+The web clipper needs to know how to access your local database server [configured in your `config.json`](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced).
 
 - **Inkdrop Local Database URL** (Optional) - The URL to the local database as you configured in `core.server.port`. Default is `http://localhost:19840`
 - **Username** (Required) - The Basic auth username as you configured in `core.server.auth.username`.

@@ -16,7 +16,7 @@ export function Fence({
     <Highlight
       prism={Prism}
       code={children.trimEnd()}
-      language={language}
+      language={language || ''}
       theme={{ plain: {}, styles: [] }}
     >
       {({ className, style, tokens, getTokenProps }) => (

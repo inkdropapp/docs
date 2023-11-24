@@ -51,6 +51,10 @@ export const navigation = [
         href: '/reference/note-synchronization',
       },
       {
+        title: 'Extend with plugins',
+        href: '/reference/extend-with-plugins',
+      },
+      {
         title: 'Use behind web proxy',
         href: '/reference/use-behind-web-proxy',
       },
@@ -74,14 +78,29 @@ export const navigation = [
         title: 'Resize images',
         href: '/reference/resize-images',
       },
+      {
+        title: 'Troubleshooting',
+        href: '/reference/troubleshooting',
+      },
+      {
+        title: 'Recover lost password',
+        href: '/reference/recover-password',
+      },
+      {
+        title: 'Salvage data from local database',
+        href: '/reference/salvage-data-from-local-database',
+      },
     ],
   },
   {
-    title: 'Contributing',
+    title: 'About',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Frequently asked questions', href: '/faq' },
+      { title: 'How secure is Inkdrop?', href: '/security' },
+      { title: 'Contact the author', href: '/contact' },
+      { title: 'Terms of Service', href: '/terms' },
+      { title: 'Privacy Policy', href: '/privacy' },
+      { title: 'Act on specified commercial transactions', href: '/notation' },
     ],
   },
 ]
