@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 type Props = {
   topicId: number
@@ -25,5 +26,20 @@ export function DiscourseComments(props: Props) {
     el.appendChild(d)
   }, [topicId])
 
-  return <div id="discourse-comments"></div>
+  return (
+    <div>
+      <h2>Comments</h2>
+      <div className="mb-4">
+        Got any question about this page? Leave a comment on{' '}
+        <Link href={`https://forum.inkdrop.app/t/${topicId}`} target="_blank">
+          the user forum here
+        </Link>
+        .
+      </div>
+      <div
+        id="discourse-comments"
+        className="mb-4 overflow-hidden rounded-lg shadow-lg"
+      ></div>
+    </div>
+  )
 }
