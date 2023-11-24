@@ -38,7 +38,7 @@ export function DiscourseComments(props: Props) {
       </div>
       <div
         id="discourse-comments"
-        className="mb-4 overflow-hidden rounded-lg shadow-lg"
+        className="mb-4 overflow-hidden rounded-lg bg-[#f9fcff] p-3"
       ></div>
     </div>
   )
