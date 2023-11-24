@@ -5,6 +5,7 @@ import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
 import { SvgIcon } from '@/components/SvgIcon'
 import { SnippetWindow } from '@/components/SnippetWindow'
 import { EmbeddedVideo } from '@/components/EmbeddedVideo'
+import { DiscourseComments } from '@/components/DiscourseComments'
 
 const tags = {
   callout: {
@@ -84,9 +85,15 @@ const tags = {
   video: {
     attributes: {
       src: { type: String },
+      type: { type: String },
     },
-    type: { type: String },
     render: EmbeddedVideo,
+  },
+  discourseComments: {
+    attributes: {
+      topicId: { type: Number },
+    },
+    render: DiscourseComments,
   },
 }
 
