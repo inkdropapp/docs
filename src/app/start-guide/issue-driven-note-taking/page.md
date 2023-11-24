@@ -77,3 +77,5 @@ Watch a video showing a basic use case:
 ---
 
 Overall, the key to effective note-taking in Inkdrop is the disciplined approach of 'One note per issue' coupled with the strategic use of note statuses. This method not only keeps your project notes organized and manageable but also aligns your engineering process with best practices in software development.
+
+{% discourseComments topicId="4274" /%}
