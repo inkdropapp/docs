@@ -165,7 +165,7 @@
     },
     {
       "source": "/manual/integrating-with-alfred",
-      "destination": "/????",
+      "destination": "/reference/integrate-with-alfred",
       "permanent": true
     },
     {
@@ -180,7 +180,7 @@
     },
     {
       "source": "/manual/list-of-commands",
-      "destination": "/????",
+      "destination": "https://developers.inkdrop.app/guides/list-of-commands",
       "permanent": true
     },
     {
@@ -190,7 +190,7 @@
     },
     {
       "source": "/manual/plugin-migration-from-v3-to-v4",
-      "destination": "/????",
+      "destination": "https://developers.inkdrop.app/appendix/plugin-migration-from-v3-to-v4",
       "permanent": true
     },
     {
@@ -225,7 +225,7 @@
     },
     {
       "source": "/reference/json-schema",
-      "destination": "/????",
+      "destination": "https://developers.inkdrop.app/data-access/notes",
       "permanent": true
     }
   ]

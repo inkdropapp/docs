@@ -79,6 +79,10 @@ export const navigation = [
         href: '/reference/resize-images',
       },
       {
+        title: 'Integrate with Alfred',
+        href: '/reference/integrate-with-alfred',
+      },
+      {
         title: 'Troubleshooting',
         href: '/reference/troubleshooting',
       },
