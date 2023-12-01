@@ -214,6 +214,11 @@
       "permanent": true
     },
     {
+      "source": "/reference/config",
+      "destination": "https://developers.inkdrop.app/modules/config",
+      "permanent": true
+    },
+    {
       "source": "/reference/component-manager",
       "destination": "https://developers.inkdrop.app/modules/component-manager",
       "permanent": true
@@ -221,6 +226,216 @@
     {
       "source": "/reference/composite-disposable",
       "destination": "https://developers.inkdrop.app/event-subscription/composite-disposable",
+      "permanent": true
+    },
+    {
+      "source": "/reference/context-menu-manager",
+      "destination": "https://developers.inkdrop.app/modules/context-menu-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/data-store",
+      "destination": "https://developers.inkdrop.app/modules/data-store",
+      "permanent": true
+    },
+    {
+      "source": "/reference/data-store",
+      "destination": "https://developers.inkdrop.app/modules/data-store",
+      "permanent": true
+    },
+    {
+      "source": "/reference/disposable",
+      "destination": "https://developers.inkdrop.app/event-subscription/disposable",
+      "permanent": true
+    },
+    {
+      "source": "/reference/emitter",
+      "destination": "https://developers.inkdrop.app/event-subscription/emitter",
+      "permanent": true
+    },
+    {
+      "source": "/reference/environment",
+      "destination": "https://developers.inkdrop.app/modules/environment",
+      "permanent": true
+    },
+    {
+      "source": "/reference/ipm-wrapper",
+      "destination": "https://developers.inkdrop.app/modules/ipm-wrapper",
+      "permanent": true
+    },
+    {
+      "source": "/reference/inkdrop-application",
+      "destination": "https://developers.inkdrop.app/modules/inkdrop-application",
+      "permanent": true
+    },
+    {
+      "source": "/reference/keymap-manager",
+      "destination": "https://developers.inkdrop.app/modules/keymap-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/layout-manager",
+      "destination": "https://developers.inkdrop.app/modules/layout-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/mde",
+      "destination": "https://developers.inkdrop.app/modules/mde",
+      "permanent": true
+    },
+    {
+      "source": "/reference/markdown-renderer",
+      "destination": "https://developers.inkdrop.app/modules/markdown-renderer",
+      "permanent": true
+    },
+    {
+      "source": "/reference/menu-manager",
+      "destination": "https://developers.inkdrop.app/modules/menu-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/notification",
+      "destination": "https://developers.inkdrop.app/modules/notification",
+      "permanent": true
+    },
+    {
+      "source": "/reference/notification-manager",
+      "destination": "https://developers.inkdrop.app/modules/notification-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/package",
+      "destination": "https://developers.inkdrop.app/modules/package",
+      "permanent": true
+    },
+    {
+      "source": "/reference/package-manager",
+      "destination": "https://developers.inkdrop.app/modules/package-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/style-manager",
+      "destination": "https://developers.inkdrop.app/modules/style-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/theme-manager",
+      "destination": "https://developers.inkdrop.app/modules/theme-manager",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-books",
+      "destination": "https://developers.inkdrop.app/states/books",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-db",
+      "destination": "https://developers.inkdrop.app/states/db",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-editing-note",
+      "destination": "https://developers.inkdrop.app/states/editing-note",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-editor",
+      "destination": "https://developers.inkdrop.app/states/editor",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-layouts",
+      "destination": "https://developers.inkdrop.app/states/layouts",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-local-config",
+      "destination": "https://developers.inkdrop.app/states/local-config",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-main-layout",
+      "destination": "https://developers.inkdrop.app/states/main-layout",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-note-list-bar",
+      "destination": "https://developers.inkdrop.app/states/note-list-bar",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-notes",
+      "destination": "https://developers.inkdrop.app/states/notes",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-preview",
+      "destination": "https://developers.inkdrop.app/states/preview",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-query-context",
+      "destination": "https://developers.inkdrop.app/states/query-context",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-tags",
+      "destination": "https://developers.inkdrop.app/states/tags",
+      "permanent": true
+    },
+    {
+      "source": "/reference/state-stats",
+      "destination": "https://developers.inkdrop.app/states/stats",
+      "permanent": true
+    },
+    {
+      "source": "/reference/action-editing-note",
+      "destination": "https://developers.inkdrop.app/actions/editing-note",
+      "permanent": true
+    },
+    {
+      "source": "/reference/action-editor",
+      "destination": "https://developers.inkdrop.app/actions/editor",
+      "permanent": true
+    },
+    {
+      "source": "/reference/dialog",
+      "destination": "https://developers.inkdrop.app/components/dialog",
+      "permanent": true
+    },
+    {
+      "source": "/reference/message-dialog",
+      "destination": "https://developers.inkdrop.app/components/message-dialog",
+      "permanent": true
+    },
+    {
+      "source": "/reference/inkdrop-database",
+      "destination": "https://developers.inkdrop.app/#data-access",
+      "permanent": true
+    },
+    {
+      "source": "/reference/db-note",
+      "destination": "https://developers.inkdrop.app/data-access/notes",
+      "permanent": true
+    },
+    {
+      "source": "/reference/db-book",
+      "destination": "https://developers.inkdrop.app/data-access/books",
+      "permanent": true
+    },
+    {
+      "source": "/reference/db-tag",
+      "destination": "https://developers.inkdrop.app/data-access/tags",
+      "permanent": true
+    },
+    {
+      "source": "/reference/db-file",
+      "destination": "https://developers.inkdrop.app/data-access/files",
+      "permanent": true
+    },
+    {
+      "source": "/reference/db-utils",
+      "destination": "https://developers.inkdrop.app/data-access/utils",
       "permanent": true
     },
     {
