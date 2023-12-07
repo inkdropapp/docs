@@ -97,6 +97,15 @@ export const navigation = [
     ],
   },
   {
+    title: 'Writing Markdown',
+    links: [
+      {
+        title: 'Basic writing and formatting syntax',
+        href: '/writing/basic-writing-and-formatting-syntax',
+      },
+    ],
+  },
+  {
     title: 'About',
     links: [
       { title: 'Frequently asked questions', href: '/faq' },
