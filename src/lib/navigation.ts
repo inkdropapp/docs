@@ -37,6 +37,14 @@ export const navigation = [
         href: '/reference/main-user-interface',
         cover: '/images/basic-usage_cover.png',
       },
+      {
+        title: 'Write notes',
+        href: '/reference/write-notes',
+      },
+      {
+        title: 'Organize notebooks',
+        href: '/reference/organize-notebooks',
+      },
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
       {
