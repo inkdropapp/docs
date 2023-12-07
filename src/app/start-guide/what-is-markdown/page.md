@@ -108,3 +108,5 @@ Moreover, as you progress in your software development journey (if that's a path
 ## Conclusion
 
 While Inkdrop offers a plethora of features to enhance your note-taking experience, the use of Markdown is at its heart. Embrace it, experiment with it, and soon, you'll wonder how you ever wrote without it. Whether or not Inkdrop becomes your go-to note-taking app, the world of Markdown is vast and worth exploring. Happy writing!
+
+{% discourseComments topicId="4305" /%}
