@@ -95,6 +95,28 @@ This will display the code block with syntax highlighting:
 
 ![Screenshot of three lines of Ruby code as displayed on GitHub. Elements of the code display in purple, blue, and red type, making the lines more visually scannable.](/images/markdown-cheatsheet_syntax-highlighting.png)
 
+## Supported color models
+
+You can call out colors within a sentence by using backticks. A supported color model within backticks will display a visualization of the color.
+
+```markdown
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
+```
+
+![Screenshot of rendered GitHub Markdown showing how HEX values within backticks create small circles of color. #ffffff shows a white circle, and #000000 shows a black circle.](/images/markdown-cheatsheet_highlighting-colors.png)
+
+Here are the currently supported color models.
+
+| Color | Syntax             | Example                    | Output                                                                                                                                                             |
+| ----- | ------------------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| HEX   | `` `#RRGGBB` ``    | `` `#0969DA` ``            | ![Screenshot of rendered GitHub Markdown showing how HEX value #0969DA appears with a blue circle.](/images/markdown-cheatsheet_highlighting-colors-hex.png)       |
+| RGB   | `` `rgb(R,G,B)` `` | `` `rgb(9, 105, 218)` ``   | ![Screenshot of rendered GitHub Markdown showing how RGB value 9, 105, 218 appears with a blue circle.](/images/markdown-cheatsheet_highlighting-colors-rgb.png)   |
+| HSL   | `` `hsl(H,S,L)` `` | `` `hsl(212, 92%, 45%)` `` | ![Screenshot of rendered GitHub Markdown showing how HSL value 212, 92%, 45% appears with a blue circle.](/images/markdown-cheatsheet_highlighting-colors-hsl.png) |
+
+{% callout title="Note" type="warning" %}
+A supported color model cannot have any leading or trailing spaces within the backticks.
+{% /callout %}
+
 ## Links
 
 You can create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL in parentheses `( )`. You can also use the keyboard shortcut {% kbd s="Command+K" /%}(Mac) or {% kbd s="Ctrl+K" /%}(Windows/Linux) to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
@@ -159,11 +181,12 @@ For more examples, see the [GitHub Flavored Markdown Spec](https://github.githu
 To create a task list, preface list items with a hyphen and space followed by `[ ]`. To mark a task as complete, use `[x]`.
 
 ```markdown
-- [ ] Checkbox
-- [x] Task
+- [ ] inkdrop://note/31p7dWY2e
+- [ ] [Support highlighting color codes](inkdrop://note/d4c01itk6)
+- [ ] Add delight to the experience when all tasks are complete 🎉
 ```
 
-![Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.](/images/markdown-cheatsheet_task-list_simple.png)
+![Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.](/images/markdown-cheatsheet_task-list.png)
 
 ## Using emoji
 
@@ -212,6 +235,35 @@ The position of a footnote in your Markdown does not influence where the footnot
 {% /callout %}
 
 Footnotes are not supported in wikis.
+
+## Alerts
+
+Alerts are an extension of the blockquote syntax that you can use to emphasize critical information.
+On Inkdrop, they are displayed with distinctive colors and icons to indicate the importance of the content.
+
+Multiple types of alerts are available.
+You can add an alert with a special blockquote line that specifies the alert type, and then add the alert information in a standard blockquote immediately after.
+
+```markdown
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
+
+Here are the rendered alerts.
+
+![Screenshot of rendered Markdown alerts showing how Note, Tips, Important, Warning, and Caution render with different colored text and icons.](/images/markdown-cheatsheet_alerts.png)
 
 ## Hiding content with comments
 
