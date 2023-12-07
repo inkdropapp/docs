@@ -40,12 +40,12 @@ Please visit [my homepage](https://www.craftz.dog/)
 
 {% /snippet %}
 
-But if you're a programmer or diving into the tech world, you might often hear about "[GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" or GFM for short. This is a particular style of Markdown with some added features tailored specifically for the needs of developers:
+But if you're a programmer or diving into the tech world, you might often hear about "[GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" or GFM for short.
+GFM is created by [GitHub](https://github.com/), the world's largest online software development platform, for its users to help them write better documentation and discuss technical topics more effectively.
+It supports the following additional features:
 
 - **Code Blocks**: With GFM, you can easily insert blocks of code by wrapping them with three backticks (\```). This not only differentiates the code from the rest of the text but also applies syntax highlighting based on the language of the code.
 - **Task Lists**: Easily track to-dos using checkboxes.
-- **Mermaid**: An amazing feature that lets you generate diagrams and flowcharts from text-based descriptions. This is particularly useful for jotting down complex ideas visually.
-- **Math Expressions**: For those in more technical or scientific fields, GFM's support for math notation can be a lifesaver, allowing for LaTeX-style mathematical expressions.
 
 For example:
 
@@ -58,18 +58,15 @@ function helloWorld() {
 }
 \```
 
+\```python
+def hello_world():
+    print("Hello, world!")
+
+hello_world()
+\```
+
 - [ ] Task item 1
 - [x] Completed task item 2
-
-\```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-\```
-
-\```math
-E = mc^2
-\```
 ````
 
 {% /snippet %}
@@ -78,7 +75,10 @@ It yields:
 
 ![GFM example](/images/what-is-markdown_gfm-example.png)
 
-It looks powerful yet simple, right? Inkdrop embraces these extended features of GitHub-flavored Markdown, ensuring that your notes can be as technical, detailed, and intricate as needed. This makes it perfect for jotting down everything from code snippets and algorithms to complex mathematical theories and flowcharts.
+It looks great, right?
+Inkdrop embraces these extended features of GitHub-flavored Markdown, making it a powerful tool for jotting down everything from code snippets, issues, and ideas, to day-to-day notes.
+
+Learn more about Markdown syntaxes in [Basic writing and formatting syntax](/writing/basic-writing-and-formatting-syntax).
 
 ## Markdown lets you avoid vendor lock-in and have access to a vast toolset
 
