@@ -9,7 +9,7 @@ function TrackPageView() {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    const { NEXT_PUBLIC_FATHOM_ID: FATHOM_ID } = process.env
+    const FATHOM_ID = process.env.NEXT_PUBLIC_FATHOM_ID
     if (!FATHOM_ID) return
     load(FATHOM_ID, { auto: false })
   }, [])
