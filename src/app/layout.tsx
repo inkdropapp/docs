@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
+import Fathom from '../components/Fathom'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
@@ -43,6 +44,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">
+        <Fathom />
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
