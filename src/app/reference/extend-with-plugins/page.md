@@ -87,13 +87,13 @@ Or, you can use the Themes tab in the Preferences window:
 
 ## Command line (ipm - Inkdrop Plugin Manager)
 
-<div class="ui message">
-  <b>ipm</b> is a fork of <a href="https://github.com/atom/apm">apm (atom package manager)</a>, some output messages may include Atom-related though, please ignore them. 😉
-</div>
+{% callout %}
+`ipm` is a fork of [apm (atom package manager)](https://github.com/atom/apm), some output messages may include Atom-related though, please ignore them. 😉
+{% /callout %}
 
-<div class="ui warning message">
-  If you are using beta version of the app, please note that the command name is <b>ipm-beta</b>.
-</div>
+{% callout type="warning" %}
+If you are using beta version of the app, please note that the command name is `ipm-beta`.
+{% /callout %}
 
 You can also install packages or themes from the command line using `ipm`.
 

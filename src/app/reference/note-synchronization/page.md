@@ -24,9 +24,9 @@ Inkdrop lets you store your notes in your own database compatible with [CouchDB]
 CouchDB is just another open-source NoSQL database so you can deploy it on your environment for free. See CouchDB's [installation guide](http://docs.couchdb.org/en/1.6.1/install/index.html) for more informations.
 Using DBaaS instead of operating database by yourself is good choice. For instance, [Cloudant](https://cloudant.com/) is one of fully-managed DBaaS providers.
 
-<div class="ui warning message">
-  <strong>WARNING</strong>: Use this feature at your own risk. Inkdrop itself doesn't protect data from other people on your server. To protect your data, read <a href='#configure-security'>Security</a> section at the bottom of this page.
-</div>
+{% callout type="warning" %}
+Use this feature at your own risk. Inkdrop itself doesn't protect data from other people on your server. To protect your data, read [Security](#configure-security) section at the bottom of this page.improvements.
+{% /callout %}
 
 ### Create a database
 
