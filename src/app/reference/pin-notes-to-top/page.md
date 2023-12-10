@@ -18,7 +18,7 @@ There are several ways to pin/unpin notes.
 ![Context menu](/images/pin-notes-to-top_howto-context-menu.png)
 
 Right-click the note you wish to pin/unpin and select "Pin to top" / "Unpin from top" menu.
-You can also toggle pinned state by pressing <kbd>P</kbd> on the note list.
+You can also toggle pinned state by pressing {% kbd %}P{% /kbd %} on the note list.
 
 ## via the editor drawer
 

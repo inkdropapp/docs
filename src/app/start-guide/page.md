@@ -100,9 +100,9 @@ sudo snap refresh inkdrop
 
 To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
 
-<div class="ui warning message">
-These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the <a href="https://forum.inkdrop.app/c/announcements"><b>What's new page</b></a> to keep up with the latest bug fixes and improvements.
-</div>
+{% callout type="warning" %}
+These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the **[What's new page](https://forum.inkdrop.app/c/announcements)** to keep up with the latest bug fixes and improvements.
+{% /callout %}
 
 ##### Debian, Ubuntu, or related systems
 
