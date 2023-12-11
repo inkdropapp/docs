@@ -87,6 +87,7 @@ const tags = {
   video: {
     attributes: {
       src: { type: String },
+      poster: { type: String },
       type: { type: String },
     },
     render: EmbeddedVideo,
