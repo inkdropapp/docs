@@ -72,7 +72,7 @@ To add a status to a note:
 
 Watch a video showing a basic use case:
 
-{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" /%}
+{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.jpg" /%}
 
 ---
 
