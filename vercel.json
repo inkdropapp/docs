@@ -199,7 +199,7 @@
       "permanent": true
     },
     {
-      "source": "/manual/",
+      "source": "/manual",
       "destination": "/start-guide",
       "permanent": true
     },
