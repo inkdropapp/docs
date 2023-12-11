@@ -9,6 +9,7 @@ import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 import '@/styles/page.css'
+import { Redirects } from '@/lib/redirects'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">
         <Fathom />
+        <Redirects />
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
