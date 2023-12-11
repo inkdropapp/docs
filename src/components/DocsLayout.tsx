@@ -5,6 +5,7 @@ import { PrevNextLinks } from '@/components/PrevNextLinks'
 import { Prose } from '@/components/Prose'
 import { TableOfContents } from '@/components/TableOfContents'
 import { collectSections } from '@/lib/sections'
+import Image from 'next/image'
 
 export function DocsLayout({
   children,
@@ -24,9 +25,11 @@ export function DocsLayout({
           <DocsHeader title={title} />
           <div>
             {coverImage && (
-              <img
+              <Image
                 src={coverImage}
                 alt="cover image"
+                width={1024}
+                height={576}
                 className="mb-6 rounded-lg border"
               />
             )}
