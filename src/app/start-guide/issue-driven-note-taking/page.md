@@ -12,7 +12,8 @@ nextjs:
         ]
 ---
 
-Having grasped the process of writing Markdown notes and organizing them with notebooks, you may be pondering **when and what notes to jot down** in your workflow.
+Are you wondering **when and what notes to jot down** in software development? Great.
+Tech note-taking becomes an indispensable part of your workflow if you have a clear method, which focuses on issues.
 Let's delve into the art of tech note-taking. {% .lead %}
 
 ## A simple rule: One note per issue

@@ -18,9 +18,9 @@ export const navigation = [
         cover: '/images/basic-usage_cover.png',
       },
       {
-        title: 'Create a notebook',
-        href: '/start-guide/create-a-notebook',
-        cover: '/images/create-a-notebook_cover.png',
+        title: 'Design a low-friction note-taking system',
+        href: '/start-guide/low-friction-note-taking-system',
+        cover: '/images/foster-knowledge_cover.png',
       },
       {
         title: 'Issue-driven tech note-taking',
