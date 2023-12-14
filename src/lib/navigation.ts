@@ -32,6 +32,11 @@ export const navigation = [
         href: 'https://www.inkdrop.app/note-taking-tips/',
         cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
       },
+      {
+        title: 'How to take notes while learning a new technology',
+        href: 'https://www.youtube.com/watch?v=RhuAn4uLVpc',
+        cover: '/images/link_youtube-2023-01-06.jpg',
+      },
     ],
   },
   {

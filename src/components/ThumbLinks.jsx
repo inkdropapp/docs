@@ -2,10 +2,11 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-
 import { navigation } from '@/lib/navigation'
+import { Icon } from '@/components/Icon'
 
 export function ThumbLink({ title, href, cover }) {
+  const isVideo = href.startsWith('https://www.youtube.com')
   const Img = cover.startsWith('/') ? Image : 'img'
   return (
     <div className="group relative rounded-xl border border-slate-200 dark:border-slate-800">
@@ -17,6 +18,13 @@ export function ThumbLink({ title, href, cover }) {
             <Link href={href}>
               <span className="absolute -inset-px rounded-xl" />
               {title}
+              {isVideo && (
+                <Icon
+                  icon="video"
+                  width={20}
+                  className="ml-1 inline text-slate-900 dark:text-white"
+                />
+              )}
             </Link>
           </h2>
         </div>
