@@ -40,7 +40,7 @@ With Markdown, you don't write notes, you craft them. And, Inkdrop is the best t
 
 Inkdrop lets you format text in many ways. Here are some basic examples:
 
-* `# Headings`. The more `#` you use, the smaller the heading becomes. `## Heading` gives you a second-level heading.
+* `# Headings`. The more `#` you use, the smaller the heading. `## Heading` gives you a second-level heading.
 * \**Italicized*\* and \*\*bold\*\* text-> *Italicized* and **bold** text.
 * \[Link](https://www.craftz.dog/) -> [Link](https://www.craftz.dog/).
 * \~~Line-through~\~ -> ~~Line-hrough~~.
