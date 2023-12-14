@@ -28,7 +28,7 @@ export const navigation = [
         cover: '/images/issue-driven-note-taking_cover.png',
       },
       {
-        title: 'Maximize your productivity with tech note-taking',
+        title: 'How an expert developer takes notes',
         href: 'https://www.inkdrop.app/note-taking-tips/',
         cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
       },
