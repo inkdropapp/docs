@@ -12,21 +12,18 @@ nextjs:
         ]
 ---
 
-Welcome to Inkdrop!{% .lead %}
+# Welcome to Inkdrop!{% .lead %}
 
-On this page, you'll find all the necessary information to start crafting notes with Inkdrop.{% .lead %}
+On this page, you'll find all the necessary information to start crafting notes with Inkdrop in just 3 simple steps.{% .lead %}
 
-There're 3 steps to take:
+1. Create an Inkdrop account
+2. Download the app
+3. Install the app on your device
 
-1. Create an Inkdrop account.
-1. Download the app.
-1. Install the app on your device.
-
-Let's get started.
-
+Let's get started!
 ---
 
-## Create Inkdrop account
+## Create an Inkdrop account
 
 First, you need to create an Inkdrop account. Your account serves many purposes and helps you to:
 
@@ -42,7 +39,7 @@ To create an account, go to the [Inkdrop's sign-up](https://my.inkdrop.app/signu
 Once you've created an account, Inkdrop sends a verification link to the specified email. What you need to do:
 
 {% callout type="warning" title="For Windows users" %}
-There're 2 options for Windows users: installer and zip archive. Prefer the installer option as it automatically updates the app once the new versions are released.
+There are 2 options for Windows users: installer and zip archive. Prefer the installer option as it automatically updates the app once the new versions are released.
 {% /callout %}
 
 1. Go to the link to verify the account.  

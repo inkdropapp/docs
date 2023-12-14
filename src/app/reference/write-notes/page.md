@@ -93,7 +93,7 @@ To preview a note:
    The note and its preview are displayed side-by-side.  
   ![SideBySide](/images/writing-note_sidebyside.png)
 
-There're 2 more ways to toggle preview. In the lower right corner of the editor:
+There are 2 more ways to toggle preview. In the lower right corner of the editor:
 
 - Click {% icon name="view-1" / %} to switch between the note and its preview.
 - Click {% icon name="layout-two-columns" / %} to toggle note and its preview side-by-side.
