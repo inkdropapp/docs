@@ -27,6 +27,11 @@ export const navigation = [
         href: '/start-guide/issue-driven-note-taking',
         cover: '/images/issue-driven-note-taking_cover.png',
       },
+      {
+        title: 'Maximize your productivity with tech note-taking',
+        href: 'https://www.inkdrop.app/note-taking-tips/',
+        cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
+      },
     ],
   },
   {
