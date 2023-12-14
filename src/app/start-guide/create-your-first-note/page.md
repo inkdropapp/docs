@@ -41,6 +41,7 @@ You can even hide the toolbar with controls for quick formatting. For this, take
    You can also use {% kbd s="Command+," /%} / {% kbd s="Ctrl+," /%}.
 2. Go to **Editing** and clear the **Toolbar** checkbox.  
    The toolbar is hidden.
+
 ### Live preview
 
 Inkdrop lets you preview notes to see what they eventually look like.
@@ -62,3 +63,4 @@ There're 2 more ways to toggle preview. In the lower right corner of the editor:
 Note that the icons are hidden by default. Hover the mouse cursor over the editor and icons will appear in the lower right corner of the editor.
 {% /callout %}
 
+{% discourseComments topicId="4306" /%}

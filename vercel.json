@@ -25,12 +25,12 @@
     },
     {
       "source": "/manual/writing-note",
-      "destination": "/start-guide/create-your-first-note",
+      "destination": "/reference/write-notes",
       "permanent": true
     },
     {
       "source": "/manual/write-notes",
-      "destination": "/start-guide/create-your-first-note",
+      "destination": "/reference/write-notes",
       "permanent": true
     },
     {
@@ -179,13 +179,18 @@
       "permanent": true
     },
     {
+      "source": "/manual/basic-usage#user-data-directory",
+      "destination": "/reference/user-data-directory",
+      "permanent": true
+    },
+    {
       "source": "/manual/list-of-commands",
       "destination": "https://developers.inkdrop.app/guides/list-of-commands",
       "permanent": true
     },
     {
       "source": "/manual/organize-notebooks",
-      "destination": "/????",
+      "destination": "/reference/organize-notebooks",
       "permanent": true
     },
     {
@@ -195,11 +200,11 @@
     },
     {
       "source": "/manual/markdown-cheatsheet",
-      "destination": "/????",
+      "destination": "/writing/basic-writing-and-formatting-syntax",
       "permanent": true
     },
     {
-      "source": "/manual/",
+      "source": "/manual",
       "destination": "/start-guide",
       "permanent": true
     },

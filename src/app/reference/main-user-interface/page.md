@@ -71,11 +71,11 @@ Some computer mouses have additional buttons that you can bind to navigate back 
 
 You can use gestures on the touchpad to navigate the history of viewed notes.
 
-<div class="ui warning message">
-The feature relies on the Electron's <a href="https://www.electronjs.org/docs/latest/api/browser-window#event-swipe-macos"><code>swipe</code></a> event which is only available for the macOS.
-<br><br>
-If you're a Windows user, check the <a href="#hack-windows-gestures">Hack Windows gestures</a> section.
-</div>
+{% callout type="warning" %}
+The feature relies on the Electron's [`swipe`](https://www.electronjs.org/docs/latest/api/browser-window#event-swipe-macos) event which is only available for the macOS.
+
+If you're a Windows user, check the [Hack Windows gestures](#hack-windows-gestures) section.
+{% /callout %}
 
 Depending on the macOS version, you can find the trackpad settings in different places.
 

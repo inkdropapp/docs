@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generate-routes-json && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-routes-json": "tsc src/lib/navigation.ts --outDir . && node ./generate-routes-json.js && rm ./navigation.js"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -24,6 +25,7 @@
     "autoprefixer": "^10.4.12",
     "clsx": "^1.2.1",
     "fast-glob": "^3.2.12",
+    "fathom-client": "^3.6.0",
     "flexsearch": "^0.7.31",
     "js-yaml": "^4.1.0",
     "next": "13.4.16",

@@ -6,9 +6,10 @@ nextjs:
     title: Get started
     description: Quick start guide for Inkdrop
     openGraph:
-      images: [
-        'https://inkdrop-user-guide.vercel.app/images/quick-start-guide_cover.png'
-      ]
+      images:
+        [
+          'https://inkdrop-user-guide.vercel.app/images/quick-start-guide_cover.png',
+        ]
 ---
 
 Welcome to Inkdrop!{% .lead %}
@@ -99,9 +100,9 @@ sudo snap refresh inkdrop
 
 To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
 
-<div class="ui warning message">
-These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the <a href="https://forum.inkdrop.app/c/announcements"><b>What's new page</b></a> to keep up with the latest bug fixes and improvements.
-</div>
+{% callout type="warning" %}
+These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the **[What's new page](https://forum.inkdrop.app/c/announcements)** to keep up with the latest bug fixes and improvements.
+{% /callout %}
 
 ##### Debian, Ubuntu, or related systems
 
@@ -147,4 +148,4 @@ Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo s
 
 Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis impedit. Eligendi amet dolorum magnam repudiandae in a.
 
-Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.
+{% discourseComments topicId="4304" /%}

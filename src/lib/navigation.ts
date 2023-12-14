@@ -18,14 +18,24 @@ export const navigation = [
         cover: '/images/basic-usage_cover.png',
       },
       {
-        title: 'Create a notebook',
-        href: '/start-guide/create-a-notebook',
-        cover: '/images/create-a-notebook_cover.png',
+        title: 'Take notes just as you breathe',
+        href: '/start-guide/low-friction-note-taking-system',
+        cover: '/images/foster-knowledge_cover.png',
       },
       {
         title: 'Issue-driven tech note-taking',
         href: '/start-guide/issue-driven-note-taking',
         cover: '/images/issue-driven-note-taking_cover.png',
+      },
+      {
+        title: 'How tech notes can boost your productivity',
+        href: 'https://www.inkdrop.app/note-taking-tips/',
+        cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
+      },
+      {
+        title: 'How to take notes while learning a new technology',
+        href: 'https://www.youtube.com/watch?v=RhuAn4uLVpc',
+        cover: '/images/link_youtube-2023-01-06.jpg',
       },
     ],
   },
@@ -36,6 +46,14 @@ export const navigation = [
         title: 'Main user interface',
         href: '/reference/main-user-interface',
         cover: '/images/basic-usage_cover.png',
+      },
+      {
+        title: 'Write notes',
+        href: '/reference/write-notes',
+      },
+      {
+        title: 'Organize notebooks',
+        href: '/reference/organize-notebooks',
       },
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
@@ -93,6 +111,15 @@ export const navigation = [
       {
         title: 'Salvage data from local database',
         href: '/reference/salvage-data-from-local-database',
+      },
+    ],
+  },
+  {
+    title: 'Writing Markdown',
+    links: [
+      {
+        title: 'Basic writing and formatting syntax',
+        href: '/writing/basic-writing-and-formatting-syntax',
       },
     ],
   },

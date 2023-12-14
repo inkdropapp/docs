@@ -14,7 +14,6 @@ export function DiscourseComments(props: Props) {
       discourseUrl: 'https://forum.inkdrop.app/',
       topicId,
     }
-    console.log('params:', window.DiscourseEmbed)
 
     var d = document.createElement('script')
     d.type = 'text/javascript'

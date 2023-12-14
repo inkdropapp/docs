@@ -18,7 +18,7 @@ Inkdrop synchronizes only the latest revision of a note across multiple devices.
 
 1. Select a note.
 2. In the upper-right corner of the editor, click menu {% icon name="navigation-menu-vertical" /%}.  
-   Alternatively, select <kbd>Command+J</kbd> or <kbd>Ctrl+J</kbd> on Windows/Linux.
+   Alternatively, select {% kbd %}Command+J{% /kbd %} or {% kbd %}Ctrl+J{% /kbd %} on Windows/Linux.
 3. Select {% icon name="history" /%} **Revision History..**.
 4. Select a revision you want to restore.
    {% callout type="warning" %}
@@ -31,7 +31,7 @@ Inkdrop synchronizes only the latest revision of a note across multiple devices.
 
 To undo restoring:
 
-- Select <kbd>Command+Z</kbd> (or <kbd>Ctrl+Z</kbd> on Windows/Linux).  
+- Select {% kbd %}Command+Z{% /kbd %} (or {% kbd %}Ctrl+Z{% /kbd %} on Windows/Linux).  
   Alternatively, in the menu bar, select **Edit** > **Undo**.
 
 ### Mobile
@@ -40,9 +40,9 @@ To undo restoring:
 2. In the upper right corner, select info {% icon name="info-circle" /%}.
 3. Select &nbsp;{% icon name="history" /%} **Revision History**.
 4. On the **Note Revisions** screen, select a revision you want to restore.
-   <div class="ui info message">
-      To see the difference between the revision and the current version of the note, switch on the <b>Compare with the latest</b> toggle.
-   </div>
+   {% callout %}
+   To see the difference between the revision and the current version of the note, switch on the _Compare with the latest_ toggle.
+   {% /callout %}
 5. Select &nbsp;{% icon name="archive-restore" /%} **Restore This Revision**.
 6. Confirm the action.  
    The selected note revision is restored.

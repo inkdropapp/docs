@@ -11,7 +11,7 @@ It allows you to share your Markdown notes with anyone, even those who don't use
 
 ## Steps to Publish Notes
 
-First, click the three-dash button on the top right corner of the editor, or press {% kbd s="Cmd + J" /%} on macOS or {% kbd s="Ctrl + J" /%} on Linux and Windows:
+First, click the three-dash button on the top right corner of the editor, or press {% kbd s="Command + J" /%} on macOS or {% kbd s="Ctrl + J" /%} on Linux and Windows:
 
 ![“Share Note” button](/images/sharing-notes_button.png)
 

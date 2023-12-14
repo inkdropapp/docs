@@ -6,6 +6,8 @@ import { SvgIcon } from '@/components/SvgIcon'
 import { SnippetWindow } from '@/components/SnippetWindow'
 import { EmbeddedVideo } from '@/components/EmbeddedVideo'
 import { DiscourseComments } from '@/components/DiscourseComments'
+import { Subscript } from '@/components/Subscript'
+import { Superscript } from '@/components/Superscript'
 
 const tags = {
   callout: {
@@ -85,6 +87,7 @@ const tags = {
   video: {
     attributes: {
       src: { type: String },
+      poster: { type: String },
       type: { type: String },
     },
     render: EmbeddedVideo,
@@ -94,6 +97,12 @@ const tags = {
       topicId: { type: Number },
     },
     render: DiscourseComments,
+  },
+  sub: {
+    render: Subscript,
+  },
+  sup: {
+    render: Superscript,
   },
 }
 

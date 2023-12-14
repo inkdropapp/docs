@@ -12,7 +12,8 @@ nextjs:
         ]
 ---
 
-Having grasped the process of writing Markdown notes and organizing them with notebooks, you may be pondering **when and what notes to jot down** in your workflow.
+Are you wondering **when and what notes to jot down** in software development? Great.
+Tech note-taking becomes an indispensable part of your workflow if you have a clear method, which focuses on issues.
 Let's delve into the art of tech note-taking. {% .lead %}
 
 ## A simple rule: One note per issue
@@ -72,10 +73,10 @@ To add a status to a note:
 
 Watch a video showing a basic use case:
 
-{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" /%}
+{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.jpg" /%}
 
 ---
 
 Overall, the key to effective note-taking in Inkdrop is the disciplined approach of 'One note per issue' coupled with the strategic use of note statuses. This method not only keeps your project notes organized and manageable but also aligns your engineering process with best practices in software development.
 
-{% discourseComments topicId="4274" /%}
+{% discourseComments topicId="4308" /%}
