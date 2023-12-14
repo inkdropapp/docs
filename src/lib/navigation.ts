@@ -18,7 +18,7 @@ export const navigation = [
         cover: '/images/basic-usage_cover.png',
       },
       {
-        title: 'Design a low-friction note-taking system',
+        title: 'Take notes just as you breathe',
         href: '/start-guide/low-friction-note-taking-system',
         cover: '/images/foster-knowledge_cover.png',
       },

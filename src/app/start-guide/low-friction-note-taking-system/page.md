@@ -1,17 +1,17 @@
 ---
-title: Design a low-friction note-taking system
+title: Take notes just as you breathe
 coverImage: '/images/foster-knowledge_cover.png'
 nextjs:
   metadata:
-    title: Design a low-friction note-taking system
-    description: Design a rapid note-taking system for your tech knowledge base
+    title: Take notes just as you breathe
+    description: Design a low-friction note-taking system for your tech knowledge base
     openGraph:
       images: ['https://docs.inkdrop.app/images/foster-knowledge_cover.png']
 ---
 
 It is intriguing to design a perfectly structured knowledge base when starting out, but it is impossible to decide everything beforehand.
 Instead of worrying about how you organize your notes, you should focus on taking useful notes first.
-Here are some practical tips to design a low-friction note-taking system on Inkdrop.{% .lead %}
+Here are some practical tips to design a **low-friction note-taking system** on Inkdrop.{% .lead %}
 
 ## Embrace your uncertainty. You can't know everything beforehand!
 
