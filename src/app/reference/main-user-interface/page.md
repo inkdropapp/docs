@@ -48,7 +48,7 @@ To create a sub-notebook:
 
 As you view your notes, Inkdrop remembers in what order you opened them. It lets you go through the history of the viewed notes back and forth.
 
-There're several options to see the viewed notes:
+There are several options to see the viewed notes:
 
 ### Via keyboard
 
