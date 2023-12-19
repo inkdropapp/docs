@@ -12,7 +12,7 @@ nextjs:
         ]
 ---
 
-# Welcome to Inkdrop!{% .lead %}
+Welcome to Inkdrop!{% .lead %}
 
 On this page, you'll find all the necessary information to start crafting notes with Inkdrop in just 3 simple steps.{% .lead %}
 
@@ -21,6 +21,7 @@ On this page, you'll find all the necessary information to start crafting notes 
 3. Install the app on your device
 
 Let's get started!
+
 ---
 
 ## Create an Inkdrop account
