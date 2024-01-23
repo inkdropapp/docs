@@ -9,7 +9,7 @@ nextjs:
 Create sophisticated formatting for your tech notes on Inkdrop with simple syntax.{% .lead %}
 
 This is intended as a quick reference and showcase.
-For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
+For more complete info, see [John Gruber's original spec](https://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
 
 ## Headings
 
