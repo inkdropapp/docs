@@ -5,7 +5,7 @@ import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
 import { SvgIcon } from '@/components/SvgIcon'
 import { SnippetWindow } from '@/components/SnippetWindow'
 import { EmbeddedVideo } from '@/components/EmbeddedVideo'
-import { DiscourseComments } from '@/components/DiscourseComments'
+import { CalloutToForum } from '@/components/CalloutToForum'
 import { Subscript } from '@/components/Subscript'
 import { Superscript } from '@/components/Superscript'
 
@@ -92,11 +92,9 @@ const tags = {
     },
     render: EmbeddedVideo,
   },
-  discourseComments: {
-    attributes: {
-      topicId: { type: Number },
-    },
-    render: DiscourseComments,
+  calloutToForum: {
+    attributes: {},
+    render: CalloutToForum,
   },
   sub: {
     render: Subscript,

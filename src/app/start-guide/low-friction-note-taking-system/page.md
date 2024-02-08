@@ -79,4 +79,4 @@ Congratulations! You have designed a low-friction note-taking system for your wo
 Again, throw away your perfectionism and embrace your uncertainty. And enjoy taking notes as freely as you want.
 Next, let's learn when and what notes to jot down in your development journey.
 
-{% discourseComments topicId="4318" /%}
+{% calloutToForum /%}

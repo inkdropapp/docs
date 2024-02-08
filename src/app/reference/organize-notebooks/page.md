@@ -79,4 +79,4 @@ To display notebook-specific entities on a mobile device:
 
 ![Disclosure Button on Notebook List on Mobile](/images/organize-notebooks_sidebar-mobile.png)
 
-{% discourseComments topicId="4307" /%}
+{% calloutToForum /%}
