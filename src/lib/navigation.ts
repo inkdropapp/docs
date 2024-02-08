@@ -3,7 +3,7 @@ export const navigation = [
     title: 'New to Inkdrop',
     links: [
       {
-        title: 'Getting started',
+        title: 'Get started',
         href: '/start-guide',
         cover: '/images/quick-start-guide_cover.png',
       },

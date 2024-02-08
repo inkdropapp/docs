@@ -1,9 +1,9 @@
 ---
-title: Getting started
+title: Get started
 coverImage: '/images/quick-start-guide_cover.png'
 nextjs:
   metadata:
-    title: Getting started
+    title: Get started
     description: Quick start guide for Inkdrop
     openGraph:
       images:
@@ -35,7 +35,7 @@ First, you need to create an Inkdrop account. Your account serves many purposes 
 - Manage payments.
 - Browse and publish plugins.
 
-To create an account, go to the [Inkdrop's sign-up](https://my.inkdrop.app/signup) page.
+To create an account, go to the [sign-up](https://my.inkdrop.app/signup) page.
 
 ## Download the app
 
