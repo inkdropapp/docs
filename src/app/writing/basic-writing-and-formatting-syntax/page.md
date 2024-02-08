@@ -9,7 +9,7 @@ nextjs:
 Create sophisticated formatting for your tech notes on Inkdrop with simple syntax.{% .lead %}
 
 This is intended as a quick reference and showcase.
-For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
+For more complete info, see [John Gruber's original spec](https://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
 
 ## Headings
 
@@ -103,7 +103,7 @@ You can create an inline link by wrapping link text in brackets `[ ]`, and then
 
 `This note was written using [Inkdrop](https://www.inkdrop.app/).`
 
-![Screenshot of rendered GitHub Markdown showing how text within brackets, "GitHub Pages," appears as a blue hyperlink.](/images/markdown-cheatsheet_link.png)
+![Screenshot of rendered GitHub Markdown showing how text within brackets, "Inkdrop," appears as a blue hyperlink.](/images/markdown-cheatsheet_link.png)
 
 ## Images
 
