@@ -50,9 +50,10 @@ That's not all, though.
 
 ### Advanced formatting with GitHub-flavored Markdown 🤓 
 
-If you're a programmer or diving into the tech world, you might have heard about [GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (GFM for short). This is a superset of Markdown. It includes all the features of Markdown and adds a few more to meet day-to-day needs of developers.:
+If you're a programmer or diving into the tech world, you might have heard about [GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (GFM for short). This is a superset of Markdown. It includes all the features of Markdown and adds a few more to meet day-to-day needs of developers:
 
 - **Fenced code Blocks**: With GFM, you can easily insert code blocks by wrapping them with three backticks (\```). You can also specify a specific programming language for correct syntax highlighting.
+
 {% snippet lang="md" filename="Code blocks" %}
 ````
 \```js
@@ -60,16 +61,27 @@ function helloWorld() {
   console.log("Hello, world!");
 }
 \```
+
+\```python
+def hello_world():
+    print("Hello, world!")
+
+hello_world()
+\```
 ````
 {% /snippet %}
+
 - **Task Lists**: Easily track to-dos using checkboxes.
+
 {% snippet lang="md" filename="To-dos" %}
 ````
 - [ ] Task item 1
 - [x] Completed task item 2
 ````
 {% /snippet %}
-- **Mermaid**: An amazing feature that lets you generate diagrams and flowcharts from text-based descriptions. This is particularly useful for jotting down complex ideas visually.
+
+- **Mermaid**: An amazing feature that lets you generate diagrams and flowcharts from text-based descriptions. This is particularly useful for jotting down complex ideas visually. (Requires [Mermaid plugin](https://my.inkdrop.app/plugins/mermaid))
+
 {% snippet lang="md" filename="Diagrams" %}
 ````
 \```mermaid
@@ -79,7 +91,9 @@ graph TD;
 \```
 ````
 {% /snippet %}
-- **Math Expressions**: For those in more technical or scientific fields, GFM's support for math notation can be a lifesaver, allowing for LaTeX-style mathematical expressions.
+
+- **Math Expressions**: For those in more technical or scientific fields, GFM's support for math notation can be a lifesaver, allowing for LaTeX-style mathematical expressions. (Requires [Math plugin](https://my.inkdrop.app/plugins/math))
+
 {% snippet lang="md" filename="Math expressions" %}
 ````
 \```math
