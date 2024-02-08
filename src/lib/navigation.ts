@@ -28,6 +28,16 @@ export const navigation = [
         cover: '/images/issue-driven-note-taking_cover.png',
       },
       {
+        title: 'Start small with tags',
+        href: '/start-guide/start-small-with-tags',
+        cover: '/images/start-small-with-tags_cover.png',
+      },
+      {
+        title: 'Scale up your knowledge base for bigger projects',
+        href: '/start-guide/scale-up-knowledge-base',
+        cover: '/images/start-small-with-tags_cover.png',
+      },
+      {
         title: 'How tech notes can boost your productivity',
         href: 'https://www.inkdrop.app/note-taking-tips/',
         cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
