@@ -62,5 +62,3 @@ There're 2 more ways to toggle preview. In the lower right corner of the editor:
 {% callout %}
 Note that the icons are hidden by default. Hover the mouse cursor over the editor and icons will appear in the lower right corner of the editor.
 {% /callout %}
-
-{% calloutToForum /%}

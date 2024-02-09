@@ -131,5 +131,3 @@ Once you've installed Inkdrop, sign in to your account. To do that:
 ---
 
 Now, you are ready to start using Inkdrop!
-
-{% calloutToForum /%}

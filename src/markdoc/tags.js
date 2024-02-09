@@ -92,10 +92,6 @@ const tags = {
     },
     render: EmbeddedVideo,
   },
-  calloutToForum: {
-    attributes: {},
-    render: CalloutToForum,
-  },
   sub: {
     render: Subscript,
   },

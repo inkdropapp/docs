@@ -78,5 +78,3 @@ Inkdrop supports [a global hotkey](/reference/key-customizations#create-a-note-a
 Congratulations! You have designed a low-friction note-taking system for your workflow.
 Again, throw away your perfectionism and embrace your uncertainty. And enjoy taking notes as freely as you want.
 Next, let's learn when and what notes to jot down in your development journey.
-
-{% calloutToForum /%}

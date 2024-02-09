@@ -117,5 +117,3 @@ Moreover, as you progress in your software development journey (if that's a path
 ## What's next? 🚀
 
 You're familiar with Markdown now. It's time to learn it by actually crafting notes. Happy writing!
-
-{% calloutToForum /%}

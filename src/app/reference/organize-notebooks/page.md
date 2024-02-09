@@ -78,5 +78,3 @@ To display notebook-specific entities on a mobile device:
   The sidebar shows entities specific to the selected notebook.
 
 ![Disclosure Button on Notebook List on Mobile](/images/organize-notebooks_sidebar-mobile.png)
-
-{% calloutToForum /%}

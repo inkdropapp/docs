@@ -6,6 +6,7 @@ import { Prose } from '@/components/Prose'
 import { TableOfContents } from '@/components/TableOfContents'
 import { collectSections } from '@/lib/sections'
 import Image from 'next/image'
+import { CalloutToForum } from './CalloutToForum'
 
 export function DocsLayout({
   children,
@@ -34,7 +35,10 @@ export function DocsLayout({
               />
             )}
           </div>
-          <Prose>{children}</Prose>
+          <Prose>
+            {children}
+            <CalloutToForum />
+          </Prose>
         </article>
         <PrevNextLinks />
       </div>
