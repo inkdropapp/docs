@@ -7,7 +7,7 @@ nextjs:
     description: How to interact with Inkdrop
 ---
 
-## Get acquainted with Inkdrop interface
+## Main user interface
 
 Inkdrop interface is broken up into 3 main sections.
 
@@ -23,6 +23,7 @@ Inkdrop interface is broken up into 3 main sections.
 
 - {% kbd %}Command+E{% /kbd %} or {% kbd %}Ctrl+E{% /kbd %} — to switch between the editor and preview modes.
 - {% kbd %}Command+P{% /kbd %} or {% kbd %}Ctrl+P{% /kbd %} — to display the editor and preview side-by-side.
+- {% kbd %}Command+/{% /kbd %} or {% kbd %}Ctrl+/{% /kbd %} — to toggle the sidebar.
 - {% kbd %}Command+Shift+D{% /kbd %} or {% kbd %}Ctrl+Shift+D{% /kbd %} — to enter/leave the 'Distraction Free Mode' 🧘 Is when the sidebar and note list are hidden, and you can focus on the writing process.
 
 ## Create new note and notebook
