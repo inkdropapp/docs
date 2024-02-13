@@ -88,9 +88,7 @@ Depending on the macOS version, you can find the trackpad settings in different 
 
 Watch a video showing how to navigate via the viewed notes using a touchpad on macOS.
 
-<video controls playsInline muted>
-  <source src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" type="video/mp4" />
-</video>
+{% video src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.png" /%}
 
 #### Hack Windows gestures
 
