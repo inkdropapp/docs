@@ -112,8 +112,8 @@ Note that this workaround doesn't break browser navigation with the gestures.
 
 You can [set custom keyboard shortcuts](reference/key-customizations) for navigation through the visited notes. The commands for the navigation are:
 
-- <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
-- <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
+- [`core:navigate-back`](https://developers.inkdrop.app/guides/list-of-commands#core-navigate-back): To go to the previous note.
+- [`core:navigate-forward`](https://developers.inkdrop.app/guides/list-of-commands#core-navigate-forward): To go to the next note.
 
 ## Settings and preferences
 

@@ -28,7 +28,7 @@ But if the same keystroke occurs outside the editor, it instead triggers the nat
 By default, `keymap.json` is loaded when Inkdrop is started.
 It will always be loaded last, giving you the chance to override bindings that are defined by Inkdrop's core keymaps or third-party packages.
 
-Available commands can be found [here](/manual/list-of-commands).
+Available commands can be found [here](https://developers.inkdrop.app/guides/list-of-commands).
 You can also see all the keybindings that are currently configured in your installation of Inkdrop in _Keybindings_ section on _Preferences_ window:
 
 ![Preferences](/images/customizing-keybindings_preferences.png)
