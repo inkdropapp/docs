@@ -52,8 +52,8 @@ There're several options to see the viewed notes:
 
 ### Via keyboard
 
-| macOS                             | Windows/Linux                 | Action              |
-| --------------------------------- | ----------------------------- | ------------------- |
+| macOS                                             | Windows/Linux                                 | Action              |
+| ------------------------------------------------- | --------------------------------------------- | ------------------- |
 | {% kbd %}Command{% /kbd %} + {% kbd %}←{% /kbd %} | {% kbd %}Alt{% /kbd %} + {% kbd %}←{% /kbd %} | Go to previous note |
 | {% kbd %}Command{% /kbd %} + {% kbd %}→{% /kbd %} | {% kbd %}Alt{% /kbd %} + {% kbd %}→{% /kbd %} | Go to next note     |
 
@@ -66,6 +66,9 @@ To navigate between notes via the app menu:
 ### Via mouse buttons
 
 Some computer mouses have additional buttons that you can bind to navigate back and forth through your viewed notes.
+For example, the MX Anywhere 3 mouse has two side buttons that you can use for this purpose as follows:
+
+![Example: MX Anywhere 3](/images/basic-usage_mouse-buttons.png)
 
 ### Using touchpad
 
@@ -79,7 +82,9 @@ If you're a Windows user, check the [Hack Windows gestures](#hack-windows-gestur
 
 Depending on the macOS version, you can find the trackpad settings in different places.
 
-#### macOS Ventura 13.2
+#### macOS
+
+![macOS Trackpad settings](/images/basic-usage_macos-trackpad.png)
 
 1. Go to **System Settings** > **Trackpad**.
 2. Select the **More Gestures** tab.
