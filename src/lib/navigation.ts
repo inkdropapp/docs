@@ -10,17 +10,22 @@ export const navigation = [
       {
         title: 'How to write Markdown notes',
         href: '/start-guide/how-to-write-markdown-notes',
-        cover: '/images/what-is-markdown_cover.png',
+        cover: '/images/how-to-write-markdown-notes_cover.jpg',
       },
       {
-        title: 'Take notes just as you breathe',
-        href: '/start-guide/low-friction-note-taking-system',
-        cover: '/images/foster-knowledge_cover.png',
+        title: 'How to organize your notes',
+        href: '/start-guide/how-to-organize-notes',
+        cover: '/images/how-to-organize-notes_cover.jpg',
       },
       {
         title: 'Issue-driven tech note-taking',
         href: '/start-guide/issue-driven-note-taking',
         cover: '/images/issue-driven-note-taking_cover.png',
+      },
+      {
+        title: 'Take notes just as you breathe',
+        href: '/start-guide/low-friction-note-taking-system',
+        cover: '/images/foster-knowledge_cover.png',
       },
       {
         title: 'How tech notes can boost your productivity',

@@ -60,6 +60,8 @@ When a notebook is collapsed, the note list shows direct notes from the collapse
 
 ## View notebook-specific statuses and tags
 
+{% video src="https://site-cdn.inkdrop.app/docs/manual/workspace-view.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/workspace-view.jpg" /%}
+
 By default, the sidebar shows all notebooks, statuses, and tags fetched from the database.
 They're mixed together, and it can be challenging to understand which entity belongs to which notebook.
 
@@ -67,8 +69,6 @@ To display entities of a specific notebook:
 
 - Hover over the notebook and click **Detail** next to its name. You can also open a notebook and press {% kbd s="Enter" /%}.  
   The sidebar only shows sub-notebooks, statuses, and tags of the selected notebook so you can focus on specific information.
-
-![Disclosure button on sidebar](/images/notebook_detail.png)
 
 ### Mobile
 

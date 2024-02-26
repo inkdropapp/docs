@@ -65,6 +65,10 @@ To navigate between notes via the app menu:
 
 ### Via mouse buttons
 
+You can use third and fourth buttons on your mouse to navigate back and forth through your viewed notes.
+
+{% video src="https://site-cdn.inkdrop.app/docs/manual/navigate-with-mouse-buttons.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/navigate-with-mouse-buttons.jpg" /%}
+
 Some computer mouses have additional buttons that you can bind to navigate back and forth through your viewed notes.
 For example, the MX Anywhere 3 mouse has two side buttons that you can use for this purpose as follows:
 
