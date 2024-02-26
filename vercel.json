@@ -447,6 +447,11 @@
       "source": "/reference/json-schema",
       "destination": "https://developers.inkdrop.app/data-access/notes",
       "permanent": true
+    },
+    {
+      "source": "/start-guide/create-your-first-note",
+      "destination": "/start-guide/what-is-markdown#create-your-first-note",
+      "permanent": true
     }
   ]
 }

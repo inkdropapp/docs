@@ -8,14 +8,9 @@ export const navigation = [
         cover: '/images/quick-start-guide_cover.png',
       },
       {
-        title: 'What is Markdown?',
-        href: '/start-guide/what-is-markdown',
+        title: 'How to write Markdown notes',
+        href: '/start-guide/how-to-write-markdown-notes',
         cover: '/images/what-is-markdown_cover.png',
-      },
-      {
-        title: 'Create your first note',
-        href: '/start-guide/create-your-first-note',
-        cover: '/images/basic-usage_cover.png',
       },
       {
         title: 'Take notes just as you breathe',
