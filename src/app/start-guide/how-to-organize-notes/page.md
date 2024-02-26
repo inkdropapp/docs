@@ -1,7 +1,7 @@
 ---
 title: How to organize your notes
 coverImage: '/images/how-to-organize-notes_cover.jpg'
-youtubeVideoId: 'oqIPa8kmwZw'
+youtubeVideoId: 'oqIPa8kmwZw?list=PLFzcienOaLeP-tVCPYCThLfqG6NNg0HBF'
 nextjs:
   metadata:
     title: How to organize notes

@@ -1,7 +1,7 @@
 ---
 title: How to write Markdown notes
 coverImage: '/images/how-to-write-markdown-notes_cover.jpg'
-youtubeVideoId: 'k0NbSPIOX54'
+youtubeVideoId: 'k0NbSPIOX54?list=PLFzcienOaLeP-tVCPYCThLfqG6NNg0HBF'
 nextjs:
   metadata:
     title: What is Markdown and how to write it
