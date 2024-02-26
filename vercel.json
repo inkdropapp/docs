@@ -449,6 +449,11 @@
       "permanent": true
     },
     {
+      "source": "/start-guide/what-is-markdown",
+      "destination": "/start-guide/how-to-write-markdown-notes",
+      "permanent": true
+    },
+    {
       "source": "/start-guide/create-your-first-note",
       "destination": "/start-guide/what-is-markdown#create-your-first-note",
       "permanent": true
