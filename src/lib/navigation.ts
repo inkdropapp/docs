@@ -23,6 +23,11 @@ export const navigation = [
         cover: '/images/issue-driven-note-taking_cover.png',
       },
       {
+        title: 'Key note categories and examples for tech issues',
+        href: '/start-guide/key-note-categories-and-examples',
+        cover: '/images/key-note-categories_cover.png',
+      },
+      {
         title: 'Take notes just as you breathe',
         href: '/start-guide/low-friction-note-taking-system',
         cover: '/images/foster-knowledge_cover.png',
