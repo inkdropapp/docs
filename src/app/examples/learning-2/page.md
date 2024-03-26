@@ -5,6 +5,8 @@ youtubeVideoId: 'RhuAn4uLVpc'
 nextjs:
   metadata:
     title: Learn Svelte.js
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

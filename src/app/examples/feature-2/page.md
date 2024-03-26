@@ -4,6 +4,8 @@ parentPage: '/start-guide/key-note-categories-and-examples'
 nextjs:
   metadata:
     title: Remember the sort option for search results
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

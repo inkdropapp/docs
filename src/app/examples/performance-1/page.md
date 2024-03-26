@@ -5,6 +5,8 @@ youtubeVideoId: '2eohPPTIw1I'
 nextjs:
   metadata:
     title: Slow launch speed
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

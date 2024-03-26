@@ -5,6 +5,8 @@ youtubeVideoId: '0gNnUWtbmeI'
 nextjs:
   metadata:
     title: Make an air quality sensor node
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

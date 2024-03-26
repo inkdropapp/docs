@@ -5,6 +5,8 @@ youtubeVideoId: 'ajmK0ZNcM4Q'
 nextjs:
   metadata:
     title: Try Neovim native LSP
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

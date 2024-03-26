@@ -5,6 +5,8 @@ youtubeVideoId: 'k2h7usLLBhY'
 nextjs:
   metadata:
     title: ToDo App with React Native
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}

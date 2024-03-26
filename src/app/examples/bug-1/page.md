@@ -4,6 +4,8 @@ parentPage: '/start-guide/key-note-categories-and-examples'
 nextjs:
   metadata:
     title: Keybindings with numbers and the shift modifier together do not work
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}
