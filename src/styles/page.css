@@ -6,3 +6,7 @@ article img[alt$='#circle-cover'] {
   width: 200px;
   border-radius: 100px;
 }
+
+article a {
+  word-break: break-word;
+}

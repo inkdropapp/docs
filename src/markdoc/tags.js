@@ -1,5 +1,6 @@
 import { Callout } from '@/components/Callout'
 import { Kbd } from '@/components/Kbd'
+import { Checkmark } from '@/components/Checkmark'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
 import { SvgIcon } from '@/components/SvgIcon'
@@ -71,9 +72,16 @@ const tags = {
     },
     render: Kbd,
   },
+  check: {
+    attributes: {
+      v: { type: Boolean },
+    },
+    render: Checkmark,
+  },
   icon: {
     attributes: {
       name: { type: String },
+      size: { type: Number },
     },
     render: SvgIcon,
   },

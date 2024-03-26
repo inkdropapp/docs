@@ -11,11 +11,16 @@ import { YouTubeVideo } from './YouTubeVideo'
 
 export function DocsLayout({
   children,
-  frontmatter: { title, coverImage, youtubeVideoId },
+  frontmatter: { title, parentPage, coverImage, youtubeVideoId },
   nodes,
 }: {
   children: React.ReactNode
-  frontmatter: { title?: string; coverImage?: string; youtubeVideoId?: string }
+  frontmatter: {
+    title?: string
+    parentPage?: string
+    coverImage?: string
+    youtubeVideoId?: string
+  }
   nodes: Array<Node>
 }) {
   let tableOfContents = collectSections(nodes)
@@ -24,7 +29,7 @@ export function DocsLayout({
     <>
       <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
         <article>
-          <DocsHeader title={title} />
+          <DocsHeader title={title} parentPage={parentPage} />
           <div>
             {youtubeVideoId ? (
               <YouTubeVideo videoId={youtubeVideoId} />
