@@ -4,6 +4,8 @@ parentPage: '/start-guide/key-note-categories-and-examples'
 nextjs:
   metadata:
     title: App crashes when exporting as PDF on iPad
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}
@@ -51,4 +53,3 @@ index 8a2047a..2115ae6 100644
 ```
 
 - Commit: https://github.com/inkdropapp/xxxxxx/commit/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-

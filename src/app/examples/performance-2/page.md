@@ -4,6 +4,8 @@ parentPage: '/start-guide/key-note-categories-and-examples'
 nextjs:
   metadata:
     title: Code splitting my.inkdrop.app for faster page load
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}
@@ -157,4 +159,3 @@ ok, much better!
 
 But the `app.css` is very large and it is taking 221ms to load.
 The work for this is going to be on [Optimize semantic-ui CSS](inkdrop://note:aMGkBaFQe).
-

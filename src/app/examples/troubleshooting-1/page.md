@@ -4,6 +4,8 @@ parentPage: '/start-guide/key-note-categories-and-examples'
 nextjs:
   metadata:
     title: Tmux italics not working
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}
@@ -42,4 +44,3 @@ It solved!
 For some reason, undercurl starts working 🤯
 
 ![Screenshot 2023-10-04 at 11.11.03](/images/example-note_troubleshooting-1_undercurl.png)
-

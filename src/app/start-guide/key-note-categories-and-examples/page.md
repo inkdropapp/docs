@@ -5,6 +5,8 @@ nextjs:
   metadata:
     title: Key note categories for tech issues
     description: Create sophisticated formatting for your prose and code with simple syntax
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 To practice [the issue-driven tech note-taking method](/start-guide/issue-driven-note-taking) in Inkdrop, it'd be nice to know the key categories for tech issues you might encounter in your workflow.

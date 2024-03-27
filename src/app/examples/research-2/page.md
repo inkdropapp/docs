@@ -5,6 +5,8 @@ youtubeVideoId: 'wg1frpp8Vvw'
 nextjs:
   metadata:
     title: Rebuild mobile app
+    openGraph:
+      images: ['https://docs.inkdrop.app/images/key-note-categories_cover.png']
 ---
 
 {% callout title="This is an example note" %}
