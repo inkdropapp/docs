@@ -10,7 +10,8 @@ nextjs:
 ---
 
 {% callout title="This is an example note" %}
-I took this note while building a ToDo app using React Native.
+I took this note while building a ToDo app using React Native, which I shared in the above video on YouTube.
+Here is what I took while working on this project:
 
 - **Inspirations**: Lists sources of UI design and animation ideas, including custom SVG checkbox designs and references to Twitter and Dribbble for UI inspiration.
 - **Data Structure**: Outlines the main components of the app, such as Projects and Tasks, and their attributes.

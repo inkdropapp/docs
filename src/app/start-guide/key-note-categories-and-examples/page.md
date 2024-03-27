@@ -10,7 +10,18 @@ nextjs:
 ---
 
 To practice [the issue-driven tech note-taking method](/start-guide/issue-driven-note-taking) in Inkdrop, it'd be nice to know the key categories for tech issues you might encounter in your workflow.
-This page provides several examples for each category so you can get a better idea of when and what to write in your notes.{% .lead %}
+This page provides several real-world examples for each category so you can get a better idea of when and what to write in your notes.{% .lead %}
+
+As we discussed on [this page](/start-guide/issue-driven-note-taking), Inkdrop has an opinionated note-taking workflow that encourages you to focus on writing **one note per issue**, while managing them as tasks with [note statuses](/reference/note-statuses).
+This workflow would help you effectively build your knowledge base while keeping track of your progress and tasks.
+However, if you are new to software engineering, it might still be unclear what kind of issues or information you should document.
+So, this guide aims to clarify when and what to write, with real-world example notes across **9 key issue categories**.
+
+{% callout type="warning" %}
+You don't have to cover everything listed in the 'What to write' section in each category because your personal tech notes aren't akin to homework reports;
+They are merely examples to inspire you.
+Just focus on what matters in your coding workflow.
+{% /callout %}
 
 ## {% icon name="bonsai" size=64 / %} Small projects
 

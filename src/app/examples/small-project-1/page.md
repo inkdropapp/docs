@@ -10,7 +10,9 @@ nextjs:
 ---
 
 {% callout title="This is an example note" %}
-This note captures the journey of planning and creating an air quality sensor node with a Raspberry Pi. It encompasses the selection of hardware components, the setup of the development environment, and the step-by-step integration of sensors to measure air quality. Key elements of the note include:
+This note captures the journey of planning and creating an air quality sensor node with a Raspberry Pi.
+I took this note while preparing to post the above video on YouTube.
+It encompasses the selection of hardware components, the setup of the development environment, and the step-by-step integration of sensors to measure air quality. Key elements of the note include:
 
 - **Links**: Resources, product information, and technical documentation
 - **Hardware selection**: Insights into choosing the MH-Z19B CO2 sensor and ANAVI Infrared pHAT
