@@ -9,11 +9,11 @@ nextjs:
     openGraph:
       images:
         [
-          'https://inkdrop-user-guide.vercel.app/images/what-is-markdown_cover.png',
+          'https://docs.inkdrop.app/images/how-to-write-markdown-notes_cover.jpg',
         ]
 ---
 
-After installing Inkdrop, you may notice that the examples in the app contain symbols like `#` or `**`. These are Markdown syntax — a simple yet powerful way to format text. If you're new to this, no worries. This page introduces you to the world of Markdown and explains why it's such a favorite among developers and tech enthusiasts .{% .lead %}
+After installing Inkdrop, you may notice that the examples in the app contain symbols like `#` or `**`. These are Markdown syntax — a simple yet powerful way to format text. If you're new to this, no worries. This page introduces you to the world of Markdown and explains why it's such a favorite among developers and tech enthusiasts.{% .lead %}
 
 ## What is Markdown? 🤔
 
