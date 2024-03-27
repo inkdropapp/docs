@@ -457,6 +457,11 @@
       "source": "/start-guide/create-your-first-note",
       "destination": "/start-guide/how-to-write-markdown-notes#create-your-first-note",
       "permanent": true
+    },
+    {
+      "source": "/start-guide/key-note-categories-and-examplesutm_source=inkdrop&utm_medium=email&utm_campaign=newsletter&utm_content=key-note-categories-and-examples",
+      "destination": "/start-guide/key-note-categories-and-examples",
+      "permanent": true
     }
   ]
 }
