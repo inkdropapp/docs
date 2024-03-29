@@ -45,7 +45,7 @@ export const navigation = [
     ],
   },
   {
-    title: 'Reference',
+    title: 'Basics',
     links: [
       {
         title: 'Main user interface',
@@ -57,18 +57,32 @@ export const navigation = [
         href: '/reference/write-notes',
       },
       {
-        title: 'Organize notebooks',
-        href: '/reference/organize-notebooks',
+        title: 'Basic writing and formatting syntax',
+        href: '/writing/basic-writing-and-formatting-syntax',
       },
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
+    ],
+  },
+  {
+    title: 'Note organization',
+    links: [
+      {
+        title: 'Organize notebooks',
+        href: '/reference/organize-notebooks',
+      },
       {
         title: 'Search and filter notes',
         href: '/reference/search-and-filter-notes',
       },
-      { title: 'Customize keybindings', href: '/reference/key-customizations' },
       { title: 'Note statuses', href: '/reference/note-statuses' },
       { title: 'Pin notes to the top', href: '/reference/pin-notes-to-top' },
+    ],
+  },
+  {
+    title: 'Customization',
+    links: [
+      { title: 'Customize keybindings', href: '/reference/key-customizations' },
       {
         title: 'Note synchronization',
         href: '/reference/note-synchronization',
@@ -78,20 +92,25 @@ export const navigation = [
         href: '/reference/extend-with-plugins',
       },
       {
-        title: 'Use behind web proxy',
-        href: '/reference/use-behind-web-proxy',
-      },
-      {
         title: 'Share notes on the web',
         href: '/reference/share-notes-on-the-web',
       },
       {
-        title: 'Clip web pages from browser',
-        href: '/reference/clip-web-pages-from-browser',
-      },
-      {
         title: 'Import notes from Evernote',
         href: '/reference/import-from-evernote',
+      },
+      {
+        title: 'Use behind web proxy',
+        href: '/reference/use-behind-web-proxy',
+      },
+    ],
+  },
+  {
+    title: 'Advanced',
+    links: [
+      {
+        title: 'Clip web pages from browser',
+        href: '/reference/clip-web-pages-from-browser',
       },
       {
         title: 'Restore previous revisions of note',
@@ -105,6 +124,11 @@ export const navigation = [
         title: 'Integrate with Alfred',
         href: '/reference/integrate-with-alfred',
       },
+    ],
+  },
+  {
+    title: 'Troubleshooting',
+    links: [
       {
         title: 'Troubleshooting',
         href: '/reference/troubleshooting',
@@ -116,15 +140,6 @@ export const navigation = [
       {
         title: 'Salvage data from local database',
         href: '/reference/salvage-data-from-local-database',
-      },
-    ],
-  },
-  {
-    title: 'Writing Markdown',
-    links: [
-      {
-        title: 'Basic writing and formatting syntax',
-        href: '/writing/basic-writing-and-formatting-syntax',
       },
     ],
   },
