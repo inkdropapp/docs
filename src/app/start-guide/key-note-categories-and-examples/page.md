@@ -18,9 +18,9 @@ However, if you are new to software engineering, it might still be unclear what 
 So, this guide aims to clarify when and what to write, with real-world example notes across **9 key issue categories**.
 
 {% callout type="warning" %}
-You don't have to cover everything listed in the 'What to write' section in each category because your personal tech notes aren't akin to homework reports;
+You don't have to cover everything listed in the 'What to write' section in each category because **your tech notes aren't meant to make you look good** or akin to homework reports;
 They are merely examples to inspire you.
-Just focus on what matters in your coding workflow.
+You can just jot down what you think is necessary in your coding workflow.
 {% /callout %}
 
 ## {% icon name="bonsai" size=64 / %} Small projects
