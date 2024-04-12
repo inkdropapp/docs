@@ -1,6 +1,7 @@
 ---
 title: App hangs when caps lock enabled on Sonoma
 parentPage: '/start-guide/key-note-categories-and-examples'
+youtubeVideoId: '9lrEc8joc8g?start=390'
 nextjs:
   metadata:
     title: App hangs when caps lock enabled on Sonoma

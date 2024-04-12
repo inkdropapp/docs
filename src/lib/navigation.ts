@@ -20,7 +20,7 @@ export const navigation = [
       {
         title: 'Issue-driven tech note-taking',
         href: '/start-guide/issue-driven-note-taking',
-        cover: '/images/issue-driven-note-taking_cover.png',
+        cover: '/images/issue-driven-note-taking_cover_2.jpg',
       },
       {
         title: 'Key note categories and examples for tech issues',
