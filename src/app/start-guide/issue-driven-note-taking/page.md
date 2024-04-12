@@ -9,7 +9,7 @@ nextjs:
     openGraph:
       images:
         [
-          'https://inkdrop-user-guide.vercel.app/images/issue-driven-note-taking_cover.png',
+          'https://inkdrop-user-guide.vercel.app/images/issue-driven-note-taking_cover_2.jpg',
         ]
 ---
 
