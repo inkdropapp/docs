@@ -8,7 +8,7 @@ export function YouTubeVideo(props: Props) {
   const { videoId } = props
 
   return (
-    <div className="aspect-video">
+    <div className="mb-4 aspect-video">
       <iframe
         className="mb-6 h-full w-full rounded-lg border border-sky-900"
         src={`https://www.youtube.com/embed/${videoId}`}
