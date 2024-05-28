@@ -223,6 +223,7 @@ Use alerts only when they are crucial for user success and limit them to one or 
 
 To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
 
+```markdown
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
@@ -237,6 +238,7 @@ To add an alert, use a special blockquote line specifying the alert type, follow
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+```
 
 Here are the rendered alerts:
 
