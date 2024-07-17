@@ -171,7 +171,7 @@ Inkdrop stores correspondence as long as it may be useful for these purposes.
 
 ### Inkdrop collects Discord account data.
 
-Inkdrop collects data about your Discord account when you connect your Discord account to your Inkdrop account. This includes your user ID, username, and avatar.
+Inkdrop collects data about your [Discord](https://discord.com/) account when you connect your Discord account to your Inkdrop account. This includes your user ID, username, and avatar.
 
 Inkdrop uses this data to:
 
