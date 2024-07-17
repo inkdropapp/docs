@@ -36,6 +36,7 @@ Inkdrop collects data about you:
 - when working with and researching current and potential customers
 - when you use [`ipm` command](/reference/extend-with-plugins) to publish plugins for Inkdrop
 - when you post topics or comments on [the Inkdrop forum](https://forum.inkdrop.app/)
+- when you join the Inkdrop Discord server
 
 When researching potential customers, we sometimes search the public World Wide Web or paid business databases. Otherwise, we don't buy or receive data about you from data brokers or other private services.
 
@@ -167,6 +168,16 @@ Inkdrop uses contact data to:
 - defend Inkdrop from legal claims
 
 Inkdrop stores correspondence as long as it may be useful for these purposes.
+
+### Inkdrop collects Discord account data.
+
+Inkdrop collects data about your Discord account when you connect your Discord account to your Inkdrop account. This includes your user ID, username, and avatar.
+
+Inkdrop uses this data to:
+
+- manage access to the Inkdrop Discord server based on your Inkdrop account status.
+
+Inkdrop stores this data as long as it is useful for these purposes.
 
 ## Where does Inkdrop keep data about me?
 
