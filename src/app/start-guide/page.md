@@ -119,6 +119,29 @@ sudo apt-get -f install
 wget https://api.inkdrop.app/download/linux/rpm -O /tmp/inkdrop.rpm && sudo yum install /tmp/inkdrop.rpm && rm /tmp/inkdrop.rpm
 ```
 
+#### Add custom Electron flags
+
+If the app doesn't start properly, you can add custom flags for your operating system. Open `inkdrop.desktop` with an editor, which is usually in `/usr/share/applications`:
+
+```ini
+[Desktop Entry]
+Name=inkdrop
+Comment=The Note-taking App with Robust Markdown Editor
+GenericName=inkdrop
+Exec=inkdrop %U        # Edit this line
+Icon=inkdrop
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
+MimeType=x-scheme-handler/inkdrop;
+```
+
+For Wayland users, add the following flags to the `Exec` field like so:
+
+```ini
+Exec=inkdrop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime %U
+```
+
 ## Sign in to your account
 
 Once you've installed Inkdrop, sign in to your account. To do that:
