@@ -1,5 +1,6 @@
 import { createLoader } from 'simple-functional-loader'
 import withMarkdoc from '@markdoc/next.js'
+
 import withSearch from './src/markdoc/search.mjs'
 
 /** @type {import('next').NextConfig} */
