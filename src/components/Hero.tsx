@@ -2,11 +2,13 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { Highlight } from 'prism-react-renderer'
+import { SvgIcon } from '@/components/SvgIcon'
 
 import { Button } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
+import heroImage from '@/images/hero.png'
 
 const codeLanguage = 'javascript'
 const code = `export default {
@@ -48,17 +50,23 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Never miss the cache again.
+              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display font-proxyma text-5xl tracking-tight text-transparent">
+                Help, tutorials & documentation.
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Cache every single thing your app could ever do ahead of time,
-                so your code never even has to run at all.
+              <p className="mt-3 font-proxyma text-2xl tracking-tight text-slate-400">
+                Learn how to unleash your coding productivity by taking and
+                organizing tech notes with Inkdrop.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
-                  View on GitHub
+                <Button
+                  href="https://my.inkdrop.app/"
+                  className="inline-flex items-center justify-center gap-1"
+                >
+                  <SvgIcon name="login" />
+                  Log in
+                </Button>
+                <Button href="https://www.inkdrop.app/" variant="secondary">
+                  What is Inkdrop?
                 </Button>
               </div>
             </div>
@@ -86,86 +94,12 @@ export function Hero() {
                 unoptimized
                 priority
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg" />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10" />
-              <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur">
-                <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0" />
-                <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
-                <div className="pl-4 pt-4">
-                  <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
-                  <div className="mt-4 flex space-x-2 text-xs">
-                    {tabs.map((tab) => (
-                      <div
-                        key={tab.name}
-                        className={clsx(
-                          'flex h-6 rounded-full',
-                          tab.isActive
-                            ? 'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
-                            : 'text-slate-500',
-                        )}
-                      >
-                        <div
-                          className={clsx(
-                            'flex items-center rounded-full px-2.5',
-                            tab.isActive && 'bg-slate-800',
-                          )}
-                        >
-                          {tab.name}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-6 flex items-start px-1 text-sm">
-                    <div
-                      aria-hidden="true"
-                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
-                    >
-                      {Array.from({
-                        length: code.split('\n').length,
-                      }).map((_, index) => (
-                        <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, '0')}
-                          <br />
-                        </Fragment>
-                      ))}
-                    </div>
-                    <Highlight
-                      code={code}
-                      language={codeLanguage}
-                      theme={{ plain: {}, styles: [] }}
-                    >
-                      {({
-                        className,
-                        style,
-                        tokens,
-                        getLineProps,
-                        getTokenProps,
-                      }) => (
-                        <pre
-                          className={clsx(
-                            className,
-                            'flex overflow-x-auto pb-6',
-                          )}
-                          style={style}
-                        >
-                          <code className="px-4">
-                            {tokens.map((line, lineIndex) => (
-                              <div key={lineIndex} {...getLineProps({ line })}>
-                                {line.map((token, tokenIndex) => (
-                                  <span
-                                    key={tokenIndex}
-                                    {...getTokenProps({ token })}
-                                  />
-                                ))}
-                              </div>
-                            ))}
-                          </code>
-                        </pre>
-                      )}
-                    </Highlight>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src={heroImage}
+                alt="A dog hacking Inkdrop"
+                priority
+                className="scale-150"
+              />
             </div>
           </div>
         </div>

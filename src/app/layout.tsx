@@ -2,11 +2,14 @@ import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
+import Fathom from '../components/Fathom'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
+import '@/styles/page.css'
+import { Redirects } from '@/lib/redirects'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,11 +26,11 @@ const lexend = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
+    template: '%s - Inkdrop User Manual',
+    default: 'Inkdrop User Manual',
   },
   description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+    'Help, tutorials & documentation on how to unleash your coding productivity with Inkdrop',
 }
 
 export default function RootLayout({
@@ -42,6 +45,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">
+        <Fathom />
+        <Redirects />
         <Providers>
           <Layout>{children}</Layout>
         </Providers>

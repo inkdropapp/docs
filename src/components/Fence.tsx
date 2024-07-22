@@ -1,7 +1,11 @@
 'use client'
 
 import { Fragment } from 'react'
-import { Highlight } from 'prism-react-renderer'
+import { Highlight, Prism } from 'prism-react-renderer'
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+require('prismjs/components/prism-bash')
+require('prismjs/components/prism-java')
+require('prismjs/components/prism-lua')
 
 export function Fence({
   children,
@@ -12,8 +16,9 @@ export function Fence({
 }) {
   return (
     <Highlight
+      prism={Prism}
       code={children.trimEnd()}
-      language={language}
+      language={language || ''}
       theme={{ plain: {}, styles: [] }}
     >
       {({ className, style, tokens, getTokenProps }) => (

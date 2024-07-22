@@ -7,6 +7,8 @@ import { PluginsIcon } from '@/components/icons/PluginsIcon'
 import { PresetsIcon } from '@/components/icons/PresetsIcon'
 import { ThemingIcon } from '@/components/icons/ThemingIcon'
 import { WarningIcon } from '@/components/icons/WarningIcon'
+import { ExternalIcon } from '@/components/icons/ExternalIcon'
+import { VideoIcon } from '@/components/icons/VideoIcon'
 
 const icons = {
   installation: InstallationIcon,
@@ -15,12 +17,15 @@ const icons = {
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
+  external: ExternalIcon,
+  video: VideoIcon,
 }
 
 const iconStyles = {
   blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
   amber:
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
+  currentColor: '[--icon-foreground:currentColor]',
 }
 
 export function Icon({
@@ -42,6 +47,8 @@ export function Icon({
       fill="none"
       className={clsx(className, iconStyles[color])}
       {...props}
+      color={color}
+      id={id}
     >
       <IconComponent id={id} color={color} />
     </svg>
@@ -57,6 +64,10 @@ const gradients = {
   amber: [
     { stopColor: '#FDE68A', offset: '.08' },
     { stopColor: '#F59E0B', offset: '.837' },
+  ],
+  currentColor: [
+    { stopColor: 'currentColor', offset: '0' },
+    { stopColor: 'currentColor', offset: '1' },
   ],
 }
 
