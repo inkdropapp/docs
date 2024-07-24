@@ -14,8 +14,6 @@ Your use of the platform is also subject to our terms and conditions.
 This privacy policy may change from time to time.
 Your continued use of the platform after we make changes to this privacy policy will be deemed acceptance of those changes, so please check this policy periodically for updates.
 
-This privacy policy has been developed and is maintained in accordance with all applicable national and international privacy and data protection laws and regulations and specifically the General Data Protection Regulation (GDPR).
-
 ## 1. Definitions
 
 In this privacy policy, the words “platform” refer to the application, website, and services offered by Inkdrop together, unless referred to individually in the document, “we”, “us”, “our” and “Inkdrop”, refer to Inkdrop, and “you” and “user”, refer to you, the Inkdrop user and client.
