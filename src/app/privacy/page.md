@@ -187,7 +187,7 @@ Inkdrop stores correspondence as long as it may be useful for these purposes.
 
 ### 5.10. Inkdrop Collects Discord Account Data
 
-Inkdrop collects data about your [Discord](https://discord.com/) account when you connect your Discord account to your Inkdrop account. This includes your user ID, username, and avatar.
+Inkdrop collects data about your [Discord](https://discord.com/) account when you connect it to your Inkdrop account. This includes your user ID, username, and avatar.
 
 Inkdrop uses this data to:
 
@@ -291,6 +291,13 @@ Inkdrop uses [Mixpanel](https://mixpanel.com/) to collect and analyze data about
 ### 11.6. Inkdrop Uses Bugsnag
 
 Inkdrop uses [Bugsnag](https://www.bugsnag.com/) to collect crash reports and error logs from our mobile apps. Those crash reports include your technical information for simpler identification and incident management. Those data are not associated with your Inkdrop account. For more information on what type of information Bugsnag collects, please visit [the Privacy Policy page of Bugsnag](https://docs.bugsnag.com/legal/privacy-policy/).
+
+### 11.7. Inkdrop Uses Loops
+
+Inkdrop uses [Loops](https://loops.so/) to manage our newsletter and other email lists.
+There’s no third-party tracking in messages we send through Loops besides Loops' own analytics, which tracks subscribers who open a message or click the links inside (disable loading external images in your email client and don't click on the link, if you don't want it to be tracked or use tracking blockers supplied by your email client).
+
+You can opt out of newsletter subscriptions by clicking the unsubscribe link provided at the end of the newsletter. Loops' privacy policy is [available here](https://loops.so/privacy).
 
 ## 12. Does Inkdrop Make Automated Decisions Based on Data About Me?
 
