@@ -33,6 +33,11 @@ export const navigation = [
         cover: '/images/foster-knowledge_cover.png',
       },
       {
+        title: 'Stay motivated and inspired',
+        href: '/start-guide/join-discord-server',
+        cover: '/images/join-discord-server_cover.jpg',
+      },
+      {
         title: 'How tech notes can boost your productivity',
         href: 'https://www.inkdrop.app/note-taking-tips/',
         cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
