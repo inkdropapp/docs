@@ -17,7 +17,7 @@ Join us to learn, grow, and transform your solitary work into a shared journey.{
 ## How to join the Discord server
 
 1. Create an account on [Discord](https://discord.com/) if you don't have one yet.
-2. Open [this page](https://my.inkdrop.app/discord) (Login required). If you don't have an Inkdrop account, check out [the website](https://www.inkdrop.app/) and create one.
+2. Open [this page](https://my.inkdrop.app/discord) (Login required). If you don't have an Inkdrop account, check out [the website](https://www.inkdrop.app/?utm_source=docs&utm_medium=web&utm_campaign=start-guide&utm_content=join-discord-server) and create one.
 3. Authorize with Discord by clicking the "**Connect**" button
    ![Step 1](/images/join-discord-server_step-1.png)
 4. Authorize the access to your Discord account
