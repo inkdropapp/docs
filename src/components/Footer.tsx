@@ -21,9 +21,7 @@ export const Footer = () => {
         <FooterLink href="https://www.inkdrop.app/">
           &copy; {year} Inkdrop
         </FooterLink>
-        <FooterLink href="https://twitter.com/inkdrop_app">
-          X (Twitter)
-        </FooterLink>
+        <FooterLink href="https://x.com/inkdrop_app">&#x1D54F;</FooterLink>
         <FooterLink href="https://forum.inkdrop.app/">User Forum</FooterLink>
         <FooterLink href="https://www.inkdrop.app/pricing">Pricing</FooterLink>
         <FooterLink href="https://my.inkdrop.app/plugins">Plugins</FooterLink>
