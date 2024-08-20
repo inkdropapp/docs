@@ -29,7 +29,7 @@ will be under the responsibility and in charge of:
 
 - Takuya Matsuyama
 - [contact@inkdrop.app](mailto:contact@inkdrop.app)
-- 1-34-2-1605 Shimmachi, Nishi, Osaka, Osaka 550-0013, Japan
+- 1-11-2-601, Kyomachibori, Nishi, Osaka, Osaka, 550-0003, Japan
 
 ## 3. How We Obtain Your Consent
 
@@ -379,4 +379,4 @@ You can send questions or complaints to:
 
 - Takuya Matsuyama
 - [contact@inkdrop.app](mailto:contact@inkdrop.app)
-- 1-34-2-1605 Shimmachi, Nishi, Osaka, Osaka 550-0013, Japan
+- 1-11-2-601, Kyomachibori, Nishi, Osaka, Osaka, 550-0003, Japan

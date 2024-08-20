@@ -17,7 +17,7 @@ Takuya Matsuyama
 
 ## Address
 
-1-34-2-1605, Shimmachi, Nishi, Osaka, Osaka, 550-0013, Japan
+1-11-2-601, Kyomachibori, Nishi, Osaka, Osaka, 550-0003, Japan
 
 ## Contact
 
