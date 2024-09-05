@@ -156,7 +156,7 @@ export const navigation = [
       { title: 'Contact the author', href: '/contact' },
       { title: 'Terms of Service', href: '/terms' },
       { title: 'Privacy Policy', href: '/privacy' },
-      { title: 'Act on specified commercial transactions', href: '/notation' },
+      { title: '特定商取引法に基づく表記', href: '/notation' },
     ],
   },
 ]
