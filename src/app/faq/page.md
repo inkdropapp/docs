@@ -10,8 +10,8 @@ nextjs:
 
 ## What platforms does Inkdrop run on?
 
-Inkdrop is available for macOS 10.11.4 (El Capitan) or later, Windows 8.1 or later, and Ubuntu Linux 18.04 or later.
-Mobile app is also available for iOS 13+ and Android 8.0+.
+Inkdrop is available for macOS 10.13 or later, Windows 8.1 or later, and Ubuntu Linux 18.04 or later.
+Mobile app is also available for iOS 15.6+ and Android 14.0+.
 
 ## Can I sync my data with DropBox, GoogleDrive, etc?
 
