@@ -36,3 +36,5 @@ next-env.d.ts
 
 # routes
 public/routes.json
+
+pages.txt
