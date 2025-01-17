@@ -35,7 +35,11 @@ You can also see all the keybindings that are currently configured in your insta
 
 By clicking **your keymap file** on the top of this section, you can open up the file.
 
-To unbind the existing keybindings, set `false` value instead of command name to them.
+There are a few special commands that you can use in your keymap:
+
+- `native!`: This command will trigger the default behavior of the key event.
+- `unset!`: This command will unbind the existing keybinding.
+- `abort!`: This command will prevent the default behavior of the key event. It calls `preventDefault` on the event object.
 
 ## Global keybindings
 
