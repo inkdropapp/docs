@@ -9,6 +9,7 @@ import { EmbeddedVideo } from '@/components/EmbeddedVideo'
 import { CalloutToForum } from '@/components/CalloutToForum'
 import { Subscript } from '@/components/Subscript'
 import { Superscript } from '@/components/Superscript'
+import Image from 'next/image'
 
 const tags = {
   callout: {
@@ -37,6 +38,15 @@ const tags = {
         <figcaption>{caption}</figcaption>
       </figure>
     ),
+  },
+  img: {
+    render: Image,
+    attributes: {
+      src: { type: String },
+      width: { type: Number },
+      height: { type: Number },
+      className: { type: String },
+    },
   },
   'quick-links': {
     render: QuickLinks,
