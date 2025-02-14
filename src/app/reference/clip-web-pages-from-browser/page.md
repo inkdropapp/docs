@@ -28,6 +28,11 @@ Please check out the following guide:
 ### Set up Web Clipper
 
 The web clipper needs to know how to access your local database server [configured in your `config.json`](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced).
+Open the extension options by right-clicking the extension toolbar icon and selecting "Options":
+
+{%img src="/images/clipping-web-pages-from-browser_open-options.png" width="300" height="300" alt="Options menu" className="inline-block" /%}
+
+Then, fill in the following fields:
 
 - **Inkdrop Local Database URL** (Optional) - The URL to the local database as you configured in `core.server.port`. Default is `http://localhost:19840`
 - **Username** (Required) - The Basic auth username as you configured in `core.server.auth.username`.
