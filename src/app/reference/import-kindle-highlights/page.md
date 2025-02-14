@@ -14,10 +14,10 @@ Please follow [the steps in this page](/reference/clip-web-pages-from-browser) t
 
 ## How to import Kindle highlights
 
-First, open your Kindle highlights page in your browser.
-Please log in if you haven't already.
+Open your Kindle highlights page in your browser.  
+If you’re not logged in, please sign in to your Amazon account.
 
-The following Amazon regions are supported:
+{% callout type="note" title="Supported Amazon Regions" %}
 
 | Region                    | URL                                  |
 | ------------------------- | ------------------------------------ |
@@ -30,11 +30,15 @@ The following Amazon regions are supported:
 | United Kingdom            | <https://read.amazon.co.uk/notebook> |
 | France                    | <https://lire.amazon.fr/notebook>    |
 
-Then, click the Inkdrop toolbar button on the top right corner of the browser:
+{% /callout %}
+
+Click the Inkdrop toolbar button in the top-right corner of your browser.
 
 ![Inkdrop Popup Window](/images/import-kindle-highlights_popup.png)
 
-Next, select the notebook where you want to save the highlights and click the **Start Importing**.
+Select the notebook where you want to save the highlights and click the **Start Importing**.
 
-The importer remembers the last sync date in order to import only new highlights since the last sync.
-If you'd like to force it to import all highlights again, click the **Reset** button on the right side of the "Last sync date" field.
+### Sync Behavior
+
+The importer remembers the last sync date and imports only new highlights since the last sync.  
+If you need to re-import all highlights, click the **Reset** button next to the “Last sync date” field.
