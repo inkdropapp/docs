@@ -118,6 +118,10 @@ export const navigation = [
         href: '/reference/clip-web-pages-from-browser',
       },
       {
+        title: 'Import your Kindle highlights',
+        href: '/reference/import-kindle-highlights',
+      },
+      {
         title: 'Restore previous revisions of note',
         href: '/reference/revision-history',
       },

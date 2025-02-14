@@ -45,9 +45,7 @@ Then, a web clipper window opens up, displaying the main content converted as Ma
 
 You can choose a notebook and add tags if you want.
 
-If you want to clip a part of the web page, select the part and click the Inkdrop toolbar button.
-
-Click "Save page" button, then the window will close and the clipped page will be saved.
+Click the "**Save Clip**" button, then the window will close and the clipped page will be saved.
 
 ## Mobile
 
