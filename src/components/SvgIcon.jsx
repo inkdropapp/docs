@@ -24,6 +24,7 @@ import TagsDouble from '@/components/icons/tags-double.svg'
 import Troubleshooting from '@/components/icons/troubleshooting.svg'
 import View1 from '@/components/icons/view-1.svg'
 import NavigationMenuVertical from '@/components/icons/navigation-menu-vertical.svg'
+import NavigationMenuHorizontalBold from '@/components/icons/navigation-menu-horizontal-bold.svg'
 import InfoCircle from '@/components/icons/information-circle.svg'
 import Login from '@/components/icons/login-1.svg'
 import SettingsCogs from '@/components/icons/settings-cogs.svg'
@@ -53,6 +54,7 @@ const svgIcons = {
   rabbit: Rabbit,
   troubleshooting: Troubleshooting,
   'navigation-menu-vertical': NavigationMenuVertical,
+  'navigation-menu-horizontal-bold': NavigationMenuHorizontalBold,
   'info-circle': InfoCircle,
   'archive-restore': ArchiveRestore,
   login: Login,

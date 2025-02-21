@@ -19,13 +19,11 @@ Inkdrop synchronizes only the latest revision of a note across multiple devices.
 1. Select a note.
 2. In the upper-right corner of the editor, click menu {% icon name="navigation-menu-vertical" /%}.  
    Alternatively, select {% kbd %}Command+J{% /kbd %} or {% kbd %}Ctrl+J{% /kbd %} on Windows/Linux.
-3. Select {% icon name="history" /%} **Revision History..**.
-4. Select a revision you want to restore.
-   {% callout type="warning" %}
-   To see which exact lines were added and removed in a revision, select the _Show as Patch_ checkbox. The added lines are highlighted with green, and the removed lines — with red.
-   {% /callout %}
-5. Click **Restore**.  
-   The selected revision is restored.
+3. Select {% icon name="history" /%} **Revision History..**. The "Note Revision History" window will appear:
+   ![revision history view](/images/revision-history_view.png)
+4. Click {% icon name="navigation-menu-horizontal-bold" /%} on the right side of the revision you want to restore.
+5. Select **Restore this revision** from the menu.  
+   The selected revision will be restored.
 
 #### Undo restoring
 
