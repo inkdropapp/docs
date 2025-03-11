@@ -73,7 +73,7 @@ You can delete your account from [here](https://my.inkdrop.app/account/delete) a
 Please make sure that the app works on your environment before making a payment during the trial period.
 
 - macOS 12+
-- Windows 11+
+- Windows 10+
 - Linux (Ubuntu 20.04+)
 - iOS 16+
-- Android 12+
+- Android 14+
