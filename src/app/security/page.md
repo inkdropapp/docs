@@ -23,6 +23,11 @@ A common key is generated when you sign up to Inkdrop.
 This key, along with an initialization vector, is used to encrypt your data in GCM (Galois/Counter Mode).
 The key is also encrypted while stored on disk, with a 256-bit AES key derived with PBKDF2 from your login password.
 
+## Two-Factor Authentication
+
+You can enable two-factor authentication (2FA) on your Inkdrop account to protect against unauthorized access to your account and notes, by using [a time-based one-time password (TOTP)](https://en.wikipedia.org/wiki/Time-based_one-time_password) from an authenticator app.
+Check out [how to configure 2FA](/reference/configure-2fa) to learn more.
+
 ## Don't Forget Your Password
 
 We never store a copy of this common key without encryption and don't use any escrow mechanism to recover your encrypted data. This means that if you forget your login password, we cannot recover your data and we can't even reset your password.

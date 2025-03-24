@@ -67,6 +67,10 @@ export const navigation = [
       },
       { title: 'User data directory', href: '/reference/user-data-directory' },
       { title: 'Data backup', href: '/reference/data-backup' },
+      {
+        title: 'Configure two-factor authentication',
+        href: '/reference/configure-2fa',
+      },
     ],
   },
   {
