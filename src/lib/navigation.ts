@@ -141,6 +141,10 @@ export const navigation = [
         title: 'Integrate with Alfred',
         href: '/reference/integrate-with-alfred',
       },
+      {
+        title: 'Integrate with Raycast',
+        href: '/reference/integrate-with-raycast',
+      },
     ],
   },
   {
