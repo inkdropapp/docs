@@ -41,6 +41,26 @@ There are a few special commands that you can use in your keymap:
 - `unset!`: This command will unbind the existing keybinding.
 - `abort!`: This command will prevent the default behavior of the key event. It calls `preventDefault` on the event object.
 
+## Multi-stroke keybindings
+
+Inkdrop also supports multi-stroke keybindings — sequences of keys typed one after another (similar to key chords in Vim and Emacs).
+You can configure them like this:
+
+```js
+{
+  ".mde-preview": {
+    "s h": "core:focus-note-list-bar",
+    "s k": "editor:title:focus",
+    "space k": "editor:title:focus",
+    "space e": "core:find",
+    "space i": "core:find-global",
+    "space o": "core:find"
+  }
+}
+```
+
+This feature is especially useful for Vimmers who are comfortable with modal editing and mnemonic key sequences.
+
 ## Global keybindings
 
 There is a special selector called `global` which lets you configure global keybindings.
