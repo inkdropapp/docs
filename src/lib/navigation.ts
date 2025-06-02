@@ -130,6 +130,10 @@ export const navigation = [
         href: '/reference/revision-history',
       },
       {
+        title: 'AI integration',
+        href: '/reference/mcp-server',
+      },
+      {
         title: 'Resize images',
         href: '/reference/resize-images',
       },
