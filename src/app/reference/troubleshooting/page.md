@@ -60,6 +60,35 @@ You should get something like this:
 
 ![Network diagnosis output](/images/working-behind-a-corporate-web-proxy_network-diagnosis_result.png)
 
+### Check System Clock Synchronization for TOTP/2FA
+
+If you're having trouble logging in with Two-Factor Authentication (TOTP), it might be due to your system clock being out of sync. TOTP codes are time-sensitive and require accurate system time to work properly.
+
+To fix this issue:
+
+#### On Windows
+1. Right-click on the clock in the system tray
+2. Select **Adjust date/time**
+3. Enable **Set time automatically**
+4. Click **Sync now** under **Synchronize your clock**
+
+#### On macOS
+1. Open **System Preferences** → **Date & Time**
+2. Check **Set date and time automatically**
+3. Select a time server from the dropdown
+
+#### On Linux
+Run the following command to sync with NTP servers:
+```sh
+sudo ntpdate -s time.nist.gov
+```
+Or ensure the NTP service is running:
+```sh
+sudo systemctl enable --now systemd-timesyncd
+```
+
+After syncing your system clock, try logging in again with your TOTP code.
+
 ### Synchronize Notes from Scratch
 
 Inkdrop stores checkpointers for providing quick sync.
