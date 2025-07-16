@@ -22,9 +22,11 @@ It allows AI to search your notes, understand their context, and generate new no
 
 1. [Set up a local HTTP server](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced)
 
-2. Add a server config to Claude Desktop:
-   - MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+2. Add the server configuration:
+   - **Claude Desktop**:
+     - MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+     - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+   - **Claude Code**: `~/.claude.json`
 
 ```js
 {
