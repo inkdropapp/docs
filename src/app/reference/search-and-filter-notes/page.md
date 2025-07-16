@@ -60,9 +60,9 @@ Read how to [reassign the default keyboard shortcuts](/reference/key-customizati
 
 Commands related to the search box:
 
-- [`core:find`](https://docs.inkdrop.app/manual/list-of-commands#corefind): Focus the search box.
-- [`core:find-global`](https://docs.inkdrop.app/manual/list-of-commands#corefind-global): Switch to global search.
-- [`core:clear`](https://docs.inkdrop.app/manual/list-of-commands#corefind-clear): Clear the search box.
+- [`core:find`](https://developers.inkdrop.app/guides/list-of-commands#core-find): Focus the search box.
+- [`core:find-global`](https://developers.inkdrop.app/guides/list-of-commands#core-find-global): Switch to global search.
+- [`core:find-clear`](https://developers.inkdrop.app/guides/list-of-commands#core-find-clear): Clear the search box.
 
 ## Use special qualifiers to narrow down results
 

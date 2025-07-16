@@ -1,13 +1,15 @@
 import { Callout } from '@/components/Callout'
 import { Kbd } from '@/components/Kbd'
+import { Checkmark } from '@/components/Checkmark'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
 import { SvgIcon } from '@/components/SvgIcon'
 import { SnippetWindow } from '@/components/SnippetWindow'
 import { EmbeddedVideo } from '@/components/EmbeddedVideo'
-import { DiscourseComments } from '@/components/DiscourseComments'
+import { CalloutToForum } from '@/components/CalloutToForum'
 import { Subscript } from '@/components/Subscript'
 import { Superscript } from '@/components/Superscript'
+import Image from 'next/image'
 
 const tags = {
   callout: {
@@ -36,6 +38,15 @@ const tags = {
         <figcaption>{caption}</figcaption>
       </figure>
     ),
+  },
+  img: {
+    render: Image,
+    attributes: {
+      src: { type: String },
+      width: { type: Number },
+      height: { type: Number },
+      className: { type: String },
+    },
   },
   'quick-links': {
     render: QuickLinks,
@@ -71,9 +82,16 @@ const tags = {
     },
     render: Kbd,
   },
+  check: {
+    attributes: {
+      v: { type: Boolean },
+    },
+    render: Checkmark,
+  },
   icon: {
     attributes: {
       name: { type: String },
+      size: { type: Number },
     },
     render: SvgIcon,
   },
@@ -87,15 +105,10 @@ const tags = {
   video: {
     attributes: {
       src: { type: String },
+      poster: { type: String },
       type: { type: String },
     },
     render: EmbeddedVideo,
-  },
-  discourseComments: {
-    attributes: {
-      topicId: { type: Number },
-    },
-    render: DiscourseComments,
   },
   sub: {
     render: Subscript,

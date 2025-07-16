@@ -6,8 +6,10 @@ nextjs:
     description: Create sophisticated formatting for your prose and code with simple syntax
 ---
 
+Create sophisticated formatting for your tech notes on Inkdrop with simple syntax.{% .lead %}
+
 This is intended as a quick reference and showcase.
-For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
+For more complete info, see [John Gruber's original spec](https://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown spec page](https://github.github.com/gfm/).
 
 ## Headings
 
@@ -123,7 +125,7 @@ You can create an inline link by wrapping link text in brackets `[ ]`, and then
 
 `This note was written using [Inkdrop](https://www.inkdrop.app/).`
 
-![Screenshot of rendered GitHub Markdown showing how text within brackets, "GitHub Pages," appears as a blue hyperlink.](/images/markdown-cheatsheet_link.png)
+![Screenshot of rendered GitHub Markdown showing how text within brackets, "Inkdrop," appears as a blue hyperlink.](/images/markdown-cheatsheet_link.png)
 
 ## Images
 
@@ -238,32 +240,32 @@ Footnotes are not supported in wikis.
 
 ## Alerts
 
-Alerts are an extension of the blockquote syntax that you can use to emphasize critical information.
-On Inkdrop, they are displayed with distinctive colors and icons to indicate the importance of the content.
+Alerts are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information. On Inkdrop, they are displayed with distinctive colors and icons to indicate the significance of the content.
 
-Multiple types of alerts are available.
-You can add an alert with a special blockquote line that specifies the alert type, and then add the alert information in a standard blockquote immediately after.
+Use alerts only when they are crucial for user success and limit them to one or two per article to prevent overloading the reader. Additionally, you should avoid placing alerts consecutively. Alerts cannot be nested within other elements.
+
+To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
 
 ```markdown
 > [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+> Useful information that users should know, even when skimming content.
 
 > [!TIP]
-> Optional information to help a user be more successful.
+> Helpful advice for doing things better or more easily.
 
 > [!IMPORTANT]
-> Crucial information necessary for users to succeed.
+> Key information users need to know to achieve their goal.
 
 > [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+> Urgent info that needs immediate user attention to avoid problems.
 
 > [!CAUTION]
-> Negative potential consequences of an action.
+> Advises about risks or negative outcomes of certain actions.
 ```
 
-Here are the rendered alerts.
+Here are the rendered alerts:
 
-![Screenshot of rendered Markdown alerts showing how Note, Tips, Important, Warning, and Caution render with different colored text and icons.](/images/markdown-cheatsheet_alerts.png)
+![Screenshot of rendered GitHub Markdown showing how alerts are displayed with distinctive colors and icons to indicate the significance of the content](/images/markdown-cheatsheet_alerts.png)
 
 ## Hiding content with comments
 

@@ -7,7 +7,7 @@ nextjs:
     description: How to interact with Inkdrop
 ---
 
-## Get acquainted with Inkdrop interface
+## Main user interface
 
 Inkdrop interface is broken up into 3 main sections.
 
@@ -15,7 +15,6 @@ Inkdrop interface is broken up into 3 main sections.
   - Notebooks are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
   - Statuses help you treat notes as tasks and, for example, display only active or completed ones.
   - Tags are like labels that let you link notes with one another. For example, if they relate to a common topic.
-    You can toggle the Sidebar by using {% kbd %}Command+/{% /kbd %} or {% kbd %}Ctrl+/{% /kbd %} on Windows/Linux.
 - **Note list** is located amid. All your notes live here ordered by modification date by default. You can search for notes via the search box at the very top of the section.
 - **Editor** is the rightmost section. This is where your magic happens 🪄 — your workspace.
 
@@ -23,6 +22,7 @@ Inkdrop interface is broken up into 3 main sections.
 
 - {% kbd %}Command+E{% /kbd %} or {% kbd %}Ctrl+E{% /kbd %} — to switch between the editor and preview modes.
 - {% kbd %}Command+P{% /kbd %} or {% kbd %}Ctrl+P{% /kbd %} — to display the editor and preview side-by-side.
+- {% kbd %}Command+/{% /kbd %} or {% kbd %}Ctrl+/{% /kbd %} — to toggle the sidebar.
 - {% kbd %}Command+Shift+D{% /kbd %} or {% kbd %}Ctrl+Shift+D{% /kbd %} — to enter/leave the 'Distraction Free Mode' 🧘 Is when the sidebar and note list are hidden, and you can focus on the writing process.
 
 ## Create new note and notebook
@@ -52,8 +52,8 @@ There're several options to see the viewed notes:
 
 ### Via keyboard
 
-| macOS                             | Windows/Linux                 | Action              |
-| --------------------------------- | ----------------------------- | ------------------- |
+| macOS                                             | Windows/Linux                                 | Action              |
+| ------------------------------------------------- | --------------------------------------------- | ------------------- |
 | {% kbd %}Command{% /kbd %} + {% kbd %}←{% /kbd %} | {% kbd %}Alt{% /kbd %} + {% kbd %}←{% /kbd %} | Go to previous note |
 | {% kbd %}Command{% /kbd %} + {% kbd %}→{% /kbd %} | {% kbd %}Alt{% /kbd %} + {% kbd %}→{% /kbd %} | Go to next note     |
 
@@ -65,21 +65,30 @@ To navigate between notes via the app menu:
 
 ### Via mouse buttons
 
+You can use third and fourth buttons on your mouse to navigate back and forth through your viewed notes.
+
+{% video src="https://site-cdn.inkdrop.app/docs/manual/navigate-with-mouse-buttons.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/navigate-with-mouse-buttons.jpg" /%}
+
 Some computer mouses have additional buttons that you can bind to navigate back and forth through your viewed notes.
+For example, the MX Anywhere 3 mouse has two side buttons that you can use for this purpose as follows:
+
+![Example: MX Anywhere 3](/images/basic-usage_mouse-buttons.png)
 
 ### Using touchpad
 
 You can use gestures on the touchpad to navigate the history of viewed notes.
 
-<div class="ui warning message">
-The feature relies on the Electron's <a href="https://www.electronjs.org/docs/latest/api/browser-window#event-swipe-macos"><code>swipe</code></a> event which is only available for the macOS.
-<br><br>
-If you're a Windows user, check the <a href="#hack-windows-gestures">Hack Windows gestures</a> section.
-</div>
+{% callout type="warning" %}
+The feature relies on the Electron's [`swipe`](https://www.electronjs.org/docs/latest/api/browser-window#event-swipe-macos) event which is only available for the macOS.
+
+If you're a Windows user, check the [Hack Windows gestures](#hack-windows-gestures) section.
+{% /callout %}
 
 Depending on the macOS version, you can find the trackpad settings in different places.
 
-#### macOS Ventura 13.2
+#### macOS
+
+![macOS Trackpad settings](/images/basic-usage_macos-trackpad.png)
 
 1. Go to **System Settings** > **Trackpad**.
 2. Select the **More Gestures** tab.
@@ -88,9 +97,7 @@ Depending on the macOS version, you can find the trackpad settings in different 
 
 Watch a video showing how to navigate via the viewed notes using a touchpad on macOS.
 
-<video controls playsInline muted>
-  <source src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" type="video/mp4" />
-</video>
+{% video src="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/navigating-notes_history.png" /%}
 
 #### Hack Windows gestures
 
@@ -114,8 +121,8 @@ Note that this workaround doesn't break browser navigation with the gestures.
 
 You can [set custom keyboard shortcuts](reference/key-customizations) for navigation through the visited notes. The commands for the navigation are:
 
-- <a href="/manual/list-of-commands#corenavigate-back"><code>core:navigate-back</code></a>: To go to the previous note.
-- <a href="/manual/list-of-commands#corenavigate-forward"><code>core:navigate-forward</code></a>: To go to the next note.
+- [`core:navigate-back`](https://developers.inkdrop.app/guides/list-of-commands#core-navigate-back): To go to the previous note.
+- [`core:navigate-forward`](https://developers.inkdrop.app/guides/list-of-commands#core-navigate-forward): To go to the next note.
 
 ## Settings and preferences
 

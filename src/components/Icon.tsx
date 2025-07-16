@@ -8,6 +8,7 @@ import { PresetsIcon } from '@/components/icons/PresetsIcon'
 import { ThemingIcon } from '@/components/icons/ThemingIcon'
 import { WarningIcon } from '@/components/icons/WarningIcon'
 import { ExternalIcon } from '@/components/icons/ExternalIcon'
+import { VideoIcon } from '@/components/icons/VideoIcon'
 
 const icons = {
   installation: InstallationIcon,
@@ -17,6 +18,7 @@ const icons = {
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
   external: ExternalIcon,
+  video: VideoIcon,
 }
 
 const iconStyles = {
@@ -45,6 +47,8 @@ export function Icon({
       fill="none"
       className={clsx(className, iconStyles[color])}
       {...props}
+      color={color}
+      id={id}
     >
       <IconComponent id={id} color={color} />
     </svg>

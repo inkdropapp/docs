@@ -11,7 +11,7 @@ It allows you to share your Markdown notes with anyone, even those who don't use
 
 ## Steps to Publish Notes
 
-First, click the three-dash button on the top right corner of the editor, or press {% kbd s="Cmd + J" /%} on macOS or {% kbd s="Ctrl + J" /%} on Linux and Windows:
+First, click the three-dash button on the top right corner of the editor, or press {% kbd s="Command + J" /%} on macOS or {% kbd s="Ctrl + J" /%} on Linux and Windows:
 
 ![“Share Note” button](/images/sharing-notes_button.png)
 
@@ -33,3 +33,16 @@ Please try it again after a few moments.
 
 Images on external sites are prohibited because of the security reason. Please use attachment images if you want to insert images in your notes.
 {% /callout %}
+
+## Linking Between Shared Notes
+
+If you have multiple notes and want to link from one to another, you can use internal note links.
+The URI of these internal note links looks like this: `inkdrop://note/xxxxxxxxxxx`.
+These links will be automatically converted to the shared URLs when viewing the note on the web.
+
+To insert an internal note link in your note:
+
+1. Right-click the note you want to link to in the note list
+   ![Right-click the note](/images/sharing-notes_copy-note-link.png)
+2. Select "**Copy Note Link**" from the context menu, or press {% kbd s="Command + C" /%} on macOS or {% kbd s="Ctrl + C" /%} on Linux and Windows while the note is selected in the note list
+3. Paste the copied link into your note. The inserted link would look like this: `[Note title](inkdrop://note/xxxxxxxxxxxx)`

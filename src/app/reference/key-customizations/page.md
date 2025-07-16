@@ -28,14 +28,38 @@ But if the same keystroke occurs outside the editor, it instead triggers the nat
 By default, `keymap.json` is loaded when Inkdrop is started.
 It will always be loaded last, giving you the chance to override bindings that are defined by Inkdrop's core keymaps or third-party packages.
 
-Available commands can be found [here](/manual/list-of-commands).
+Available commands can be found [here](https://developers.inkdrop.app/guides/list-of-commands).
 You can also see all the keybindings that are currently configured in your installation of Inkdrop in _Keybindings_ section on _Preferences_ window:
 
 ![Preferences](/images/customizing-keybindings_preferences.png)
 
 By clicking **your keymap file** on the top of this section, you can open up the file.
 
-To unbind the existing keybindings, set `false` value instead of command name to them.
+There are a few special commands that you can use in your keymap:
+
+- `native!`: This command will trigger the default behavior of the key event.
+- `unset!`: This command will unbind the existing keybinding.
+- `abort!`: This command will prevent the default behavior of the key event. It calls `preventDefault` on the event object.
+
+## Multi-stroke keybindings
+
+Inkdrop also supports multi-stroke keybindings — sequences of keys typed one after another (similar to key chords in Vim and Emacs).
+You can configure them like this:
+
+```js
+{
+  ".mde-preview": {
+    "s h": "core:focus-note-list-bar",
+    "s k": "editor:title:focus",
+    "space k": "editor:title:focus",
+    "space e": "core:find",
+    "space i": "core:find-global",
+    "space o": "core:find"
+  }
+}
+```
+
+This feature is especially useful for Vimmers who are comfortable with modal editing and mnemonic key sequences.
 
 ## Global keybindings
 

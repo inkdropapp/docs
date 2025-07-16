@@ -26,4 +26,4 @@ Please do not forget to check out the [FAQ](/faq) and [troubleshooting](/referen
 
 ## X / Twitter
 
-I'm usually on [@inkdrop_app (English)](https://twitter.com/inkdrop_app) and [@craftzdog (日本語)](https://twitter.com/craftzdog).
+I'm usually on [@inkdrop_app (English)](https://x.com/inkdrop_app) and [@craftzdog (日本語)](https://x.com/craftzdog).

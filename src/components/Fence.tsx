@@ -4,6 +4,8 @@ import { Fragment } from 'react'
 import { Highlight, Prism } from 'prism-react-renderer'
 ;(typeof global !== 'undefined' ? global : window).Prism = Prism
 require('prismjs/components/prism-bash')
+require('prismjs/components/prism-java')
+require('prismjs/components/prism-lua')
 
 export function Fence({
   children,

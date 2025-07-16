@@ -3,7 +3,7 @@
 import { Suspense, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { Dialog } from '@headlessui/react'
+import { Dialog, DialogPanel } from '@headlessui/react'
 
 import { Logomark } from '@/components/Logo'
 import { Navigation } from '@/components/Navigation'
@@ -82,7 +82,7 @@ export function MobileNavigation() {
         className="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden"
         aria-label="Navigation"
       >
-        <Dialog.Panel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 dark:bg-slate-900 sm:px-6">
+        <DialogPanel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 sm:px-6 dark:bg-slate-900">
           <div className="flex items-center">
             <button
               type="button"
@@ -96,7 +96,7 @@ export function MobileNavigation() {
             </Link>
           </div>
           <Navigation className="mt-5 px-1" onLinkClick={onLinkClick} />
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </>
   )
