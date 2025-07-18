@@ -1,0 +1,71 @@
+# Inkdrop Documentation
+
+> Official documentation for Inkdrop - a Markdown note-taking app built for developers who think in code. Features end-to-end encryption, issue-driven note-taking methodology, and extensibility through plugins.
+
+## New to Inkdrop
+
+- [Get started](/start-guide): Quick start guide for creating account, downloading and installing Inkdrop
+- [How to write Markdown notes](/start-guide/how-to-write-markdown-notes): Introduction to Markdown syntax, formatting, and writing notes with live preview
+- [How to organize your notes](/start-guide/how-to-organize-notes): Using notebooks, statuses, and tags to organize notes efficiently
+- [Issue-driven tech note-taking](/start-guide/issue-driven-note-taking): One note per issue methodology for focused tech note-taking
+- [Key note categories and examples for tech issues](/start-guide/key-note-categories-and-examples): Nine key tech issue categories with real-world note examples
+- [Take notes just as you breathe](/start-guide/low-friction-note-taking-system): Creating an inbox-based system for capturing notes without friction
+- [Stay motivated and inspired](/start-guide/join-discord-server): Join the community Discord server for motivation and collaboration
+- [How tech notes can boost your productivity](https://www.inkdrop.app/note-taking-tips/): External guide on leveraging tech notes for productivity
+- [How to take notes while learning a new technology](https://www.youtube.com/watch?v=RhuAn4uLVpc): Video tutorial on effective note-taking strategies
+
+## Basics
+
+- [Main user interface](/reference/main-user-interface): Overview of Inkdrop's three-panel interface layout with sidebar, note list, and editor
+- [Write notes](/reference/write-notes): Guide to creating, editing, deleting notes with tags, statuses, and preview capabilities
+- [Basic writing and formatting syntax](/writing/basic-writing-and-formatting-syntax): Comprehensive Markdown reference covering GitHub-flavored formatting, code blocks, tables, and alerts
+- [User data directory](/reference/user-data-directory): Location paths where Inkdrop stores local configuration files and database data
+- [Data backup](/reference/data-backup): Continuous JSON backup system to protect notes with restore and export capabilities
+- [Configure two-factor authentication](/reference/configure-2fa): Setup guide for two-factor authentication using TOTP authenticator apps
+
+## Note organization
+
+- [Organize notebooks](/reference/organize-notebooks): Managing hierarchical notebook structures with sub-notebooks and workspace-specific views
+- [Search and filter notes](/reference/search-and-filter-notes): Powerful search capabilities with special qualifiers for filtering by notebook, tag, and status
+- [Note statuses](/reference/note-statuses): Task management system using Active, On Hold, Completed, and Dropped statuses
+- [Pin notes to the top](/reference/pin-notes-to-top): Feature to stick important notes at the top of note lists for quick access
+
+## Customization
+
+- [Customize keybindings](/reference/key-customizations): Configure custom keybindings, multi-stroke shortcuts, and global hotkeys using JSON keymap files
+- [Note synchronization](/reference/note-synchronization): Cloud sync options including Inkdrop server or self-hosted CouchDB setup with SSL
+- [Extend with plugins](/reference/extend-with-plugins): Install and manage plugins for enhanced functionality, themes, and Markdown extensions
+- [Share notes on the web](/reference/share-notes-on-the-web): Publish individual notes with public URLs and automatic internal link conversion
+- [Import notes from Evernote](/reference/import-from-evernote): Import HTML-exported Evernote notes into Inkdrop notebooks preserving content
+- [Use behind web proxy](/reference/use-behind-web-proxy): Configure HTTP/HTTPS proxy settings for corporate networks including authentication
+
+## Advanced
+
+- [Clip web pages from browser](/reference/clip-web-pages-from-browser): Browser extension to save web content as Markdown notes via local server
+- [Import your Kindle highlights](/reference/import-kindle-highlights): Browser extension feature to import and sync Kindle reading highlights as notes
+- [Restore previous revisions of note](/reference/revision-history): Automatic version tracking with ability to restore previous revisions
+- [AI integration](/reference/mcp-server): Model Context Protocol server enabling AI assistants to access and manipulate notes
+- [Resize images](/reference/resize-images): Custom CSS stylesheet technique to control image sizes using alt attribute suffixes
+- [Integrate with Alfred](/reference/integrate-with-alfred): Alfred workflow for instant note searching and creation on macOS
+- [Integrate with Raycast](/reference/integrate-with-raycast): Raycast extension for quick note search and creation using productivity launcher
+
+## Troubleshooting
+
+- [Troubleshooting](/reference/troubleshooting): Comprehensive solutions for login issues, sync problems, plugin errors, and payment failures
+- [Recover lost password](/reference/recover-password): Explanation that passwords cannot be reset due to client-side encryption security
+- [Salvage data from local database](/reference/salvage-data-from-local-database): Recovery tool to extract unencrypted notes from local storage after password loss
+
+## About
+
+- [Frequently asked questions](/faq): Common questions about pricing, features, billing, account management, and technical requirements
+- [How secure is Inkdrop?](/security): End-to-end encryption implementation using AES-256 with transport security and 2FA
+- [Contact the author](/contact): Multiple ways to reach the developer including forum, email, and social media
+- [Terms of Service](/terms): Service agreement covering account usage, payments, content ownership, and liability
+- [Privacy Policy](/privacy): Detailed privacy policy explaining data collection, storage, third-party services, and GDPR
+- [特定商取引法に基づく表記](/notation): Japanese commercial transaction law disclosure with business operator details
+
+## Further Resources
+
+- [API reference](https://developers.inkdrop.app/): Customize and create your own plugins
+- [User forum](https://forum.inkdrop.app/): Join discussions, get help, and share app insights
+- [Plugins](https://my.inkdrop.app/plugins): Extend Inkdrop with community plugins
