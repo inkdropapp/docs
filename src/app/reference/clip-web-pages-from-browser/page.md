@@ -18,7 +18,7 @@ because the app syncs data securely via the end-to-end encryption.
 To accomplish that, you have to set up a local Inkdrop server beforehand so that the browser extension can access your local database.
 Please check out the following guide:
 
-- [Inkdrop API Reference: Accessing via HTTP (Advanced)](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced)
+- [Inkdrop API Reference: Integrate with External Programs](https://developers.inkdrop.app/guides/integrate-with-external-programs)
 
 ### Install Web Clipper
 
@@ -27,7 +27,7 @@ Please check out the following guide:
 
 ### Set up Web Clipper
 
-The web clipper needs to know how to access your local database server [configured in your `config.json`](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced).
+The web clipper needs to know how to access your local database server.
 Open the extension options by right-clicking the extension toolbar icon and selecting "Options":
 
 {%img src="/images/clipping-web-pages-from-browser_open-options.png" width="300" height="300" alt="Options menu" className="inline-block" /%}

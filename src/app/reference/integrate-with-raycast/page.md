@@ -19,7 +19,7 @@ Go to [the Raycast Store](https://www.raycast.com/yaeda/inkdrop) and install the
 
 The workflow accesses your notes via HTTP locally.
 You have to configure the app to open a HTTP endpoint.
-See [the instruction](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced) for more detail.
+See [the instruction](https://developers.inkdrop.app/guides/integrate-with-external-programs) for more detail.
 
 ### 2. Set up the extension
 

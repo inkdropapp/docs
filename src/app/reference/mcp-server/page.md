@@ -1,8 +1,8 @@
 ---
-title: AI Integration
+title: AI Integration (MCP Server)
 nextjs:
   metadata:
-    title: AI Integration
+    title: AI Integration (MCP Server)
     description: Inkdrop provides an MCP server for AI integration, allowing you to use AI models for various tasks within your notes.
 ---
 
@@ -20,7 +20,7 @@ It allows AI to search your notes, understand their context, and generate new no
 
 ### Installation
 
-1. [Set up a local HTTP server](https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced)
+1. [Set up a local HTTP server](https://developers.inkdrop.app/guides/integrate-with-external-programs)
 
 2. Add the server configuration:
    - **Claude Desktop**:

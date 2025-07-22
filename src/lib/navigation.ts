@@ -130,7 +130,7 @@ export const navigation = [
         href: '/reference/revision-history',
       },
       {
-        title: 'AI integration',
+        title: 'AI integration (MCP Server)',
         href: '/reference/mcp-server',
       },
       {
