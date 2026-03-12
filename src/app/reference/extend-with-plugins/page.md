@@ -41,10 +41,7 @@ Your note app will now have the functionality that the plugin provides.
 
 ### Mobile
 
-Some plugins are bundled in the mobile app as Markdown renderer options.
-Go to `Preferences > Markdown Renderer` and you will see the list of available options:
-
-![Advanced markdown renderer options](/images/extend-inkdrop-with-plugins_mobile.png)
+The plugins on mobile are not supported, unfortunately, because Apple prohibits third-party code execution on iOS.
 
 ## Plugin settings
 
