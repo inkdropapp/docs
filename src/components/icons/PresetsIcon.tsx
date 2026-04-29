@@ -24,7 +24,7 @@ export function PresetsIcon({
       <LightMode>
         <circle cx={20} cy={12} r={12} fill={`url(#${id}-gradient)`} />
         <g
-          className="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
+          className="fill-(--icon-background) stroke-(--icon-foreground)"
           fillOpacity={0.5}
           strokeWidth={2}
           strokeLinecap="round"

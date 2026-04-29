@@ -1,0 +1,73 @@
+export function DatabaseSyncIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" {...props}>
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M12,9.751C5.787,9.751.75,7.736.75,5.251S5.787.751,12,.751s11.25,2.014,11.25,4.5c0,1.323-1.428,2.513-3.7,3.337"
+      />
+      <line
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        x1={23.25}
+        y1={9.016}
+        x2={23.25}
+        y2={5.251}
+      />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M.75,5.251v6c0,2.067,3.486,3.809,8.235,4.336"
+      />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M.75,11.251v6c0,1.96,3.134,3.628,7.508,4.245"
+      />
+      <polyline
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        points="15 18.751 11.25 18.751 11.25 22.501"
+      />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M22.667,19.484a5.572,5.572,0,0,1-10.74-.733"
+      />
+      <polyline
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        points="19.5 15.751 23.25 15.751 23.25 12.001"
+      />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M11.833,15.017a5.573,5.573,0,0,1,10.74.734"
+      />
+    </svg>
+  )
+}

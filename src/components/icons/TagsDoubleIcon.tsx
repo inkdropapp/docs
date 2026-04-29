@@ -1,0 +1,32 @@
+export function TagsDoubleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 140 140" {...props}>
+      <g transform="matrix(5.833333333333333,0,0,5.833333333333333,0,0)">
+        <path
+          d="M4.5,1.06h6.879a1.5,1.5,0,0,1,1.06.439L22.5,11.56"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+        ></path>
+        <path
+          d="M9.129,4.06H3a1.5,1.5,0,0,0-1.5,1.5v6.128a1.5,1.5,0,0,0,.439,1.061l9.75,9.75a1.5,1.5,0,0,0,2.122,0l6.128-6.129a1.5,1.5,0,0,0,0-2.121L10.189,4.5A1.5,1.5,0,0,0,9.129,4.06Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+        ></path>
+        <path
+          d="M6,8.185a.375.375,0,1,0,.375.375A.374.374,0,0,0,6,8.185H6"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+        ></path>
+      </g>
+    </svg>
+  )
+}
