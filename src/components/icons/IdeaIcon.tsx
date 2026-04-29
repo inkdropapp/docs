@@ -1,5 +1,109 @@
 export function IdeaIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" {...props}><path fill="#fff9bf" d="M19 11a6.97 6.97 0 0 1 -4 6.32 6.958 6.958 0 0 1 -6 0A7 7 0 1 1 19 11Z" strokeWidth={1}></path><path fill="#ffef5e" d="M15 14.821a6.958 6.958 0 0 1 -6 0 6.966 6.966 0 0 1 -3.88 -5.085A6.957 6.957 0 0 0 9 17.32a6.959 6.959 0 0 0 6 0 6.957 6.957 0 0 0 3.88 -7.584A6.965 6.965 0 0 1 15 14.821Z" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M19 11a6.97 6.97 0 0 1 -4 6.32 6.958 6.958 0 0 1 -6 0A7 7 0 1 1 19 11v0Z" strokeWidth={1}></path><path fill="#e3e3e3" stroke="#191919" strokeLinecap="round" strokeLinejoin="round" d="M15 17.32v2.18c0.002 0.168 -0.011 0.335 -0.04 0.5H9.04a2.737 2.737 0 0 1 -0.04 -0.5v-2.18a6.958 6.958 0 0 0 6 0Z" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M9 17.32v-0.02" strokeWidth={1}></path><path fill="#808080" stroke="#191919" strokeLinecap="round" strokeLinejoin="round" d="M14.96 20a3 3 0 0 1 -5.91 0h5.91Z" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M12 22.501v1" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M13 17.928V12a1.5 1.5 0 1 1 1.5 1.5h-5A1.5 1.5 0 1 1 11 12v5.927" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M12 0.501v1" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="m4.575 3.577 0.707 0.707" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M1.5 11.001h1" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="m4.575 18.426 0.707 -0.707" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="m19.425 18.426 -0.707 -0.707" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="M22.5 11.001h-1" strokeWidth={1}></path><path stroke="#191919" strokeLinecap="round" strokeMiterlimit={10} d="m19.425 3.577 -0.707 0.707" strokeWidth={1}></path></svg>
+    <svg fill="none" viewBox="0 0 24 24" {...props}>
+      <path
+        fill="#fff9bf"
+        d="M19 11a6.97 6.97 0 0 1 -4 6.32 6.958 6.958 0 0 1 -6 0A7 7 0 1 1 19 11Z"
+        strokeWidth={1}
+      ></path>
+      <path
+        fill="#ffef5e"
+        d="M15 14.821a6.958 6.958 0 0 1 -6 0 6.966 6.966 0 0 1 -3.88 -5.085A6.957 6.957 0 0 0 9 17.32a6.959 6.959 0 0 0 6 0 6.957 6.957 0 0 0 3.88 -7.584A6.965 6.965 0 0 1 15 14.821Z"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M19 11a6.97 6.97 0 0 1 -4 6.32 6.958 6.958 0 0 1 -6 0A7 7 0 1 1 19 11v0Z"
+        strokeWidth={1}
+      ></path>
+      <path
+        fill="#e3e3e3"
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15 17.32v2.18c0.002 0.168 -0.011 0.335 -0.04 0.5H9.04a2.737 2.737 0 0 1 -0.04 -0.5v-2.18a6.958 6.958 0 0 0 6 0Z"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M9 17.32v-0.02"
+        strokeWidth={1}
+      ></path>
+      <path
+        fill="#808080"
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14.96 20a3 3 0 0 1 -5.91 0h5.91Z"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M12 22.501v1"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M13 17.928V12a1.5 1.5 0 1 1 1.5 1.5h-5A1.5 1.5 0 1 1 11 12v5.927"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M12 0.501v1"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="m4.575 3.577 0.707 0.707"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M1.5 11.001h1"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="m4.575 18.426 0.707 -0.707"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="m19.425 18.426 -0.707 -0.707"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="M22.5 11.001h-1"
+        strokeWidth={1}
+      ></path>
+      <path
+        stroke="#191919"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        d="m19.425 3.577 -0.707 0.707"
+        strokeWidth={1}
+      ></path>
+    </svg>
   )
 }

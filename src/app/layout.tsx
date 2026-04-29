@@ -44,6 +44,17 @@ export default function RootLayout({
       className={clsx('h-full antialiased', inter.variable, lexend.variable)}
       suppressHydrationWarning
     >
+      <head>
+        <link
+          rel="preconnect"
+          href="https://use.typekit.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://p.typekit.net/p.css?s=1&k=atg0zvr&ht=tk&f=32895.32897.32899.32902&a=46188681&app=typekit&e=css"
+        />
+      </head>
       <body className="flex min-h-full bg-white dark:bg-slate-900">
         <Fathom />
         <Redirects />
