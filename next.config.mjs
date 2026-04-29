@@ -8,5 +8,7 @@ const nextConfig = {
 }
 
 export default withSearch(
-  withMarkdoc({ schemaPath: './src/markdoc' })(nextConfig),
+  withMarkdoc({ schemaPath: './src/markdoc', nextjsExports: ['revalidate'] })(
+    nextConfig,
+  ),
 )

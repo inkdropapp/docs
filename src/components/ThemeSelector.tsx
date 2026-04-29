@@ -58,6 +58,7 @@ export function ThemeSelector(
   let [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
   }, [])
 
@@ -69,7 +70,7 @@ export function ThemeSelector(
     <Listbox as="div" value={theme} onChange={setTheme} {...props}>
       <Label className="sr-only">Theme</Label>
       <ListboxButton
-        className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+        className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md ring-1 shadow-black/5 ring-black/5 dark:bg-slate-700 dark:ring-white/5 dark:ring-inset"
         aria-label="Theme"
       >
         <LightIcon
@@ -85,14 +86,14 @@ export function ThemeSelector(
           )}
         />
       </ListboxButton>
-      <ListboxOptions className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5">
+      <ListboxOptions className="absolute top-full left-1/2 mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md ring-1 shadow-black/5 ring-black/5 dark:bg-slate-800 dark:ring-white/5">
         {themes.map((theme) => (
           <ListboxOption
             key={theme.value}
             value={theme.value}
             className={({ focus, selected }) =>
               clsx(
-                'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
+                'flex cursor-pointer items-center rounded-[0.625rem] p-1 select-none',
                 {
                   'text-sky-500': selected,
                   'text-slate-900 dark:text-white': focus && !selected,
@@ -104,7 +105,7 @@ export function ThemeSelector(
           >
             {({ selected }) => (
               <>
-                <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
+                <div className="rounded-md bg-white p-1 shadow-sm ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-white/5 dark:ring-inset">
                   <theme.icon
                     className={clsx(
                       'h-4 w-4',

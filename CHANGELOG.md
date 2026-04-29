@@ -1,5 +1,37 @@
 # Changelog
 
+## 2025-07-29
+
+- Update to React 19 and Next.js 15.4
+
+## 2025-05-22
+
+- Fix bug with focus styles
+
+## 2025-04-28
+
+- Update template to Tailwind CSS v4.1.4
+
+## 2025-04-10
+
+- Update template to Tailwind CSS v4.1.3
+
+## 2025-03-22
+
+- Update template to Tailwind CSS v4.0.15
+
+## 2025-03-18
+
+- Fix heading spacing in callout component ([#1677](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1677))
+
+## 2025-02-10
+
+- Update template to Tailwind CSS v4.0.6
+
+## 2025-01-23
+
+- Update template to Tailwind CSS v4.0
+
 ## 2024-06-21
 
 - Bump Headless UI dependency to v2.1
@@ -18,7 +50,7 @@
 
 ## 2024-01-17
 
-- Fix `sharp` dependency issues ([#1549](https://github.com/tailwindlabs/tailwindui-issues/issues/1549))
+- Fix `sharp` dependency issues ([#1549](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1549))
 
 ## 2024-01-10
 
@@ -36,7 +68,7 @@
 
 ## 2023-09-05
 
-- Add scroll position buffer for table of contents ([#1499](https://github.com/tailwindlabs/tailwindui-issues/issues/1499))
+- Add scroll position buffer for table of contents ([#1499](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1499))
 
 ## 2023-08-15
 
@@ -48,7 +80,7 @@
 
 ## 2023-07-24
 
-- Fix search rendering bug in Safari ([#1470](https://github.com/tailwindlabs/tailwindui-issues/issues/1470))
+- Fix search rendering bug in Safari ([#1470](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1470))
 
 ## 2023-07-18
 
@@ -61,7 +93,7 @@
 
 ## 2023-05-15
 
-- Replace Algolia DocSearch with basic built-in search ([#1395](https://github.com/tailwindlabs/tailwindui-issues/issues/1395))
+- Replace Algolia DocSearch with basic built-in search ([#1395](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1395))
 
 ## 2023-04-11
 
@@ -69,7 +101,7 @@
 
 ## 2023-04-05
 
-- Fix listbox console error ([#1442](https://github.com/tailwindlabs/tailwindui-issues/issues/1442))
+- Fix listbox console error ([#1442](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1442))
 
 ## 2023-03-29
 
@@ -96,11 +128,11 @@
 ## 2022-09-27
 
 - Update Headless UI, Next.js, Markdoc, and Autoprefixer dependencies
-- Fix nav sidebar overflow issue ([#1337](https://github.com/tailwindlabs/tailwindui-issues/issues/1337))
+- Fix nav sidebar overflow issue ([#1337](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1337))
 
 ## 2022-09-19
 
-- Fix bug with theme switching ([#1325](https://github.com/tailwindlabs/tailwindui-issues/issues/1325))
+- Fix bug with theme switching ([#1325](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1325))
 
 ## 2022-09-09
 
@@ -120,7 +152,7 @@
 
 ## 2022-07-26
 
-- Fix issue with table customizations ([#1278](https://github.com/tailwindlabs/tailwindui-issues/issues/1278))
+- Fix issue with table customizations ([#1278](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1278))
 
 ## 2022-07-25
 
@@ -128,7 +160,7 @@
 
 ## 2022-07-11
 
-- Add `.env.example` file ([#1260](https://github.com/tailwindlabs/tailwindui-issues/issues/1260))
+- Add `.env.example` file ([#1260](https://github.com/tailwindlabs/tailwind-plus-issues/issues/1260))
 
 ## 2022-07-07
 

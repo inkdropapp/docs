@@ -1,4 +1,4 @@
-# Tailwind UI License
+# Tailwind Plus License
 
 ## Personal License
 
@@ -33,20 +33,20 @@ Examples of usage **allowed** by the license:
 
 Examples of usage **not allowed** by the license:
 
-- Creating a repository of your favorite Tailwind UI components or templates (or derivatives based on Tailwind UI components or templates) and publishing it publicly.
-- Creating a React or Vue version of Tailwind UI and making it available either for sale or for free.
-- Create a Figma or Sketch UI kit based on the Tailwind UI component designs.
-- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Tailwind UI.
+- Creating a repository of your favorite Tailwind Plus components or templates (or derivatives based on Tailwind Plus components or templates) and publishing it publicly.
+- Creating a React or Vue version of Tailwind Plus and making it available either for sale or for free.
+- Create a Figma or Sketch UI kit based on the Tailwind Plus component designs.
+- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Tailwind Plus.
 - Creating a theme, template, or project starter kit using the components or templates and making it available either for sale or for free.
 - Creating an admin panel tool (like [Laravel Nova](https://nova.laravel.com/) or [ActiveAdmin](https://activeadmin.info/)) that is made available either for sale or for free.
 
-In simple terms, use Tailwind UI for anything you like as long as it doesn't compete with Tailwind UI.
+In simple terms, use Tailwind Plus for anything you like as long as it doesn't compete with Tailwind Plus.
 
 ### Personal License Definitions
 
 Licensee is the individual who has purchased a Personal License.
 
-Components and Templates are the source code and design assets made available to the Licensee after purchasing a Tailwind UI license.
+Components and Templates are the source code and design assets made available to the Licensee after purchasing a Tailwind Plus license.
 
 End Product is any artifact produced that incorporates the Components or Templates or derivatives of the Components or Templates.
 
@@ -87,18 +87,18 @@ Examples of usage **allowed** by the license:
 
 Examples of use **not allowed** by the license:
 
-- Creating a repository of your favorite Tailwind UI components or template (or derivatives based on Tailwind UI components or templates) and publishing it publicly.
-- Creating a React or Vue version of Tailwind UI and making it available either for sale or for free.
-- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Tailwind UI.
+- Creating a repository of your favorite Tailwind Plus components or template (or derivatives based on Tailwind Plus components or templates) and publishing it publicly.
+- Creating a React or Vue version of Tailwind Plus and making it available either for sale or for free.
+- Creating a "website builder" project where end users can build their own websites using components or templates included with or derived from Tailwind Plus.
 - Creating a theme or template using the components or templates and making it available either for sale or for free.
 - Creating an admin panel tool (like [Laravel Nova](https://nova.laravel.com/) or [ActiveAdmin](https://activeadmin.info/)) that is made available either for sale or for free.
-- Creating any End Product that is not the sole property of either your company or a client of your company. For example your employees/contractors can't use your company Tailwind UI license to build their own websites or side projects.
+- Creating any End Product that is not the sole property of either your company or a client of your company. For example your employees/contractors can't use your company Tailwind Plus license to build their own websites or side projects.
 
 ### Team License Definitions
 
 Licensee is the business entity who has purchased a Team License.
 
-Components and Templates are the source code and design assets made available to the Licensee after purchasing a Tailwind UI license.
+Components and Templates are the source code and design assets made available to the Licensee after purchasing a Tailwind Plus license.
 
 End Product is any artifact produced that incorporates the Components or Templates or derivatives of the Components or Templates.
 
@@ -112,7 +112,7 @@ Client is an individual or entity receiving custom professional services directl
 
 ## Enforcement
 
-If you are found to be in violation of the license, access to your Tailwind UI account will be terminated, and a refund may be issued at our discretion. When license violation is blatant and malicious (such as intentionally redistributing the Components or Templates through private warez channels), no refund will be issued.
+If you are found to be in violation of the license, access to your Tailwind Plus account will be terminated, and a refund may be issued at our discretion. When license violation is blatant and malicious (such as intentionally redistributing the Components or Templates through private warez channels), no refund will be issued.
 
 The copyright of the Components and Templates is owned by Tailwind Labs Inc. You are granted only the permissions described in this license; all other rights are reserved. Tailwind Labs Inc. reserves the right to pursue legal remedies for any unauthorized use of the Components or Templates outside the scope of this license.
 
@@ -126,4 +126,4 @@ This Agreement is governed by the laws of the Province of Ontario and the applic
 
 Unsure which license you need, or unsure if your use case is covered by our licenses?
 
-Email us at [support@tailwindui.com](mailto:support@tailwindui.com) with your questions.
+Email us at [support@tailwindcss.com](mailto:support@tailwindcss.com) with your questions.
