@@ -105,8 +105,8 @@ export const navigation = [
         href: '/reference/share-notes-on-the-web',
       },
       {
-        title: 'Configure AI providers',
-        href: '/reference/configure-ai-providers',
+        title: 'Set up AI integrations',
+        href: '/reference/ai-integrations',
       },
       {
         title: 'Import notes from Evernote',
