@@ -149,6 +149,10 @@ export const navigation = [
         title: 'Integrate with Raycast',
         href: '/reference/integrate-with-raycast',
       },
+      {
+        title: 'Inline AI assistant',
+        href: '/reference/inline-ai-assistant',
+      },
     ],
   },
   {
