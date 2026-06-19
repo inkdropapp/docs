@@ -9,7 +9,7 @@ nextjs:
 Next edit suggestions predict what you'll type next and complete the line at your cursor.{% .lead %}
 
 {% callout type="warning" %}
-Available on v6 (canary)
+Available on [v6 (canary)](https://my.inkdrop.app/download/canary)
 {% /callout %}
 
 As you write, Inkdrop can ask an AI provider for a short continuation at the cursor and show it inline as ghost text. Press {% kbd %}Tab{% /kbd %} to accept it, or keep typing to ignore it. It's handy for repetitive content and structured patterns in your notes—filling in the next item of a list, the next row of a table, or finishing the sentence you started.

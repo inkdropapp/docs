@@ -7,7 +7,7 @@ nextjs:
 ---
 
 {% callout type="warning" %}
-Available on v6 (canary)
+Available on [v6 (canary)](https://my.inkdrop.app/download/canary)
 {% /callout %}
 
 Inkdrop can integrate with AI providers to unlock AI-powered features such as the [inline AI assistant](/reference/inline-ai-assistant) and [next edit suggestions](/reference/next-edit-suggestions).

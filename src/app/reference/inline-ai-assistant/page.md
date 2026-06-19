@@ -9,7 +9,7 @@ nextjs:
 The inline AI assistant lets you rewrite and transform text without leaving the editor.{% .lead %}
 
 {% callout type="warning" %}
-Available on v6 (canary)
+Available on [v6 (canary)](https://my.inkdrop.app/download/canary)
 {% /callout %}
 
 Select some text, describe what you want in plain language (or pick a preset), and the assistant replaces your selection with the AI-generated result. It's handy for proofreading, summarizing, reformatting, generating diagrams, and any other quick edit you'd otherwise do by hand.
