@@ -20,5 +20,9 @@ The config folder has the following files and folders:
 
 - `config.json` — app config file in the [JSON format](https://www.json.org/json-en.html)
 - `keymap.json` — keybindings config file in the [JSON format](https://www.json.org/json-en.html)
+- `styles.css` - custom CSS file for styling the app. See [Style tweaks](https://developers.inkdrop.app/guides/style-tweaks) for details.
+- `init.js` - custom JavaScript file for advanced customization. See [the init file](https://developers.inkdrop.app/guides/the-init-file) for details.
 - `packages/` — installed plugins
+- `dev/packages/` — linked plugins for development
 - `db/` — local database
+- `state-cache/` - cached app state for faster startup

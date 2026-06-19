@@ -67,22 +67,28 @@ If you're having trouble logging in with Two-Factor Authentication (TOTP), it mi
 To fix this issue:
 
 #### On Windows
+
 1. Right-click on the clock in the system tray
 2. Select **Adjust date/time**
 3. Enable **Set time automatically**
 4. Click **Sync now** under **Synchronize your clock**
 
 #### On macOS
+
 1. Open **System Preferences** → **Date & Time**
 2. Check **Set date and time automatically**
 3. Select a time server from the dropdown
 
 #### On Linux
+
 Run the following command to sync with NTP servers:
+
 ```sh
 sudo ntpdate -s time.nist.gov
 ```
+
 Or ensure the NTP service is running:
+
 ```sh
 sudo systemctl enable --now systemd-timesyncd
 ```
@@ -143,6 +149,15 @@ If you get an error like below:
 ```
 
 You can disable the GPU acceleration by appending `--disable-gpu-sandbox` parameter to avoid it.
+
+### Clear state cache
+
+If you get IPC command errors, please try clearing the app state cache directory from [the user data directory](/reference/user-data-directory):
+
+```sh
+cd <user-data-directory>
+rm -r state-cache/
+```
 
 ## Plugin Won't Work
 
