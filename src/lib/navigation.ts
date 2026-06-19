@@ -153,6 +153,10 @@ export const navigation = [
         title: 'Inline AI assistant',
         href: '/reference/inline-ai-assistant',
       },
+      {
+        title: 'Next edit suggestions',
+        href: '/reference/next-edit-suggestions',
+      },
     ],
   },
   {
