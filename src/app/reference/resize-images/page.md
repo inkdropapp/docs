@@ -3,32 +3,31 @@ title: Resize images
 nextjs:
   metadata:
     title: Resize images
-    description: Inkdrop allows resizing images in Markdown notes by defining custom styles in the styles.less file for different size specifications
+    description: Inkdrop allows resizing images in Markdown notes by defining custom styles in the styles.css file for different size specifications
 ---
 
 Inkdrop basically follows GitHub-flavored Markdown which does not support specifying image size.
 To change image sizes in your notes, you have to define [custom stylesheet](https://developers.inkdrop.app/guides/style-tweaks).
-Add following rules to your `styles.less`:
+Add the following rules to your `styles.css`.
+These target both the inline image widgets in the editor (`.cm-image-widget-img`) and the rendered Markdown preview (`.mde-preview img`):
 
 ```css
-.editor {
-  .mde-cm-wrapper .CodeMirror .CodeMirror-linewidget,
-  .mde-preview {
-    img[alt$='#small'] {
-      max-width: 75% !important;
-      min-width: 200pt !important;
-    }
+.cm-editor .cm-image-widget-img[alt$='#small'],
+.mde-preview img[alt$='#small'] {
+  max-width: 75% !important;
+  min-width: 200pt !important;
+}
 
-    img[alt$='#x-small'] {
-      max-width: 50% !important;
-      min-width: 100pt !important;
-    }
+.cm-editor .cm-image-widget-img[alt$='#x-small'],
+.mde-preview img[alt$='#x-small'] {
+  max-width: 50% !important;
+  min-width: 100pt !important;
+}
 
-    img[alt$='#xx-small'] {
-      max-width: 25% !important;
-      min-width: 50pt !important;
-    }
-  }
+.cm-editor .cm-image-widget-img[alt$='#xx-small'],
+.mde-preview img[alt$='#xx-small'] {
+  max-width: 25% !important;
+  min-width: 50pt !important;
 }
 ```
 

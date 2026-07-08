@@ -12,8 +12,8 @@ Here's a small example, excerpted from Inkdrop's built-in keymap:
 
 ```js
 {
-  ".CodeMirror textarea": {
-    "enter": "editor:new-line"
+  ".cm-editor .cm-scroller": {
+    "enter": "editor:new-line-continue-markup"
   },
   "body .native-key-bindings": {
     "enter": "native!"
@@ -22,7 +22,7 @@ Here's a small example, excerpted from Inkdrop's built-in keymap:
 ```
 
 This keymap defines the meaning of `Enter` in two different contexts.
-In a normal editor, pressing `Enter` triggers the `editor:new-line` command, which causes the editor to insert a newline.
+In a normal editor, pressing `Enter` triggers the `editor:new-line-continue-markup` command, which inserts a new line (continuing the current list or block when there is one).
 But if the same keystroke occurs outside the editor, it instead triggers the native behavior.
 
 By default, `keymap.json` is loaded when Inkdrop is started.
