@@ -117,6 +117,10 @@ export const navigation = [
         href: '/reference/import-from-apple-notes',
       },
       {
+        title: 'Import notes from Notion',
+        href: '/reference/import-from-notion',
+      },
+      {
         title: 'Use behind web proxy',
         href: '/reference/use-behind-web-proxy',
       },
