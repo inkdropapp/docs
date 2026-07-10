@@ -121,6 +121,10 @@ export const navigation = [
         href: '/reference/import-from-notion',
       },
       {
+        title: 'Import notes from Bear',
+        href: '/reference/import-from-bear',
+      },
+      {
         title: 'Use behind web proxy',
         href: '/reference/use-behind-web-proxy',
       },
