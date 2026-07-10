@@ -113,6 +113,10 @@ export const navigation = [
         href: '/reference/import-from-evernote',
       },
       {
+        title: 'Import notes from Apple Notes',
+        href: '/reference/import-from-apple-notes',
+      },
+      {
         title: 'Use behind web proxy',
         href: '/reference/use-behind-web-proxy',
       },
