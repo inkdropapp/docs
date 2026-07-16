@@ -81,6 +81,10 @@ export const navigation = [
         href: '/reference/organize-notebooks',
       },
       {
+        title: 'Note templates',
+        href: '/reference/note-templates',
+      },
+      {
         title: 'Search and filter notes',
         href: '/reference/search-and-filter-notes',
       },
