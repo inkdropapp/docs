@@ -3,44 +3,49 @@ title: Resize images
 nextjs:
   metadata:
     title: Resize images
-    description: Inkdrop allows resizing images in Markdown notes by defining custom styles in the styles.css file for different size specifications
+    description: Control how large images render in your notes with Marp-style size specifiers and the image resize toolbar
 ---
 
-Inkdrop basically follows GitHub-flavored Markdown which does not support specifying image size.
-To change image sizes in your notes, you have to define [custom stylesheet](https://developers.inkdrop.app/guides/style-tweaks).
-Add the following rules to your `styles.css`.
-These target both the inline image widgets in the editor (`.cm-image-widget-img`) and the rendered Markdown preview (`.mde-preview img`):
+Inkdrop lets you control how large an image renders straight from Markdown, using **Marp-style image size specifiers**. Set a size with a quick toolbar or by typing the specifier yourself — no custom CSS or plugin required.{% .lead %}
 
-```css
-.cm-editor .cm-image-widget-img[alt$='#small'],
-.mde-preview img[alt$='#small'] {
-  max-width: 75% !important;
-  min-width: 200pt !important;
-}
+## Use the image resize toolbar
 
-.cm-editor .cm-image-widget-img[alt$='#x-small'],
-.mde-preview img[alt$='#x-small'] {
-  max-width: 50% !important;
-  min-width: 100pt !important;
-}
+![The image resize toolbar](/images/resize-images_toolbar.png)
 
-.cm-editor .cm-image-widget-img[alt$='#xx-small'],
-.mde-preview img[alt$='#xx-small'] {
-  max-width: 25% !important;
-  min-width: 50pt !important;
-}
-```
+The easiest way to resize an image is with the toolbar:
 
-With these rules defined, your images with `alt` attribute ending with `#small` will be rendered in small size.
-You can insert images in Markdown as following:
+1. Place the cursor anywhere inside an image in the editor.  
+   An **Image Size** toolbar appears above it.
+2. Choose a preset:
+   - **Auto** — the image's natural size (no specifier).
+   - **Small** — 30% of the available width.
+   - **Half** — 50% of the available width.
+   - **Full** — 100% of the available width.
+
+![The image resize example](/images/resize-images_example.png)
+
+The toolbar highlights the preset matching the image's current size and writes the specifier into the image for you.
+
+## Write size specifiers by hand
+
+You can also type the specifier into the image's alt text. Inkdrop follows the [Marp image syntax](https://marpit.marp.app/image-syntax) — set the width, the height, or both:
 
 ```markdown
-![image.jpg](inkdrop://file:srPsQH8nx)
-![image.jpg #small](inkdrop://file:srPsQH8nx)
-![image.jpg #x-small](inkdrop://file:srPsQH8nx)
-![image.jpg #xx-small](inkdrop://file:srPsQH8nx)
+![width:200px](inkdrop://file:srPsQH8nx)
+![height:120px](inkdrop://file:srPsQH8nx)
+![width:200px height:120px](inkdrop://file:srPsQH8nx)
+![width:50%](inkdrop://file:srPsQH8nx)
 ```
 
-The app will render like so:
+`width:` and `height:` have the shorthands `w:` and `h:`:
 
-![example](/images/resizing-images-example.png)
+```markdown
+![w:320 h:240](inkdrop://file:srPsQH8nx)
+```
+
+- A bare number is treated as pixels, so `w:320` is the same as `width:320px`.
+- Any caption text in the alt is preserved — `![Diagram w:50%](…)` keeps the “Diagram” label.
+
+### Supported units
+
+A size can be a percentage (`50%`), a pixel value (`200px` or a bare `200`), or any of these CSS length units: `px`, `pt`, `pc`, `in`, `cm`, `mm`, `em`, `ex`, `ch`. To return an image to its natural size, use the **Auto** preset or remove the specifier.

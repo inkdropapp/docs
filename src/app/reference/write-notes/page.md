@@ -14,10 +14,23 @@ Inkdrop supports both standard Markdown syntax and the
 
 To create a note:
 
-- Click {% icon name="pencil-write" /%} in the upper-right corner of the note list.  
-  You can also use the {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%} shortcut.
+1. Click {% icon name="pencil-write" /%} in the upper-right corner of the note list, or press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%}.  
+   Inkdrop opens the **Create a new note** picker.
+2. Select **Blank note** — or press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%} again — to start with an untitled empty note.
 
-An untitled empty note is created. Name the note, so it'll be easier to look for later.
+Name the note, so it'll be easier to look for later.
+
+### Start from a template
+
+The **Create a new note** picker also lets you start from a [template](/reference/note-templates) — a ready-made note for a common task, such as a daily report, implementation plan, or a bug-fix write-up.
+
+![The Create a new note template picker](/images/write-notes_template-picker.png)
+
+1. Open the picker by clicking {% icon name="pencil-write" /%} or pressing {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%}.
+2. Type in the search field to filter the list, or use the {% kbd s="Up" /%} / {% kbd s="Down" /%} arrow keys to browse. The pane on the right previews the selected template.
+3. Press {% kbd s="Enter" /%}, or click a template, to create a note from it.
+
+Recently used templates appear at the top of the list for quick access. See [Note templates](/reference/note-templates) for the full list of built-in templates and how to create your own.
 
 ## Delete notes
 
