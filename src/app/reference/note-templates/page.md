@@ -22,18 +22,17 @@ Selecting a template here opens it for viewing or editing — it does **not** cr
 
 ## Create a note from a template
 
-When you create a note, Inkdrop opens the **Create a new note** picker, where you can start from a blank note or from a template.
-
 ![The Create a new note picker](/images/write-notes_template-picker.png)
 
-1. Click {% icon name="pencil-write" /%} in the upper-right corner of the note list, or press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%}.
-2. Type in the search field to filter the list, or use the {% kbd s="Up" /%} / {% kbd s="Down" /%} arrow keys to browse. The pane on the right previews the selected template.
-3. Press {% kbd s="Enter" /%}, or click a template, to create a note from it.
+1. Create a note — click {% icon name="pencil-write" /%} in the upper-right corner of the note list, or press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%}. Inkdrop opens a new, empty, untitled note.
+2. With the note still empty, press {% kbd s="Command+T" /%} / {% kbd s="Ctrl+T" /%} — or click **Choose a template** in the editor's placeholder text — to open the **Choose a template** picker.
+3. Type in the search field to filter the list, or use the {% kbd s="Up" /%} / {% kbd s="Down" /%} arrow keys to browse. The pane on the right previews the selected template.
+4. Press {% kbd s="Enter" /%}, or click a template, to apply it.
 
-Your most recently used templates appear in a **Recently used** section at the top of the list, so the templates you rely on stay within easy reach.
+The template's content fills in the note in place. Any tags or [status](/reference/note-statuses) you'd already set on the note are kept — the template only adds to them, it never clears what's there.
 
 {% callout title="Tip" %}
-To start with a plain, empty note, select **Blank note** at the top of the list, or just press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%} again.
+**Choose a template** is only offered while the note is still empty — once you start typing, use the **Templates** section on the sidebar instead to copy content in manually.
 {% /callout %}
 
 ## Built-in templates
