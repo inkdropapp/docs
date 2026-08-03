@@ -1,5 +1,8 @@
 import { Callout } from '@/components/Callout'
+import { Carousel, CarouselItem } from '@/components/Carousel'
 import { Kbd } from '@/components/Kbd'
+import { Mark } from '@/components/Mark'
+import { Underline } from '@/components/Underline'
 import { Checkmark } from '@/components/Checkmark'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { ThumbLink, ThumbLinks } from '@/components/ThumbLinks'
@@ -115,6 +118,25 @@ const tags = {
   },
   sup: {
     render: Superscript,
+  },
+  carousel: {
+    render: Carousel,
+  },
+  'carousel-item': {
+    render: CarouselItem,
+    attributes: {
+      index: { type: Number, required: true },
+      image: { type: String },
+      video: { type: String },
+      alt: { type: String, required: true },
+      title: { type: String },
+    },
+  },
+  mark: {
+    render: Mark,
+  },
+  underline: {
+    render: Underline,
   },
 }
 

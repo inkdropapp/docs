@@ -39,8 +39,8 @@ export const navigation = [
       },
       {
         title: 'How tech notes can boost your productivity',
-        href: 'https://www.inkdrop.app/note-taking-tips/',
-        cover: 'https://www.inkdrop.app/og-cover-image_tips.jpg',
+        href: '/start-guide/note-taking-tips',
+        cover: '/images/note-taking-tips_cover.jpg',
       },
       {
         title: 'How to take notes while learning a new technology',

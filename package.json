@@ -21,6 +21,8 @@
     "@tailwindcss/typography": "^0.5.19",
     "@types/react-highlight-words": "^0.20.1",
     "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "fast-glob": "^3.3.3",
     "fathom-client": "^3.7.2",
     "flexsearch": "^0.8.212",

@@ -231,5 +231,5 @@ Other possibilities would be:
 - Code reviews
 - etc.
 
-Just note that Inkdrop is a plain-text Markdown editor, which may not fit every type of note but would work best for coding-related notes. This is because of the decision of '[The right tool for the right task](https://www.inkdrop.app/note-taking-tips/)' philosophy.
+Just note that Inkdrop is a plain-text Markdown editor, which may not fit every type of note but would work best for coding-related notes. This is because of the decision of '[The right tool for the right task](/start-guide/note-taking-tips#the-right-tool-for-the-right-task)' philosophy.
 So, you might want to consider using another app for writing non-linear thoughts and image-heavy notes.
