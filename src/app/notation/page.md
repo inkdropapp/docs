@@ -72,8 +72,6 @@ You can delete your account from [here](https://my.inkdrop.app/account/delete) a
 
 Please make sure that the app works on your environment before making a payment during the trial period.
 
-- macOS 12+
-- Windows 10+
-- Linux (Ubuntu 20.04+)
-- iOS 16+
-- Android 14+
+詳しい動作環境については[こちら](/faq)をご覧ください。
+
+For more information about the supported platforms, please refer to [here](/faq).
