@@ -192,6 +192,10 @@ export const navigation = [
         href: '/reference/troubleshooting',
       },
       {
+        title: 'Migrate from v5 to v6',
+        href: '/reference/migrate-from-v5-to-v6',
+      },
+      {
         title: 'Recover lost password',
         href: '/reference/recover-password',
       },
