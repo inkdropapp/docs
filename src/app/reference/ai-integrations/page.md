@@ -6,10 +6,6 @@ nextjs:
     description: Connect Inkdrop to AI providers like Anthropic or any OpenAI-compatible service using your own API key to enable AI-powered features.
 ---
 
-{% callout type="warning" %}
-Available on [v6 (canary)](https://my.inkdrop.app/download/canary)
-{% /callout %}
-
 Inkdrop can integrate with AI providers to unlock AI-powered features such as the [inline AI assistant](/reference/inline-ai-assistant) and [next edit suggestions](/reference/next-edit-suggestions).
 For privacy and security reasons, Inkdrop doesn't include a built-in AI provider—you bring your own API key.
 
