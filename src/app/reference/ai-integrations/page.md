@@ -9,6 +9,8 @@ nextjs:
 Inkdrop can integrate with AI providers to unlock AI-powered features such as the [inline AI assistant](/reference/inline-ai-assistant) and [next edit suggestions](/reference/next-edit-suggestions).
 For privacy and security reasons, Inkdrop doesn't include a built-in AI provider—you bring your own API key.
 
+These settings only cover the AI features built into the app. To let an external AI agent such as Claude Code read and write your notes, see [Integrate AI agents with the MCP Server](/reference/mcp-server) instead.
+
 ## Bring your own keys
 
 If you already have an API key for a provider like Anthropic, or a self-hosted OpenAI-compatible provider, you can add it to Inkdrop.

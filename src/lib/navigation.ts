@@ -93,6 +93,27 @@ export const navigation = [
     ],
   },
   {
+    title: 'Artificial Intelligence',
+    links: [
+      {
+        title: 'Integrate AI agents with the MCP Server',
+        href: '/reference/mcp-server',
+      },
+      {
+        title: 'Set up AI integrations',
+        href: '/reference/ai-integrations',
+      },
+      {
+        title: 'Inline AI assistant',
+        href: '/reference/inline-ai-assistant',
+      },
+      {
+        title: 'Next edit suggestions',
+        href: '/reference/next-edit-suggestions',
+      },
+    ],
+  },
+  {
     title: 'Customization',
     links: [
       { title: 'Customize keybindings', href: '/reference/key-customizations' },
@@ -107,10 +128,6 @@ export const navigation = [
       {
         title: 'Share notes on the web',
         href: '/reference/share-notes-on-the-web',
-      },
-      {
-        title: 'Set up AI integrations',
-        href: '/reference/ai-integrations',
       },
       {
         title: 'Import notes from Evernote',
@@ -150,10 +167,6 @@ export const navigation = [
         href: '/reference/revision-history',
       },
       {
-        title: 'Integrate AI agents with the MCP Server',
-        href: '/reference/mcp-server',
-      },
-      {
         title: 'Resize images',
         href: '/reference/resize-images',
       },
@@ -164,14 +177,6 @@ export const navigation = [
       {
         title: 'Integrate with Raycast',
         href: '/reference/integrate-with-raycast',
-      },
-      {
-        title: 'Inline AI assistant',
-        href: '/reference/inline-ai-assistant',
-      },
-      {
-        title: 'Next edit suggestions',
-        href: '/reference/next-edit-suggestions',
       },
     ],
   },
