@@ -100,6 +100,10 @@ export const navigation = [
         href: '/reference/mcp-server',
       },
       {
+        title: 'Teach AI agents with Agent Skills',
+        href: '/reference/agent-skills',
+      },
+      {
         title: 'Set up AI integrations',
         href: '/reference/ai-integrations',
       },
