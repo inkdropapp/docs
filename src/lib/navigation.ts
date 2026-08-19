@@ -62,6 +62,10 @@ export const navigation = [
         href: '/reference/write-notes',
       },
       {
+        title: 'Fuzzy finder Telescope',
+        href: '/reference/fuzzy-finder-telescope',
+      },
+      {
         title: 'Basic writing and formatting syntax',
         href: '/writing/basic-writing-and-formatting-syntax',
       },
