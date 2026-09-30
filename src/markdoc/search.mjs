@@ -53,7 +53,10 @@ export default function withSearch(nextConfig = {}) {
             let pagesDir = path.resolve('./src/app')
             this.addContextDependency(pagesDir)
 
-            let files = glob.sync('**/page.md', { cwd: pagesDir })
+            let files = glob.sync('**/page.md', {
+              cwd: pagesDir,
+              ignore: ['examples/**'],
+            })
             let data = files.map((file) => {
               let url =
                 file === 'page.md' ? '/' : `/${file.replace(/\/page\.md$/, '')}`
