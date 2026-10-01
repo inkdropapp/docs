@@ -41,14 +41,11 @@ To create an account, go to the [sign-up](https://my.inkdrop.app/signup) page.
 
 Once you've created an account, Inkdrop sends a verification link to the specified email. What you need to do:
 
-{% callout type="warning" title="For Windows users" %}
-There're 2 options for Windows users: installer and zip archive. Prefer the installer option as it automatically updates the app once the new versions are released.
-{% /callout %}
-
 1. Go to the link to verify the account.  
-   You're redirected to the Inkdrop website.
+   You're redirected to the Inkdrop website.  
+   The link expires in 3 days. If it has expired, sign in to your account to have a new one sent.
 2. Select **Download the client app**.
-3. Select an installer appropriate for your operating system.  
+3. Select an installer appropriate for your operating system and CPU architecture.  
    The download will start.
 
 Alternatively, you can sign in to your Inkdrop account and select **Download app** as shown in the image below:
@@ -59,24 +56,52 @@ Then select an installer appropriate for your operating system.
 
 ![Download](/images/quick-start-guide_download2.png)
 
+The following builds are available:
+
+| Platform | Architectures                                 | Formats                                                |
+| -------- | --------------------------------------------- | ------------------------------------------------------ |
+| macOS    | Apple Silicon (`arm64`), Intel (`x64`)        | `.dmg`, `.zip`                                         |
+| Windows  | `x64`, `arm64`                                | Installer (`.exe`), `.zip`                             |
+| Linux    | `x64` (`amd64`/`x86_64`), `arm64` (`aarch64`) | AppImage, Snap (`amd64` only), `.deb`, `.zip`, Flatpak |
+
+Files are named like `inkdrop-<version>-<arch>-<platform>.<ext>`, for example `inkdrop-6.0.0-arm64-mac.dmg`.
+
 ## Install Inkdrop
 
 ### macOS
 
-Once you downloaded the `Inkdrop-x.y.z-Mac.zip` file:
+Download the `.dmg` file for your Mac. Pick `arm64` for Apple Silicon (M-series) Macs and `x64` for Intel Macs.
 
-1. Double-click the downloaded file to extract the application.
-2. Drag extracted application into your **Applications** folder.
+1. Double-click the downloaded `inkdrop-x.y.z-<arch>-mac.dmg` file to open it.
+2. Drag the Inkdrop application into your **Applications** folder.
+
+If you downloaded the `.zip` file instead, double-click it to extract the application and then move it into your **Applications** folder.
+
+#### via Homebrew (optional)
+
+Inkdrop is also available as a [Homebrew cask](https://formulae.brew.sh/cask/inkdrop):
+
+```shell
+brew install --cask inkdrop
+```
+
+{% callout title="" %}
+The Homebrew cask is maintained by the community, so it may lag behind the latest release.
+{% /callout %}
 
 ### Windows
 
-Once you've downloaded the `Setup.exe` file, double-click it and follow the installation instruction.
+{% callout type="warning" title="Installer or zip archive" %}
+There're 2 options for Windows users: installer and zip archive. Prefer the installer as it automatically updates the app once new versions are released.
+{% /callout %}
+
+Once you've downloaded the `inkdrop-x.y.z-<arch>-windows.exe` file, double-click it and follow the installation instructions. Pick `arm64` for Windows on ARM devices and `x64` otherwise.
 
 ### Linux
 
-You can install Inkdrop via Snap or package.
+You can install Inkdrop on Linux via an AppImage, Snap, a Debian package, a zip archive, or a Flatpak bundle. Each format is available for both `x64` and `arm64`, except Snap, which is available for `amd64` only.
 
-#### via Snap
+#### Snap
 
 {% callout title="" %}
 If you don't have `snapd` yet, please [install it](https://snapcraft.io/docs/core/install) beforehand.
@@ -96,28 +121,40 @@ You can easily update the app by running the command below:
 sudo snap refresh inkdrop
 ```
 
-#### via Package
+#### Debian, Ubuntu, or related systems
 
-To install Inkdrop on Linux, you can download a Debian package, an RPM package, or a zip archive.
+Download the `.deb` package (`amd64` or `arm64`) and install it:
 
-{% callout type="warning" %}
-These packages don't support auto-updates! You'll need to repeat the installation process to update to the latest version. Visit the **[What's new page](https://forum.inkdrop.app/c/announcements)** to keep up with the latest bug fixes and improvements.
+```bash
+sudo apt install ./inkdrop-x.y.z-amd64-linux.deb
+```
+
+`apt` installs any missing dependencies automatically.
+
+#### AppImage
+
+AppImage runs on most distributions without installation. Make the file executable and run it:
+
+```bash
+chmod +x inkdrop-x.y.z-x86_64-linux.AppImage
+./inkdrop-x.y.z-x86_64-linux.AppImage
+```
+
+#### Flatpak
+
+{% callout title="" %}
+If you don't have Flatpak yet, please [set it up](https://flatpak.org/setup/) beforehand.
 {% /callout %}
 
-##### Debian, Ubuntu, or related systems
+Download the `.flatpak` bundle (`x86_64` or `aarch64`) and install it:
 
 ```bash
-wget https://api.inkdrop.app/download/linux/deb -O /tmp/inkdrop.deb && sudo dpkg -i /tmp/inkdrop.deb && rm /tmp/inkdrop.deb
-
-# Install Inkdrop's dependencies if they are missing
-sudo apt-get -f install
+flatpak install --user ./inkdrop-x.y.z-x86_64-linux.flatpak
 ```
 
-##### RedHat, Fedora, or related systems
+#### Zip archive
 
-```bash
-wget https://api.inkdrop.app/download/linux/rpm -O /tmp/inkdrop.rpm && sudo yum install /tmp/inkdrop.rpm && rm /tmp/inkdrop.rpm
-```
+Extract the zip archive anywhere you like and run the `inkdrop` executable inside it.
 
 #### Add custom Electron flags
 
@@ -147,9 +184,8 @@ Exec=inkdrop --enable-features=UseOzonePlatform --ozone-platform=wayland --enabl
 Once you've installed Inkdrop, sign in to your account. To do that:
 
 1. Open the app. You'll see a login screen.
-2. Enter your credentials and select **LOG IN**.
-
-![Login](/images/quick-start-guide_login.png)
+2. Enter your email address and password, and select **Log in**.
+3. If you've enabled [two-factor authentication](/security#two-factor-authentication), enter the 6-digit code from your authenticator app and select **Verify**.
 
 ---
 
