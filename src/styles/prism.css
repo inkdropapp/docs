@@ -45,3 +45,8 @@ pre[class*='language-'] {
 .token.combinator {
   color: var(--color-slate-400);
 }
+
+/* Prism's markdown `table` token class collides with Tailwind's `table` utility (display: table) */
+.token.table {
+  display: inline;
+}

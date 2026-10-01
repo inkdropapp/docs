@@ -19,6 +19,7 @@ import { LibraryIcon } from '@/components/icons/LibraryIcon'
 import { Login1Icon } from '@/components/icons/Login1Icon'
 import { NavigationMenuHorizontalBoldIcon } from '@/components/icons/NavigationMenuHorizontalBoldIcon'
 import { NavigationMenuVerticalIcon } from '@/components/icons/NavigationMenuVerticalIcon'
+import { Pen1Icon } from '@/components/icons/Pen1Icon'
 import { PencilWriteIcon } from '@/components/icons/PencilWriteIcon'
 import { RabbitIcon } from '@/components/icons/RabbitIcon'
 import { ResearchIcon } from '@/components/icons/ResearchIcon'
@@ -34,6 +35,7 @@ const svgIcons = {
   'arrow-left-1': ArrowLeft1Icon,
   'arrow-circle-right': ArrowCircleRightIcon,
   'pencil-write': PencilWriteIcon,
+  'pen-1': Pen1Icon,
   'add-circle': AddCircleIcon,
   'book-close-2': BookClose2Icon,
   bonsai: BonsaiIcon,
