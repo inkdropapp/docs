@@ -14,7 +14,7 @@ Now that you understand how to create notes using Markdown in Inkdrop, let's mov
 
 ## Sidebar: A note organization portal
 
-![sidebar](/images/basic-usage_cover.png)
+![sidebar](/images/how-to-organize-notes_sidebar.png)
 
 The sidebar is the leftmost section of the app.
 It is more than just a section of the app; it's where all your organizational tools are located.
@@ -23,6 +23,8 @@ Inkdrop provides three ways to organize your notes:
 - **Notebooks** are like folders that store your notes. You can nest notebooks in one another as deeply as needed.
 - **Statuses** help you treat notes as tasks and, for example, display only active or completed ones.
 - **Tags** are like labels that let you link notes with one another. For example, if they relate to a common topic.
+
+The sidebar also gives you quick access to your [note templates](/reference/note-templates) under **Templates**.
 
 Press {% kbd %}Command+/{% /kbd %} or {% kbd %}Ctrl+/{% /kbd %} to toggle the sidebar.
 
@@ -35,7 +37,7 @@ Every notebook covers a specific topic and can be divided into sub-notebooks.
 
 To create a new notebook, click the {% icon name="add-circle" /%} icon next to the **Notebooks** title:
 
-![Add notebook](/images/organize-notebooks_add.png)
+![Add notebook](/images/how-to-organize-notes_add-notebook.png)
 
 To create a sub notebook:
 
@@ -46,35 +48,37 @@ To create a sub notebook:
 
 ### Move notes into a notebook
 
-![how to move notes](/images/low-friction-note-taking-system_move-notes.png)
+![how to move notes](/images/how-to-organize-notes_move-notes.png)
 
 There are a few ways to move notes into a notebook (See the above screenshot):
 
 - **A.** Click the notebook dropdown menu on the editor
-- **B.** Drag & drop the note on the note list into the notebook on the sidebar
-- **C.** Press {%kbd s="m" /%} while the focus is on the note list
+- **B.** Press {% kbd s="Command+Ctrl+M" /%} / {% kbd s="Ctrl+Alt+M" /%} while the focus is on the editor
+- **C.** Drag & drop the note on the note list into the notebook on the sidebar
+- **D.** Press {% kbd s="m" /%} while the focus is on the note list
 
 ### Configure the default notebook
 
 When creating a new note in the **All Notes** section, it will be created in the default notebook.
 You may want to change it after creating notebooks.
-It can be changed from **Inkdrop** > **Preferences** > **General** > **Default notebook**.
+It can be changed from **Inkdrop** > **Preferences** > **General** > **Default notebook** on macOS, or **File** > **Settings** > **General** > **Default notebook** on Windows and Linux.
 
-![preferences](/images/organize-notebooks_default-notebook.png)
+![preferences](/images/how-to-organize-notes_default-notebook.png)
 
 ## Note statuses
 
 Inkdrop can have several statuses for your notes, including 'Active', 'On Hold', 'Completed', and 'Dropped', which help you treat notes as tasks.
 
-- **Active**: For tasks you’re currently working.
+- **Active**: For tasks you’re currently working on.
 - **On Hold**: When you’ve paused work on a task.
 - **Completed**: For tasks you’ve successfully finished.
 - **Dropped**: For tasks you’ve decided to stop pursuing.
 
-The notes with 'Completed' and 'Dropped' statuses are hidden in the note list by default when you view them via a notebook so you can focus on the active issues.
-You can view them by clicking the **Completed** and **Dropped** tabs on the sidebar.
+Notes with 'Completed' and 'Dropped' statuses are hidden from the note list by default — in **All Notes**, notebooks, and tags — so you can focus on the active issues.
+They still appear when you search by keyword.
+To view them, click **Completed** or **Dropped** in the **Status** section of the sidebar.
 
-![Note status](/images/issue-driven-note-taking_note_status.png)
+![Note status](/images/how-to-organize-notes_note-status.png)
 
 ### Assign a status to a note
 
@@ -82,7 +86,17 @@ To add a status to a note:
 
 1. Open the note that you want to mark with status.
 2. Under the note's title, click **Status**.
-3. Select a status from the list
+3. Select a status from the list.
+
+You can also change the status with keyboard shortcuts while editing a note:
+
+| Status    | macOS                         | Windows/Linux              |
+| --------- | ----------------------------- | -------------------------- |
+| None      | {% kbd s="Command+Ctrl+1" /%} | {% kbd s="Shift+Alt+1" /%} |
+| Active    | {% kbd s="Command+Ctrl+2" /%} | {% kbd s="Shift+Alt+2" /%} |
+| On Hold   | {% kbd s="Command+Ctrl+3" /%} | {% kbd s="Shift+Alt+3" /%} |
+| Completed | {% kbd s="Command+Ctrl+4" /%} | {% kbd s="Shift+Alt+4" /%} |
+| Dropped   | {% kbd s="Command+Ctrl+5" /%} | {% kbd s="Shift+Alt+5" /%} |
 
 ## Tags
 
@@ -98,19 +112,21 @@ Tags can reflect anything from importance levels to specific subjects like frame
 To tag a note:
 
 1. Open the note you want to tag.
-2. Under the note's title, enter the tag name in the **Add Tags** field.  
+2. Under the note's title, enter the tag name in the **Add Tags** field (**A**).  
    Inkdrop suggests already existing tags as you enter.
 3. Press {% kbd s="Enter" /%} to add the tag to the note.
 
 ![Tags](/images/how-to-organize-notes_tags.png)
 
-You can quickly filter by a tag by clicking one on the note list.
+The tags associated with each note are shown on the note list (**B**).
+Click a tag on a note in the note list to filter by that tag (**C**).
 By selecting multiple tags, you can narrow down your note list to include only the notes that meet all selected criteria, making it even easier to find exactly what you’re looking for.
+To filter by only the clicked tag and clear the others, hold {% kbd s="Option" /%} / {% kbd s="Alt" /%} while clicking.
 
 ## Go back/forth with keyboard, mouse, or trackpad
 
 As you view your notes, Inkdrop remembers in what order you opened them. It lets you go through the history of the viewed notes back and forth.
-There're several options to see the viewed notes.
+There are several options to see the viewed notes.
 
 For the instructions on how to configure, see [this page](/reference/main-user-interface#browse-viewed-notes).
 
@@ -125,7 +141,7 @@ For the instructions on how to configure, see [this page](/reference/main-user-i
 
 To navigate between notes via the app menu:
 
-- Click **View** and then select **Back** or **Forward**.
+- Click **Navigate** and then select **Back** or **Forward**.
 
 ### Via mouse buttons
 
@@ -150,3 +166,4 @@ To display entities of a specific notebook:
 
 - Hover over the notebook and click **Detail** next to its name. You can also open a notebook and press {% kbd s="Enter" /%}.  
   The sidebar only shows sub-notebooks, statuses, and tags of the selected notebook so you can focus on specific information.
+- Or, select **Navigate** > **Go to Notebook/Workspace...** to search notebooks with [Telescope](/reference/fuzzy-finder-telescope#jump-to-a-notebook), and press {% kbd s="Command+Enter" /%} / {% kbd s="Ctrl+Enter" /%} to open one as a workspace.
