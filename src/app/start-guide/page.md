@@ -58,11 +58,11 @@ Then select an installer appropriate for your operating system.
 
 The following builds are available:
 
-| Platform | Architectures                                 | Formats                                                |
-| -------- | --------------------------------------------- | ------------------------------------------------------ |
-| macOS    | Apple Silicon (`arm64`), Intel (`x64`)        | `.dmg`, `.zip`                                         |
-| Windows  | `x64`, `arm64`                                | Installer (`.exe`), `.zip`                             |
-| Linux    | `x64` (`amd64`/`x86_64`), `arm64` (`aarch64`) | AppImage, Snap (`amd64` only), `.deb`, `.zip`, Flatpak |
+| Platform | Architectures                                 | Formats                                       |
+| -------- | --------------------------------------------- | --------------------------------------------- |
+| macOS    | Apple Silicon (`arm64`), Intel (`x64`)        | `.dmg`, `.zip`                                |
+| Windows  | `x64`, `arm64`                                | Installer (`.exe`), `.zip`                    |
+| Linux    | `x64` (`amd64`/`x86_64`), `arm64` (`aarch64`) | AppImage, Snap (`amd64` only), `.deb`, `.zip` |
 
 Files are named like `inkdrop-<version>-<arch>-<platform>.<ext>`, for example `inkdrop-6.0.0-arm64-mac.dmg`.
 
@@ -99,7 +99,7 @@ Once you've downloaded the `inkdrop-x.y.z-<arch>-windows.exe` file, double-click
 
 ### Linux
 
-You can install Inkdrop on Linux via an AppImage, Snap, a Debian package, a zip archive, or a Flatpak bundle. Each format is available for both `x64` and `arm64`, except Snap, which is available for `amd64` only.
+You can install Inkdrop on Linux via an AppImage, Snap, a Debian package, or a zip archive. Each format is available for both `x64` and `arm64`, except Snap, which is available for `amd64` only. Inkdrop is also available on [Flathub](https://flathub.org/apps/app.inkdrop.Inkdrop).
 
 #### Snap
 
@@ -146,10 +146,16 @@ chmod +x inkdrop-x.y.z-x86_64-linux.AppImage
 If you don't have Flatpak yet, please [set it up](https://flatpak.org/setup/) beforehand.
 {% /callout %}
 
-Download the `.flatpak` bundle (`x86_64` or `aarch64`) and install it:
+The app is available on [Flathub](https://flathub.org/apps/app.inkdrop.Inkdrop). To install it, run the following command in the terminal:
 
-```bash
-flatpak install --user ./inkdrop-x.y.z-x86_64-linux.flatpak
+```shell
+flatpak install flathub app.inkdrop.Inkdrop
+```
+
+You can update the app by running the command below:
+
+```shell
+flatpak update app.inkdrop.Inkdrop
 ```
 
 #### Zip archive
