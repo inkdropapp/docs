@@ -121,7 +121,7 @@ A supported color model cannot have any leading or trailing spaces within the ba
 
 ## Links
 
-You can create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL in parentheses `( )`. You can also use the keyboard shortcut {% kbd s="Command+K" /%}(Mac) or {% kbd s="Ctrl+K" /%}(Windows/Linux) to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
+You can create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL in parentheses `( )`. You can also use the keyboard shortcut {% kbd s="Command+Alt+K" /%}(Mac) or {% kbd s="Ctrl+Alt+K" /%}(Windows/Linux) to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
 
 `This note was written using [Inkdrop](https://www.inkdrop.app/).`
 
