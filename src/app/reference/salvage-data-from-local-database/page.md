@@ -14,7 +14,7 @@ It stores your data without encrypting in local database.
 You can use our tool to extract data as [backup files](/reference/data-backup) from it.
 Follow the below steps to try that.
 
-## Install Inkdrop local database extractor
+## Inkdrop local database extractor
 
 The tool is published on npm as [inkdrop-localdb-extract](https://www.npmjs.com/package/inkdrop-localdb-extract).
 
@@ -25,21 +25,15 @@ The tool is published on npm as [inkdrop-localdb-extract](https://www.npmjs.com/
 
 {% callout title="Using Inkdrop v5 or earlier?" %}
 Inkdrop v5 and earlier store the local database in a different format.
-Install the previous version of the tool instead: `npm install -g inkdrop-localdb-extract@0`, which requires NodeJS >= 12.
+Use the previous version of the tool instead by running `npx inkdrop-localdb-extract@0`, which requires NodeJS >= 12.
 {% /callout %}
-
-### How to install
-
-```sh
-npm install -g inkdrop-localdb-extract
-```
 
 ## How to salvage data
 
-You got a command `inkdrop-localdb-extract`:
+You can run the tool with `npx` without installing it:
 
 ```sh
-inkdrop-localdb-extract
+npx inkdrop-localdb-extract --help
 
 Options:
       --version  Show version number                                   [boolean]
@@ -62,7 +56,7 @@ Your database file can be found at the following path:
 For example:
 
 ```sh
-inkdrop-localdb-extract --src /path/to/db/<USER_ID>.sqlite --dest /path/to/store
+npx inkdrop-localdb-extract --src /path/to/db/<USER_ID>.sqlite --dest /path/to/store
 ```
 
 Then, you should get [backup files](/reference/data-backup) in the specified destination directory.
