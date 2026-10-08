@@ -20,7 +20,13 @@ The tool is published on npm as [inkdrop-localdb-extract](https://www.npmjs.com/
 
 ### Requirements
 
-- [NodeJS](https://nodejs.org/) >= 12
+- [NodeJS](https://nodejs.org/) >= 24.16
+- Inkdrop v6 or later
+
+{% callout title="Using Inkdrop v5 or earlier?" %}
+Inkdrop v5 and earlier store the local database in a different format.
+Install the previous version of the tool instead: `npm install -g inkdrop-localdb-extract@0`, which requires NodeJS >= 12.
+{% /callout %}
 
 ### How to install
 
@@ -36,28 +42,39 @@ You got a command `inkdrop-localdb-extract`:
 inkdrop-localdb-extract
 
 Options:
-  --version   Show version number                                      [boolean]
-  -s, --src   The path to the source database directory
-              (ex: "~/Library/Application Support/inkdrop/db/56ab08396cec2c0f87492c9a0f005f86")   [required]
-  -d, --dest  The path to the destination directory                   [required]
-  --help      Show help                                                [boolean]
+      --version  Show version number                                   [boolean]
+  -s, --src      The path to the source database file
+                 (ex: "~/Library/Application
+                 Support/inkdrop/db/56ab08396cec2c0f87492c9a0f005f86.sqlite")
+                                                             [string] [required]
+  -d, --dest     The path to the destination directory       [string] [required]
+      --help     Show help                                             [boolean]
 ```
 
-Your data directory can be found at the following path:
+Your database file can be found at the following path:
 
-- on macOS: `~/Library/Application Support/inkdrop/db/<USER_ID>`
-- on Windows: `%APPDATA%\inkdrop\db\<USER_ID>`
-- on Linux: `~/.config/inkdrop/db/<USER_ID>`
+- on macOS: `~/Library/Application Support/inkdrop/db/<USER_ID>.sqlite`
+- on Windows: `%APPDATA%\inkdrop\db\<USER_ID>.sqlite`
+- on Linux: `~/.config/inkdrop/db/<USER_ID>.sqlite`
 
 `USER_ID` looks something like `56ab08396cec2c0f87492c9a0f005f86`.
 
 For example:
 
 ```sh
-inkdrop-localdb-extract --src /path/to/db --dest /path/to/store
+inkdrop-localdb-extract --src /path/to/db/<USER_ID>.sqlite --dest /path/to/store
 ```
 
 Then, you should get [backup files](/reference/data-backup) in the specified destination directory.
+The tool opens the database in read-only mode, so it never modifies your local data.
+
+### Deleted notes
+
+The tool also salvages notes, notebooks, tags, and files that you deleted on this device.
+Their last revisions before the deletion are exported into the `_deleted` folder.
+If you want to restore any of them, move the files from the `_deleted` folder to the `data` folder before restoring.
+
+Documents deleted on another device can't be salvaged, because only their deletion records are synced to this device.
 
 ## Migrate data to new account
 
