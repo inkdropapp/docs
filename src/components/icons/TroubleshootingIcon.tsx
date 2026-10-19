@@ -1,6 +1,4 @@
-export function TroubleshootingIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>,
-) {
+export function TroubleshootingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg fill="none" viewBox="0 0 24 24" {...props}>
       <path

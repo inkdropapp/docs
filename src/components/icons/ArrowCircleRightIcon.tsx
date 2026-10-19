@@ -1,6 +1,4 @@
-export function ArrowCircleRightIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>,
-) {
+export function ArrowCircleRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" strokeWidth={1.5} {...props}>
       <path

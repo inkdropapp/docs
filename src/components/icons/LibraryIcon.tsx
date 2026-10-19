@@ -23,11 +23,7 @@ export function LibraryIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="M23.5 12.5v10c0 0.2652 -0.1054 0.5196 -0.2929 0.7071s-0.4419 0.2929 -0.7071 0.2929h-21c-0.26522 0 -0.51957 -0.1054 -0.707107 -0.2929C0.605357 23.0196 0.5 22.7652 0.5 22.5v-10h23Z"
         strokeWidth={1}
       ></path>
-      <path
-        fill="#b2b2b2"
-        d="M23.5 12.499H0.5v2.836h23v-2.836Z"
-        strokeWidth={1}
-      ></path>
+      <path fill="#b2b2b2" d="M23.5 12.499H0.5v2.836h23v-2.836Z" strokeWidth={1}></path>
       <path
         stroke="#191919"
         strokeLinecap="round"

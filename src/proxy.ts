@@ -1,10 +1,10 @@
 import { NextResponse, type NextRequest } from 'next/server'
 
 function quality(accept: string, type: string) {
-  for (let entry of accept.split(',')) {
-    let [mediaType, ...params] = entry.trim().split(';')
+  for (const entry of accept.split(',')) {
+    const [mediaType, ...params] = entry.trim().split(';')
     if (mediaType.trim().toLowerCase() !== type) continue
-    let q = params.find((param) => param.trim().startsWith('q='))
+    const q = params.find((param) => param.trim().startsWith('q='))
     return q ? Number(q.trim().slice(2)) : 1
   }
   return 0
@@ -13,15 +13,13 @@ function quality(accept: string, type: string) {
 // Agents asking for Markdown via `Accept: text/markdown` get the `.md` version
 // of a page at its regular URL, while browsers keep getting HTML
 export function proxy(request: NextRequest) {
-  let accept = request.headers.get('accept') ?? ''
-  let markdown = quality(accept, 'text/markdown')
+  const accept = request.headers.get('accept') ?? ''
+  const markdown = quality(accept, 'text/markdown')
   if (markdown === 0 || markdown < quality(accept, 'text/html')) {
     return NextResponse.next()
   }
 
-  let response = NextResponse.rewrite(
-    new URL(`/raw-md${request.nextUrl.pathname}`, request.url),
-  )
+  const response = NextResponse.rewrite(new URL(`/raw-md${request.nextUrl.pathname}`, request.url))
   response.headers.set('Vary', 'Accept')
   return response
 }

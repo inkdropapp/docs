@@ -11,7 +11,6 @@ import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
-import { Footer } from './Footer'
 import { SvgIcon } from '@/components/SvgIcon'
 
 function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -23,7 +22,7 @@ function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function Header() {
-  let [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     function onScroll() {
@@ -60,17 +59,12 @@ function Header() {
       </div>
       <div className="relative flex basis-0 items-center justify-end gap-5 sm:gap-7 md:grow">
         <ThemeSelector className="relative z-10" />
-        <Link
-          href="https://github.com/inkdropapp/docs"
-          className="group"
-          aria-label="GitHub"
-        >
+        <Link href="https://github.com/inkdropapp/docs" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
         <Link
           href="https://my.inkdrop.app/"
-          className="inline-flex flex-nowrap items-center gap-1 whitespace-nowrap rounded-full bg-white px-3 py-1 text-sm text-sky-500 ring-1 ring-sky-300 hover:bg-sky-100 hover:text-sky-600 hover:ring-sky-500 dark:bg-sky-400/10 dark:text-sky-400 dark:ring-inset dark:ring-sky-400/20 dark:hover:bg-sky-400/10 dark:hover:text-sky-300 dark:hover:ring-sky-300
-"
+          className="inline-flex flex-nowrap items-center gap-1 rounded-full bg-white px-3 py-1 text-sm whitespace-nowrap text-sky-500 ring-1 ring-sky-300 hover:bg-sky-100 hover:text-sky-600 hover:ring-sky-500 dark:bg-sky-400/10 dark:text-sky-400 dark:ring-sky-400/20 dark:ring-inset dark:hover:bg-sky-400/10 dark:hover:text-sky-300 dark:hover:ring-sky-300"
         >
           <SvgIcon name="login" width={14} height={14} />
           Log in
@@ -80,9 +74,15 @@ function Header() {
   )
 }
 
-export function Layout({ children }: { children: React.ReactNode }) {
-  let pathname = usePathname()
-  let isHomePage = pathname === '/'
+export function Layout({
+  children,
+  footer,
+}: {
+  children: React.ReactNode
+  footer: React.ReactNode
+}) {
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
 
   return (
     <div className="flex w-full flex-col">
@@ -99,7 +99,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
         {children}
       </div>
-      <Footer />
+      {footer}
     </div>
   )
 }

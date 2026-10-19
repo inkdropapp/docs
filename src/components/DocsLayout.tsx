@@ -23,7 +23,7 @@ export function DocsLayout({
   }
   nodes: Array<Node>
 }) {
-  let tableOfContents = collectSections(nodes)
+  const tableOfContents = collectSections(nodes)
 
   return (
     <>

@@ -15,19 +15,23 @@ function TrafficLightsIcon(props) {
 
 export function SnippetWindow(props) {
   const { children, lang, filename } = props
-  const code = children.props.children.trim().split('\n').map(line => line.startsWith('\\') ? line.substring(1) : line).join('\n')
+  const code = children.props.children
+    .trim()
+    .split('\n')
+    .map((line) => (line.startsWith('\\') ? line.substring(1) : line))
+    .join('\n')
   const tabs = [{ name: filename, isActive: true }]
 
   return (
-    <div className="relative not-prose">
+    <div className="not-prose relative">
       <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg" />
       <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10" />
       <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur-sm">
         <div className="absolute -top-px right-11 left-20 h-px bg-linear-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0" />
         <div className="absolute right-20 -bottom-px left-11 h-px bg-linear-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
-        <div className="pl-4 pt-4">
-          <div className="flex space-x-2 text-xs items-center">
-            <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30 mr-4" />
+        <div className="pt-4 pl-4">
+          <div className="flex items-center space-x-2 text-xs">
+            <TrafficLightsIcon className="mr-4 h-2.5 w-auto stroke-slate-500/30" />
             {tabs.map((tab) => (
               <div
                 key={tab.name}
@@ -35,13 +39,13 @@ export function SnippetWindow(props) {
                   'flex h-6 rounded-full',
                   tab.isActive
                     ? 'bg-linear-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
-                    : 'text-slate-500'
+                    : 'text-slate-500',
                 )}
               >
                 <div
                   className={clsx(
                     'flex items-center rounded-full px-2.5',
-                    tab.isActive && 'bg-slate-800'
+                    tab.isActive && 'bg-slate-800',
                   )}
                 >
                   {tab.name}
@@ -63,33 +67,14 @@ export function SnippetWindow(props) {
                 </Fragment>
               ))}
             </div>
-            <Highlight
-              code={code}
-              language={lang}
-              theme={{ plain: {}, styles: [] }}
-            >
-              {({
-                className,
-                style,
-                tokens,
-                getLineProps,
-                getTokenProps,
-              }) => (
-                <pre
-                  className={clsx(
-                    className,
-                    'flex overflow-x-auto pb-6'
-                  )}
-                  style={style}
-                >
+            <Highlight code={code} language={lang} theme={{ plain: {}, styles: [] }}>
+              {({ className, style, tokens, getLineProps, getTokenProps }) => (
+                <pre className={clsx(className, 'flex overflow-x-auto pb-6')} style={style}>
                   <code className="px-4">
                     {tokens.map((line, lineIndex) => (
                       <div key={lineIndex} {...getLineProps({ line })}>
                         {line.map((token, tokenIndex) => (
-                          <span
-                            key={tokenIndex}
-                            {...getTokenProps({ token })}
-                          />
+                          <span key={tokenIndex} {...getTokenProps({ token })} />
                         ))}
                       </div>
                     ))}
@@ -102,5 +87,4 @@ export function SnippetWindow(props) {
       </div>
     </div>
   )
-
 }

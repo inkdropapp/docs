@@ -41,14 +41,10 @@ function SearchIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function useAutocomplete({
-  close,
-}: {
-  close: (autocomplete: Autocomplete) => void
-}) {
-  let id = useId()
-  let router = useRouter()
-  let [autocompleteState, setAutocompleteState] = useState<
+function useAutocomplete({ close }: { close: (autocomplete: Autocomplete) => void }) {
+  const id = useId()
+  const router = useRouter()
+  const [autocompleteState, setAutocompleteState] = useState<
     AutocompleteState<Result> | EmptyObject
   >({})
 
@@ -59,22 +55,14 @@ function useAutocomplete({
 
     router.push(itemUrl)
 
-    if (
-      itemUrl ===
-      window.location.pathname + window.location.search + window.location.hash
-    ) {
-      // eslint-disable-next-line react-hooks/immutability
+    if (itemUrl === window.location.pathname + window.location.search + window.location.hash) {
+      // oxlint-disable-next-line react/immutability
       close(autocomplete)
     }
   }
 
-  let [autocomplete] = useState<Autocomplete>(() =>
-    createAutocomplete<
-      Result,
-      React.SyntheticEvent,
-      React.MouseEvent,
-      React.KeyboardEvent
-    >({
+  const [autocomplete] = useState<Autocomplete>(() =>
+    createAutocomplete<Result, React.SyntheticEvent, React.MouseEvent, React.KeyboardEvent>({
       id,
       placeholder: 'Find something...',
       defaultActiveItemId: 0,
@@ -110,7 +98,7 @@ function useAutocomplete({
 }
 
 function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  let id = useId()
+  const id = useId()
 
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
@@ -122,14 +110,7 @@ function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="M15.5 10a5.5 5.5 0 1 0-5.5 5.5"
       />
       <defs>
-        <linearGradient
-          id={id}
-          x1="13"
-          x2="9.5"
-          y1="9"
-          y2="15"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id={id} x1="13" x2="9.5" y1="9" y2="15" gradientUnits="userSpaceOnUse">
           <stop stopColor="currentColor" />
           <stop offset="1" stopColor="currentColor" stopOpacity="0" />
         </linearGradient>
@@ -160,12 +141,12 @@ function SearchResult({
   collection: AutocompleteCollection<Result>
   query: string
 }) {
-  let id = useId()
+  const id = useId()
 
-  let sectionTitle = navigation.find((section) =>
+  const sectionTitle = navigation.find((section) =>
     section.links.find((link) => link.href === result.url.split('#')[0]),
   )?.title
-  let hierarchy = [sectionTitle, result.pageTitle].filter(
+  const hierarchy = [sectionTitle, result.pageTitle].filter(
     (x): x is string => typeof x === 'string',
   )
 
@@ -224,9 +205,7 @@ function SearchResults({
     return (
       <p className="px-4 py-8 text-center text-sm text-slate-700 dark:text-slate-400">
         No results for &ldquo;
-        <span className="wrap-break-word text-slate-900 dark:text-white">
-          {query}
-        </span>
+        <span className="wrap-break-word text-slate-900 dark:text-white">{query}</span>
         &rdquo;
       </p>
     )
@@ -255,7 +234,7 @@ const SearchInput = forwardRef<
     onClose: () => void
   }
 >(function SearchInput({ autocomplete, autocompleteState, onClose }, inputRef) {
-  let inputProps = autocomplete.getInputProps({ inputElement: null })
+  const inputProps = autocomplete.getInputProps({ inputElement: null })
 
   return (
     <div className="group relative flex h-12">
@@ -302,8 +281,8 @@ function CloseOnNavigation({
   close: (autocomplete: Autocomplete) => void
   autocomplete: Autocomplete
 }) {
-  let pathname = usePathname()
-  let searchParams = useSearchParams()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   useEffect(() => {
     close(autocomplete)
@@ -321,11 +300,11 @@ function SearchDialog({
   setOpen: (open: boolean) => void
   className?: string
 }) {
-  let formRef = useRef<React.ElementRef<'form'>>(null)
-  let panelRef = useRef<React.ElementRef<'div'>>(null)
-  let inputRef = useRef<React.ElementRef<typeof SearchInput>>(null)
+  const formRef = useRef<React.ElementRef<'form'>>(null)
+  const panelRef = useRef<React.ElementRef<'div'>>(null)
+  const inputRef = useRef<React.ElementRef<typeof SearchInput>>(null)
 
-  let close = useCallback(
+  const close = useCallback(
     (autocomplete: Autocomplete) => {
       setOpen(false)
       autocomplete.setQuery('')
@@ -333,7 +312,7 @@ function SearchDialog({
     [setOpen],
   )
 
-  let { autocomplete, autocompleteState } = useAutocomplete({
+  const { autocomplete, autocompleteState } = useAutocomplete({
     close() {
       close(autocomplete)
     },
@@ -376,7 +355,7 @@ function SearchDialog({
               <form
                 ref={formRef}
                 {...autocomplete.getFormProps({
-                  // eslint-disable-next-line react-hooks/refs
+                  // oxlint-disable-next-line react/refs
                   inputElement: inputRef.current,
                 })}
               >
@@ -409,8 +388,8 @@ function SearchDialog({
 }
 
 function useSearchProps() {
-  let buttonRef = useRef<React.ElementRef<'button'>>(null)
-  let [open, setOpen] = useState(false)
+  const buttonRef = useRef<React.ElementRef<'button'>>(null)
+  const [open, setOpen] = useState(false)
 
   return {
     buttonProps: {
@@ -422,8 +401,7 @@ function useSearchProps() {
     dialogProps: {
       open,
       setOpen: useCallback((open: boolean) => {
-        let { width = 0, height = 0 } =
-          buttonRef.current?.getBoundingClientRect() ?? {}
+        const { width = 0, height = 0 } = buttonRef.current?.getBoundingClientRect() ?? {}
         if (!open || (width !== 0 && height !== 0)) {
           setOpen(open)
         }
@@ -433,14 +411,12 @@ function useSearchProps() {
 }
 
 export function Search() {
-  let [modifierKey, setModifierKey] = useState<string>()
-  let { buttonProps, dialogProps } = useSearchProps()
+  const [modifierKey, setModifierKey] = useState<string>()
+  const { buttonProps, dialogProps } = useSearchProps()
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setModifierKey(
-      /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl ',
-    )
+    // oxlint-disable-next-line react/set-state-in-effect
+    setModifierKey(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl ')
   }, [])
 
   return (

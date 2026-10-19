@@ -1,6 +1,4 @@
-export function InformationCircleIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>,
-) {
+export function InformationCircleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} {...props}>
       <path

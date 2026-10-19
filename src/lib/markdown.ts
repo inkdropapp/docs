@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import glob from 'fast-glob'
-import yaml from 'js-yaml'
+import { load as loadYaml } from 'js-yaml'
 
 import { navigation } from '@/lib/navigation'
 
@@ -28,10 +28,8 @@ type Frontmatter = {
 type Attrs = Record<string, string>
 
 function parseAttrs(source: string): Attrs {
-  let attrs: Attrs = {}
-  for (let [, key, quoted, bare] of source.matchAll(
-    /([\w-]+)=(?:"([^"]*)"|(\S+))/g,
-  )) {
+  const attrs: Attrs = {}
+  for (const [, key, quoted, bare] of source.matchAll(/([\w-]+)=(?:"([^"]*)"|(\S+))/g)) {
     attrs[key] = quoted ?? bare
   }
   return attrs
@@ -61,18 +59,18 @@ function quote(text: string) {
 function convertMarkdoc(body: string) {
   // Keep code untouched while rewriting tags and links: fenced blocks (also
   // indented ones inside lists, and `~~~` fences) and inline code spans
-  let code: Array<string> = []
-  let protect = (text: string) => {
+  const code: Array<string> = []
+  const protect = (text: string) => {
     code.push(text)
     return `\u0000CODE${code.length - 1}\u0000`
   }
-  let restore = (text: string) =>
+  const restore = (text: string) =>
+    // oxlint-disable-next-line no-control-regex -- NUL is an intentional placeholder sentinel
     text.replace(/\u0000CODE(\d+)\u0000/g, (_, i) => code[Number(i)])
 
   body = body
-    .replace(
-      /^[ \t]*(`{3,}|~{3,})[^\n]*\n[\s\S]*?^[ \t]*\1[ \t]*$/gm,
-      (fence) => protect(fence.replace(/\\```/g, '```')),
+    .replace(/^[ \t]*(`{3,}|~{3,})[^\n]*\n[\s\S]*?^[ \t]*\1[ \t]*$/gm, (fence) =>
+      protect(fence.replace(/\\```/g, '```')),
     )
     .replace(/(?<![\\`])(`+)[^`\n][^\n]*?(?<!`)\1(?!`)/g, protect)
 
@@ -81,52 +79,41 @@ function convertMarkdoc(body: string) {
     .replace(/[ \t]*\{%\s*\.[\w-]+\s*%\}/g, '')
     .replace(/\{%\s*kbd\s+s="([^"]*)"\s*\/\s*%\}/g, '`$1`')
     .replace(/\{%\s*kbd\s*%\}([\s\S]*?)\{%\s*\/kbd\s*%\}/g, '`$1`')
-    .replace(/\{%\s*check\s+v=(true|false)\s*\/\s*%\}/g, (_, v) =>
-      v === 'true' ? '✅' : '❌',
-    )
+    .replace(/\{%\s*check\s+v=(true|false)\s*\/\s*%\}/g, (_, v) => (v === 'true' ? '✅' : '❌'))
     // Decorative UI icons carry no meaning in plain text
     .replace(/\{%\s*icon\s+[^%]*?\/\s*%\}[ \t]?/g, '')
     .replace(/\{%\s*img\s+([^%]*?)\/\s*%\}/g, (_, attrs) => {
-      let { src, alt } = parseAttrs(attrs)
+      const { src, alt } = parseAttrs(attrs)
       return image(src, alt)
     })
-    .replace(/\{%\s*video\s+([^%]*?)\/\s*%\}/g, (_, attrs) =>
-      video(parseAttrs(attrs).src),
-    )
+    .replace(/\{%\s*video\s+([^%]*?)\/\s*%\}/g, (_, attrs) => video(parseAttrs(attrs).src))
     .replace(/\{%\s*quick-link\s+([^%]*?)\/\s*%\}/g, (_, attrs) => {
-      let { title, href, description } = parseAttrs(attrs)
+      const { title, href, description } = parseAttrs(attrs)
       return `- [${title}](${absolutize(href)})${description ? `: ${description}` : ''}`
     })
     // Rendered from the navigation by the ThumbLinks component
-    .replace(
-      /\{%\s*thumb-links\s+([^%]*)%\}[\s\S]*?\{%\s*\/thumb-links\s*%\}/g,
-      (_, attrs) =>
-        navigation[Number(parseAttrs(attrs).category)].links
-          .map((link) => `- [${link.title}](${absolutize(link.href)})`)
-          .join('\n'),
+    .replace(/\{%\s*thumb-links\s+([^%]*)%\}[\s\S]*?\{%\s*\/thumb-links\s*%\}/g, (_, attrs) =>
+      navigation[Number(parseAttrs(attrs).category)].links
+        .map((link) => `- [${link.title}](${absolutize(link.href)})`)
+        .join('\n'),
     )
     // Quoted after code is restored so multi-line fences stay inside the quote
-    .replace(
-      /\{%\s*callout([^%]*)%\}([\s\S]*?)\{%\s*\/callout\s*%\}/g,
-      (_, attrs, content) => {
-        let { title, type = 'note' } = parseAttrs(attrs)
-        let label = type === 'warning' ? 'Warning' : 'Note'
-        let heading = title ? `**${label}: ${title}**\n\n` : `**${label}**\n\n`
-        return `\u0001QUOTE${heading}${content.trim()}\u0001`
-      },
-    )
+    .replace(/\{%\s*callout([^%]*)%\}([\s\S]*?)\{%\s*\/callout\s*%\}/g, (_, attrs, content) => {
+      const { title, type = 'note' } = parseAttrs(attrs)
+      const label = type === 'warning' ? 'Warning' : 'Note'
+      const heading = title ? `**${label}: ${title}**\n\n` : `**${label}**\n\n`
+      return `\u0001QUOTE${heading}${content.trim()}\u0001`
+    })
     .replace(
       /\{%\s*carousel-item\s+([^%]*)%\}([\s\S]*?)\{%\s*\/carousel-item\s*%\}/g,
       (_, attrs, content) => {
-        let { title, image: src, video: videoSrc, alt } = parseAttrs(attrs)
-        let media = src ? image(src, alt) : videoSrc && video(videoSrc)
-        return [title && `**${title}**`, media, content.trim()]
-          .filter(Boolean)
-          .join('\n\n')
+        const { title, image: src, video: videoSrc, alt } = parseAttrs(attrs)
+        const media = src ? image(src, alt) : videoSrc && video(videoSrc)
+        return [title && `**${title}**`, media, content.trim()].filter(Boolean).join('\n\n')
       },
     )
     .replace(/\{%\s*snippet\s+([^%]*)%\}/g, (_, attrs) => {
-      let { filename } = parseAttrs(attrs)
+      const { filename } = parseAttrs(attrs)
       return filename ? `**${filename}**` : ''
     })
     // Fail the build on tags without a Markdown conversion instead of silently
@@ -140,9 +127,8 @@ function convertMarkdoc(body: string) {
     .replace(/^([ \t]*\[[^\]\n]+\]:[ \t]*)\/(?!\/)/gm, `$1${SITE_URL}/`)
     .replace(/\n{3,}/g, '\n\n')
 
-  return restore(body).replace(/\u0001QUOTE([^\u0001]*)\u0001/g, (_, text) =>
-    quote(text),
-  )
+  // oxlint-disable-next-line no-control-regex -- SOH is an intentional placeholder sentinel
+  return restore(body).replace(/\u0001QUOTE([^\u0001]*)\u0001/g, (_, text) => quote(text))
 }
 
 function pageFile(slug: Array<string>) {
@@ -150,23 +136,20 @@ function pageFile(slug: Array<string>) {
 }
 
 export async function getMarkdownSlugs() {
-  let files = await glob('**/page.md', { cwd: APP_DIR })
+  const files = await glob('**/page.md', { cwd: APP_DIR })
   return files.map((file) => file.split('/').slice(0, -1))
 }
 
 // Example notes are left out of the llms.txt files, as in the search index
 async function getLlmsSlugs() {
-  let slugs = await getMarkdownSlugs()
+  const slugs = await getMarkdownSlugs()
   return slugs.filter((slug) => slug[0] !== 'examples')
 }
 
 async function readPage(slug: Array<string>) {
-  let source = (await fs.readFile(pageFile(slug), 'utf8')).replace(
-    /\r\n?/g,
-    '\n',
-  )
-  let match = source.match(/^---\n([\s\S]*?)\n---\n?/)
-  let frontmatter = (match ? yaml.load(match[1]) : {}) as Frontmatter
+  const source = (await fs.readFile(pageFile(slug), 'utf8')).replace(/\r\n?/g, '\n')
+  const match = source.match(/^---\n([\s\S]*?)\n---\n?/)
+  const frontmatter = (match ? loadYaml(match[1]) : {}) as Frontmatter
 
   return {
     title: frontmatter.title ?? frontmatter.nextjs?.metadata?.title,
@@ -181,15 +164,14 @@ function markdownUrl(slug: Array<string>) {
 }
 
 export async function getPageMarkdown(slug: Array<string>) {
-  let { title, description, youtubeVideoId, body } = await readPage(slug)
-  let url = `${SITE_URL}/${slug.join('/')}`
+  const { title, description, youtubeVideoId, body } = await readPage(slug)
+  const url = `${SITE_URL}/${slug.join('/')}`
 
   return [
     title && `# ${title}`,
     description && `> ${description}`,
     `Source: ${url}`,
-    youtubeVideoId &&
-      `Video: https://www.youtube.com/watch?v=${youtubeVideoId.replace('?', '&')}`,
+    youtubeVideoId && `Video: https://www.youtube.com/watch?v=${youtubeVideoId.replace('?', '&')}`,
     convertMarkdoc(body).trim(),
   ]
     .filter(Boolean)
@@ -198,17 +180,17 @@ export async function getPageMarkdown(slug: Array<string>) {
 }
 
 async function linkItem(slug: Array<string>, title?: string) {
-  let page = await readPage(slug)
-  let item = `- [${title ?? page.title ?? slug.join('/')}](${markdownUrl(slug)})`
+  const page = await readPage(slug)
+  const item = `- [${title ?? page.title ?? slug.join('/')}](${markdownUrl(slug)})`
   return page.description ? `${item}: ${page.description}` : item
 }
 
 // Index of all pages following the llms.txt convention (https://llmstxt.org)
 export async function getLlmsTxt() {
-  let listed = new Set<string>()
-  let sections = await Promise.all(
+  const listed = new Set<string>()
+  const sections = await Promise.all(
     navigation.map(async (section) => {
-      let items = await Promise.all(
+      const items = await Promise.all(
         section.links.map((link) => {
           if (/^https?:/.test(link.href)) {
             return `- [${link.title}](${link.href})`
@@ -221,8 +203,8 @@ export async function getLlmsTxt() {
     }),
   )
 
-  let slugs = await getLlmsSlugs()
-  let others = await Promise.all(
+  const slugs = await getLlmsSlugs()
+  const others = await Promise.all(
     slugs
       .filter((slug) => slug.length > 0 && !listed.has(`/${slug.join('/')}`))
       .map((slug) => linkItem(slug)),
@@ -253,11 +235,9 @@ export async function getLlmsTxt() {
 
 // Every page's Markdown concatenated into a single document
 export async function getLlmsFullTxt() {
-  let slugs = await getLlmsSlugs()
-  let pages = await Promise.all(
-    slugs
-      .sort((a, b) => a.join('/').localeCompare(b.join('/')))
-      .map(getPageMarkdown),
+  const slugs = await getLlmsSlugs()
+  const pages = await Promise.all(
+    slugs.sort((a, b) => a.join('/').localeCompare(b.join('/'))).map(getPageMarkdown),
   )
   return pages.join('\n---\n\n')
 }

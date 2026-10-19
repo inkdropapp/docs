@@ -39,8 +39,8 @@ function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function CloseOnNavigation({ close }: { close: () => void }) {
-  let pathname = usePathname()
-  let searchParams = useSearchParams()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   useEffect(() => {
     close()
@@ -50,11 +50,11 @@ function CloseOnNavigation({ close }: { close: () => void }) {
 }
 
 export function MobileNavigation() {
-  let [isOpen, setIsOpen] = useState(false)
-  let close = useCallback(() => setIsOpen(false), [setIsOpen])
+  const [isOpen, setIsOpen] = useState(false)
+  const close = useCallback(() => setIsOpen(false), [setIsOpen])
 
   function onLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    let link = event.currentTarget
+    const link = event.currentTarget
     if (
       link.pathname + link.search + link.hash ===
       window.location.pathname + window.location.search + window.location.hash
@@ -84,11 +84,7 @@ export function MobileNavigation() {
       >
         <DialogPanel className="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 sm:px-6 dark:bg-slate-900">
           <div className="flex items-center">
-            <button
-              type="button"
-              onClick={() => close()}
-              aria-label="Close navigation"
-            >
+            <button type="button" onClick={() => close()} aria-label="Close navigation">
               <CloseIcon className="h-6 w-6 stroke-slate-500" />
             </button>
             <Link href="/" className="ml-6" aria-label="Home page">

@@ -1,6 +1,4 @@
-export function NavigationMenuVerticalIcon(
-  props: React.ComponentPropsWithoutRef<'svg'>,
-) {
+export function NavigationMenuVerticalIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 140 140" {...props}>
       <g transform="matrix(5.833333333333333,0,0,5.833333333333333,0,0)">

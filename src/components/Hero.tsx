@@ -27,8 +27,8 @@ export function Hero() {
                 Help, tutorials & documentation.
               </p>
               <p className="mt-3 font-proxyma text-2xl tracking-tight text-slate-400">
-                Learn how to unleash your coding productivity by taking and
-                organizing tech notes with Inkdrop.
+                Learn how to unleash your coding productivity by taking and organizing tech notes
+                with Inkdrop.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button
@@ -67,12 +67,7 @@ export function Hero() {
                 unoptimized
                 priority
               />
-              <Image
-                src={heroImage}
-                alt="A dog hacking Inkdrop"
-                priority
-                className="scale-150"
-              />
+              <Image src={heroImage} alt="A dog hacking Inkdrop" priority className="scale-150" />
             </div>
           </div>
         </div>

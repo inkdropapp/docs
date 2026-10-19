@@ -7,13 +7,7 @@ require('prismjs/components/prism-bash')
 require('prismjs/components/prism-java')
 require('prismjs/components/prism-lua')
 
-export function Fence({
-  children,
-  language,
-}: {
-  children: string
-  language: string
-}) {
+export function Fence({ children, language }: { children: string; language: string }) {
   return (
     <Highlight
       prism={Prism}

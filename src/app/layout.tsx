@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import Fathom from '../components/Fathom'
 
 import { Providers } from '@/app/providers'
+import { Footer } from '@/components/Footer'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
@@ -33,11 +34,7 @@ export const metadata: Metadata = {
     'Help, tutorials & documentation on how to unleash your coding productivity with Inkdrop',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -45,11 +42,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link
-          rel="preconnect"
-          href="https://use.typekit.net"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://p.typekit.net/p.css?s=1&k=atg0zvr&ht=tk&f=32895.32897.32899.32902&a=46188681&app=typekit&e=css"
@@ -59,7 +52,7 @@ export default function RootLayout({
         <Fathom />
         <Redirects />
         <Providers>
-          <Layout>{children}</Layout>
+          <Layout footer={<Footer />}>{children}</Layout>
         </Providers>
       </body>
     </html>

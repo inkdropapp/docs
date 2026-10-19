@@ -13,14 +13,13 @@ const FooterLink = (props: React.ComponentProps<typeof Link>) => {
 }
 
 export const Footer = () => {
+  // oxlint-disable-next-line react/purity -- server component (passed into the client Layout as a prop), rendered at build time
   const year = new Date().getFullYear()
   return (
     <div className="relative mx-auto flex w-full flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
       <div className="absolute h-px w-full bg-slate-100 dark:bg-slate-800" />
       <div className="my-4 flex max-w-[100rem] flex-wrap gap-6 p-6">
-        <FooterLink href="https://www.inkdrop.app/">
-          &copy; {year} Inkdrop
-        </FooterLink>
+        <FooterLink href="https://www.inkdrop.app/">&copy; {year} Inkdrop</FooterLink>
         <FooterLink href="https://x.com/inkdrop_app">&#x1D54F;</FooterLink>
         <FooterLink href="https://forum.inkdrop.app/">User Forum</FooterLink>
         <FooterLink href="https://www.inkdrop.app/pricing">Pricing</FooterLink>

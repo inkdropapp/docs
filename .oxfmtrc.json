@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "sortImports": false,
+  "sortPackageJson": true,
+  "sortTailwindcss": {
+    "stylesheet": "./src/styles/tailwind.css"
+  },
+  "ignorePatterns": ["**/*.md", "public/**", "pnpm-lock.yaml"]
+}

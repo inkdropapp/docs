@@ -74,21 +74,11 @@ type SvgIconProps = {
   size?: number
 }
 
-export function SvgIcon({
-  name,
-  className,
-  width,
-  height,
-  size,
-}: SvgIconProps) {
+export function SvgIcon({ name, className, width, height, size }: SvgIconProps) {
   const Icon = svgIcons[name]
   return (
     <span className={`inline-flex ${className ?? ''}`}>
-      <Icon
-        aria-hidden="true"
-        width={size ?? width ?? 18}
-        height={size ?? height ?? 18}
-      />
+      <Icon aria-hidden="true" width={size ?? width ?? 18} height={size ?? height ?? 18} />
     </span>
   )
 }

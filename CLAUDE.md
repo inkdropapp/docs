@@ -17,7 +17,8 @@ npm run build         # Generate routes JSON and build for production
 npm start            # Run production server
 
 # Code Quality
-npm run lint         # Run ESLint with Next.js rules
+npm run lint         # Run oxlint (react, jsx-a11y, nextjs plugins)
+npm run format       # Format with oxfmt (format:check for CI)
 ```
 
 ## Architecture & Structure
@@ -73,7 +74,8 @@ though the build still passes. Re-verify the patch after major Next upgrades
 
 ### Code Style
 - TypeScript with strict mode enabled
-- Prettier configured: single quotes, no semicolons
+- oxfmt configured (`.oxfmtrc.json`): single quotes, no semicolons, Tailwind class sorting; `*.md` content is not formatted
+- oxlint configured in `.oxlintrc.json`; use `oxlint-disable-next-line` with oxlint rule names (e.g. `react/refs`, `nextjs/no-img-element`)
 - Tailwind CSS for styling with Typography plugin
 - Path alias: `@/*` maps to `./src/*`
 
@@ -86,7 +88,7 @@ though the build still passes. Re-verify the patch after major Next upgrades
 ### CI/CD
 - GitHub Actions configured for Claude AI code reviews on PRs
 - Vercel handles automatic deployments on push to main
-- No formal test suite - rely on TypeScript, ESLint, and build validation
+- No formal test suite - rely on TypeScript, oxlint, and build validation
 
 ## Tech Stack Reference
 - **Framework**: Next.js 16 (App Router)

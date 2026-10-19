@@ -2,11 +2,7 @@ import NextLink from 'next/link'
 import { Icon } from '@/components/Icon'
 
 export function QuickLinks({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-      {children}
-    </div>
-  )
+  return <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">{children}</div>
 }
 
 export function QuickLink({
@@ -43,9 +39,7 @@ export function QuickLink({
               )}
             </Link>
           </h2>
-          <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
-            {description}
-          </p>
+          <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">{description}</p>
         </div>
       </div>
     </div>

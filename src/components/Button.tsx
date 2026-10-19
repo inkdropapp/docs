@@ -15,11 +15,7 @@ type ButtonProps = {
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
 )
 
-export function Button({
-  variant = 'primary',
-  className,
-  ...props
-}: ButtonProps) {
+export function Button({ variant = 'primary', className, ...props }: ButtonProps) {
   className = clsx(variantStyles[variant], className)
 
   return typeof props.href === 'undefined' ? (

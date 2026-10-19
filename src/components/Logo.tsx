@@ -2,12 +2,7 @@ import { SVGProps } from 'react'
 
 export function LogomarkDefs(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      aria-hidden="true"
-      className="absolute h-0 w-0"
-      viewBox="0 0 1 1"
-      {...props}
-    >
+    <svg aria-hidden="true" className="absolute h-0 w-0" viewBox="0 0 1 1" {...props}>
       <defs>
         <path
           id="_logomark-ring-top"
@@ -83,10 +78,7 @@ function LogomarkPaths() {
   return (
     <>
       <use fill="url(#_logomark-grad-ring-top)" href="#_logomark-ring-top" />
-      <use
-        fill="url(#_logomark-grad-ring-bottom)"
-        href="#_logomark-ring-bottom"
-      />
+      <use fill="url(#_logomark-grad-ring-bottom)" href="#_logomark-ring-bottom" />
       <path
         clipPath="url(#_logomark-clip-ring-bottom)"
         fill="url(#_logomark-grad-shade)"

@@ -3,13 +3,7 @@
 import clsx from 'clsx'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from 'react'
+import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 
 const AUTOPLAY_DELAY_MS = 30000
 
@@ -26,15 +20,11 @@ const CarouselContext = createContext<CarouselContextValue>({
 export function Carousel({ children }: { children: React.ReactNode }) {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState<Array<number>>([])
-  const [viewportRef, emblaApi] = useEmblaCarousel(
-    { loop: true, align: 'center' },
-    [Autoplay({ delay: AUTOPLAY_DELAY_MS })],
-  )
+  const [viewportRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' }, [
+    Autoplay({ delay: AUTOPLAY_DELAY_MS }),
+  ])
 
-  const scrollTo = useCallback(
-    (index: number) => emblaApi?.scrollTo(index),
-    [emblaApi],
-  )
+  const scrollTo = useCallback((index: number) => emblaApi?.scrollTo(index), [emblaApi])
 
   useEffect(() => {
     if (!emblaApi) return
@@ -110,6 +100,8 @@ export function CarouselItem({
   const isSelected = index === selectedIndex
 
   return (
+    // Mouse shortcut only; the dot buttons provide keyboard navigation
+    // oxlint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
     <div
       onClick={() => scrollTo(index)}
       className={clsx(
@@ -119,23 +111,12 @@ export function CarouselItem({
     >
       <div className="not-prose">
         {video ? (
-          <video
-            className="w-full rounded-lg shadow-lg"
-            controls
-            playsInline
-            loop
-            muted
-          >
+          <video className="w-full rounded-lg shadow-lg" controls playsInline loop muted>
             <source src={video} type="video/mp4" />
           </video>
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={image}
-            alt={alt}
-            loading="lazy"
-            className="w-full rounded-lg shadow-lg"
-          />
+          // oxlint-disable-next-line nextjs/no-img-element
+          <img src={image} alt={alt} loading="lazy" className="w-full rounded-lg shadow-lg" />
         )}
       </div>
       {title && <h3>{title}</h3>}

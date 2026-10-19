@@ -1,24 +1,13 @@
 import { useId } from 'react'
 
 export function HeroBackground(props: React.ComponentPropsWithoutRef<'svg'>) {
-  let id = useId()
+  const id = useId()
 
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 668 1069"
-      width={668}
-      height={1069}
-      fill="none"
-      {...props}
-    >
+    <svg aria-hidden="true" viewBox="0 0 668 1069" width={668} height={1069} fill="none" {...props}>
       <defs>
         <clipPath id={`${id}-clip-path`}>
-          <path
-            fill="#fff"
-            transform="rotate(-180 334 534.4)"
-            d="M0 0h668v1068.8H0z"
-          />
+          <path fill="#fff" transform="rotate(-180 334 534.4)" d="M0 0h668v1068.8H0z" />
         </clipPath>
       </defs>
       <g opacity=".4" clipPath={`url(#${id}-clip-path)`} strokeWidth={4}>

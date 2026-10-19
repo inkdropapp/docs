@@ -23,8 +23,7 @@ const icons = {
 
 const iconStyles = {
   blue: '[--icon-foreground:var(--color-slate-900)] [--icon-background:var(--color-white)]',
-  amber:
-    '[--icon-foreground:var(--color-amber-900)] [--icon-background:var(--color-amber-100)]',
+  amber: '[--icon-foreground:var(--color-amber-900)] [--icon-background:var(--color-amber-100)]',
   currentColor: '[--icon-foreground:currentColor]',
 }
 
@@ -37,8 +36,8 @@ export function Icon({
   color?: keyof typeof iconStyles
   icon: keyof typeof icons
 } & Omit<React.ComponentPropsWithoutRef<'svg'>, 'color'>) {
-  let id = useId()
-  let IconComponent = icons[icon]
+  const id = useId()
+  const IconComponent = icons[icon]
 
   return (
     <svg
@@ -78,13 +77,7 @@ export function Gradient({
   color?: keyof typeof gradients
 } & Omit<React.ComponentPropsWithoutRef<'radialGradient'>, 'color'>) {
   return (
-    <radialGradient
-      cx={0}
-      cy={0}
-      r={1}
-      gradientUnits="userSpaceOnUse"
-      {...props}
-    >
+    <radialGradient cx={0} cy={0} r={1} gradientUnits="userSpaceOnUse" {...props}>
       {gradients[color].map((stop, stopIndex) => (
         <stop key={stopIndex} {...stop} />
       ))}
@@ -92,16 +85,10 @@ export function Gradient({
   )
 }
 
-export function LightMode({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<'g'>) {
+export function LightMode({ className, ...props }: React.ComponentPropsWithoutRef<'g'>) {
   return <g className={clsx('dark:hidden', className)} {...props} />
 }
 
-export function DarkMode({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<'g'>) {
+export function DarkMode({ className, ...props }: React.ComponentPropsWithoutRef<'g'>) {
   return <g className={clsx('hidden dark:inline', className)} {...props} />
 }

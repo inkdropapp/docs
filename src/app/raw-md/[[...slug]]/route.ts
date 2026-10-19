@@ -6,7 +6,7 @@ export const dynamic = 'force-static'
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  let slugs = await getMarkdownSlugs()
+  const slugs = await getMarkdownSlugs()
   return slugs.map((slug) => ({ slug }))
 }
 
@@ -14,8 +14,8 @@ export async function GET(
   _request: Request,
   { params }: { params: Promise<{ slug?: Array<string> }> },
 ) {
-  let { slug = [] } = await params
-  let markdown = await getPageMarkdown(slug)
+  const { slug = [] } = await params
+  const markdown = await getPageMarkdown(slug)
 
   return new Response(markdown, {
     headers: { 'Content-Type': 'text/markdown; charset=utf-8' },

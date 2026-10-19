@@ -1,12 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
-import {
-  Label,
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from '@headlessui/react'
+import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
 import clsx from 'clsx'
 
 const themes = [
@@ -51,14 +45,12 @@ function SystemIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function ThemeSelector(
-  props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>,
-) {
-  let { theme, setTheme } = useTheme()
-  let [mounted, setMounted] = useState(false)
+export function ThemeSelector(props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>) {
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
+    // oxlint-disable-next-line react/set-state-in-effect
     setMounted(true)
   }, [])
 
@@ -92,15 +84,12 @@ export function ThemeSelector(
             key={theme.value}
             value={theme.value}
             className={({ focus, selected }) =>
-              clsx(
-                'flex cursor-pointer items-center rounded-[0.625rem] p-1 select-none',
-                {
-                  'text-sky-500': selected,
-                  'text-slate-900 dark:text-white': focus && !selected,
-                  'text-slate-700 dark:text-slate-400': !focus && !selected,
-                  'bg-slate-100 dark:bg-slate-900/40': focus,
-                },
-              )
+              clsx('flex cursor-pointer items-center rounded-[0.625rem] p-1 select-none', {
+                'text-sky-500': selected,
+                'text-slate-900 dark:text-white': focus && !selected,
+                'text-slate-700 dark:text-slate-400': !focus && !selected,
+                'bg-slate-100 dark:bg-slate-900/40': focus,
+              })
             }
           >
             {({ selected }) => (
@@ -109,9 +98,7 @@ export function ThemeSelector(
                   <theme.icon
                     className={clsx(
                       'h-4 w-4',
-                      selected
-                        ? 'fill-sky-400 dark:fill-sky-400'
-                        : 'fill-slate-400',
+                      selected ? 'fill-sky-400 dark:fill-sky-400' : 'fill-slate-400',
                     )}
                   />
                 </div>

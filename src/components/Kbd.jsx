@@ -1,6 +1,6 @@
 export function Kbd({ s, children }) {
   return (
-    <kbd className='bg-slate-50 dark:bg-slate-600 rounded-md  border border-b-2 border-slate-300 dark:border-slate-800 text-sm text-slate-700 dark:text-slate-300 px-2 py-1'>
+    <kbd className="rounded-md border border-b-2 border-slate-300 bg-slate-50 px-2 py-1 text-sm text-slate-700 dark:border-slate-800 dark:bg-slate-600 dark:text-slate-300">
       {s || children}
     </kbd>
   )
