@@ -48,6 +48,13 @@ function withMarkdocRscLayer(nextConfig = {}) {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
+  // Serve a plain Markdown version of every page at `<path>.md` for agents
+  async rewrites() {
+    return [
+      { source: '/index.md', destination: '/raw-md' },
+      { source: '/:path+.md', destination: '/raw-md/:path+' },
+    ]
+  },
 }
 
 export default withSearch(
