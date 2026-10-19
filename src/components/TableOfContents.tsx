@@ -2,8 +2,10 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
+import { RobotHeadIcon } from '@/components/icons/RobotHeadIcon'
 import { type Section, type Subsection } from '@/lib/sections'
 
 export function TableOfContents({
@@ -11,6 +13,8 @@ export function TableOfContents({
 }: {
   tableOfContents: Array<Section>
 }) {
+  let pathname = usePathname()
+  let markdownHref = pathname === '/' ? '/index.md' : `${pathname}.md`
   let [currentSection, setCurrentSection] = useState(tableOfContents[0]?.id)
 
   let getHeadings = useCallback((tableOfContents: Array<Section>) => {
@@ -64,11 +68,19 @@ export function TableOfContents({
   return (
     <div className="hidden xl:sticky xl:top-19 xl:-mr-6 xl:block xl:h-[calc(100vh-4.75rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
       <nav aria-labelledby="on-this-page-title" className="w-56">
+        <link rel="alternate" type="text/markdown" href={markdownHref} />
+        <a
+          href={markdownHref}
+          className="mb-8 inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-slate-300 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:active:bg-slate-700"
+        >
+          <RobotHeadIcon aria-hidden="true" className="h-4 w-4 flex-none" />
+          View as Markdown
+        </a>
         {tableOfContents.length > 0 && (
           <>
             <h2
               id="on-this-page-title"
-              className="font-proxyma text-md font-bold text-slate-900 dark:text-white"
+              className="text-md font-proxyma font-bold text-slate-900 dark:text-white"
             >
               On this page
             </h2>
