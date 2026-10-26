@@ -35,7 +35,7 @@ claude mcp add inkdrop --scope user \
   --env INKDROP_LOCAL_SERVER_URL=http://localhost:19840 \
   --env INKDROP_LOCAL_USERNAME=your-local-server-username \
   --env INKDROP_LOCAL_PASSWORD=your-local-server-password \
-  -- npx -y @inkdropapp/mcp-server
+  -- npx -y @inkdropapp/mcp-server@latest
 ```
 
 ### Codex
@@ -45,7 +45,7 @@ codex mcp add inkdrop \
   --env INKDROP_LOCAL_SERVER_URL=http://localhost:19840 \
   --env INKDROP_LOCAL_USERNAME=your-local-server-username \
   --env INKDROP_LOCAL_PASSWORD=your-local-server-password \
-  -- npx -y @inkdropapp/mcp-server
+  -- npx -y @inkdropapp/mcp-server@latest
 ```
 
 ### Other agents
@@ -61,7 +61,7 @@ Agents without a CLI need the server added to their MCP configuration file:
   "mcpServers": {
     "inkdrop": {
       "command": "npx",
-      "args": ["-y", "@inkdropapp/mcp-server"],
+      "args": ["-y", "@inkdropapp/mcp-server@latest"],
       "env": {
         "INKDROP_LOCAL_SERVER_URL": "http://localhost:19840",
         "INKDROP_LOCAL_USERNAME": "your-local-server-username",
