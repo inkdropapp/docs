@@ -23,14 +23,14 @@ export const navigation = [
         cover: '/images/issue-driven-note-taking_cover_2.jpg',
       },
       {
-        title: 'Key note categories and examples for tech issues',
-        href: '/start-guide/key-note-categories-and-examples',
-        cover: '/images/key-note-categories_cover.png',
-      },
-      {
         title: 'Note-driven agentic coding',
         href: '/start-guide/note-driven-agentic-coding',
         cover: 'https://img.youtube.com/vi/VvrtXVUCIyg/maxresdefault.jpg',
+      },
+      {
+        title: 'Key note categories and examples for tech issues',
+        href: '/start-guide/key-note-categories-and-examples',
+        cover: '/images/key-note-categories_cover.png',
       },
       {
         title: 'Take notes just as you breathe',
