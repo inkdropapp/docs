@@ -28,6 +28,11 @@ export const navigation = [
         cover: '/images/key-note-categories_cover.png',
       },
       {
+        title: 'Note-driven agentic coding',
+        href: '/start-guide/note-driven-agentic-coding',
+        cover: 'https://img.youtube.com/vi/VvrtXVUCIyg/maxresdefault.jpg',
+      },
+      {
         title: 'Take notes just as you breathe',
         href: '/start-guide/low-friction-note-taking-system',
         cover: '/images/foster-knowledge_cover.png',
