@@ -25,7 +25,7 @@ export const navigation = [
       {
         title: 'Note-driven agentic coding',
         href: '/start-guide/note-driven-agentic-coding',
-        cover: 'https://img.youtube.com/vi/VvrtXVUCIyg/maxresdefault.jpg',
+        cover: '/images/note-driven-agentic-coding_cover.jpg',
       },
       {
         title: 'Key note categories and examples for tech issues',

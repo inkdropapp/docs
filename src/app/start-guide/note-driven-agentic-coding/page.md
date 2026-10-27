@@ -6,7 +6,7 @@ nextjs:
     title: Note-driven agentic coding
     description: Plan, decide, implement, and review with your AI coding agent, using Inkdrop notes as the shared workspace
     openGraph:
-      images: ['https://img.youtube.com/vi/VvrtXVUCIyg/maxresdefault.jpg']
+      images: ['https://docs.inkdrop.app/images/note-driven-agentic-coding_cover.jpg']
 ---
 
 AI coding agents are great at writing code, but they work best when they have a clear plan to follow.
