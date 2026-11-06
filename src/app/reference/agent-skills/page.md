@@ -18,6 +18,8 @@ Skills on their own can't touch your notes. Set up the [Inkdrop MCP server](/ref
 
 ## Install
 
+The skills live in the [inkdropapp/skills](https://github.com/inkdropapp/skills) repository on GitHub, where contributions are welcome.
+
 The [skills.sh](https://skills.sh) CLI works with Claude Code, Codex, Cursor, and 70+ other agents:
 
 ```sh
@@ -26,6 +28,18 @@ npx skills@latest add inkdropapp/skills
 
 Pick the skills and agents you want, and it copies them into place.
 That's it—the agent picks up each skill on its own when a task matches its description.
+
+### Installing with APM
+
+If you manage agent dependencies with [APM](https://github.com/microsoft/apm), add the skills to your project's `apm.yml` and deploy them to every agent it targets:
+
+```sh
+# All skills
+apm install inkdropapp/skills
+
+# or a single skill
+apm install inkdropapp/skills --skill note-taking
+```
 
 ### Installing manually
 
@@ -93,5 +107,3 @@ Instructions the agent should follow…
 
 Keep the `description` specific—it's what the agent matches against to decide whether the skill is relevant.
 Including `argument-hint` makes it a user-invoked slash command instead of a model-invoked one.
-
-Contributions to the shared skills are welcome at [inkdropapp/skills](https://github.com/inkdropapp/skills).
