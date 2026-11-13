@@ -141,7 +141,7 @@ Prefixes and the set of enabled sources can be changed in your [`config.json`](/
 
 ## Add your own sources
 
-Telescope is extensible: a plugin can register a source of its own, with its own items, icons, actions, and prefix — that's exactly what [telescope-toc](https://github.com/inkdropapp/telescope-toc) and [telescope-themes](https://github.com/inkdropapp/telescope-themes) do. Both are small, complete examples written in TypeScript — see the [plugin development docs](https://developers.inkdrop.app/) to build your own.
+Telescope is extensible: a plugin can register a source of its own, with its own items, icons, actions, and prefix — that's exactly what [telescope-toc](https://github.com/inkdropapp/plugins/tree/main/packages/telescope-toc) and [telescope-themes](https://github.com/inkdropapp/plugins/tree/main/packages/telescope-themes) do. Both are small, complete examples written in TypeScript — see the [plugin development docs](https://developers.inkdrop.app/) to build your own.
 
 ## See also
 
