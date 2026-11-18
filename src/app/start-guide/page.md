@@ -150,6 +150,8 @@ If the AppImage exits with `dlopen(): error loading libfuse.so.2`, your distribu
 Later versions don't need FUSE 2.
 {% /callout %}
 
+The AppImage doesn't add Inkdrop to your app launcher. See [Add Inkdrop to your app launcher](#add-inkdrop-to-your-app-launcher).
+
 #### Flatpak
 
 {% callout title="" %}
@@ -172,27 +174,77 @@ flatpak update app.inkdrop.Inkdrop
 
 Extract the zip archive anywhere you like and run the `inkdrop` executable inside it.
 
+The zip archive doesn't add Inkdrop to your app launcher. See [Add Inkdrop to your app launcher](#add-inkdrop-to-your-app-launcher).
+
+#### Add Inkdrop to your app launcher
+
+Snap, Flatpak, and the `.deb` package add a launcher entry, an icon, and the `inkdrop://` link handler for you. The AppImage and the zip archive don't install anything, so links such as `inkdrop://note/...` won't open the app until you add a desktop entry.
+
+For the AppImage, a tool such as [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever) or [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) can do this for you. To do it by hand:
+
+1. Get the icon.
+   - Zip archive: it is `app.inkdrop.Inkdrop.png` in the extracted folder.
+   - AppImage: extract it with the command below. It is saved in `squashfs-root/usr/share/icons/hicolor/256x256/apps/`.
+
+     ```bash
+     ./inkdrop-x.y.z-x86_64-linux.AppImage --appimage-extract usr/share/icons/hicolor/256x256/apps/inkdrop.png
+     ```
+
+2. Create `~/.local/share/applications/inkdrop.desktop` with the following content. Set `Exec` to the full path of the AppImage or the `inkdrop` executable, and `Icon` to the full path of the icon:
+
+   ```ini
+   [Desktop Entry]
+   Type=Application
+   Name=Inkdrop
+   GenericName=Markdown Notes
+   Comment=Markdown note-taking app
+   Exec=/full/path/to/inkdrop %U
+   Icon=/full/path/to/inkdrop.png
+   Terminal=false
+   StartupWMClass=inkdrop
+   Categories=Office;Utility;TextEditor;
+   MimeType=x-scheme-handler/inkdrop;
+   ```
+
+3. Register the entry and the `inkdrop://` link handler:
+
+   ```bash
+   update-desktop-database ~/.local/share/applications
+   xdg-mime default inkdrop.desktop x-scheme-handler/inkdrop
+   ```
+
+Update `Exec` when you move the app or download a new AppImage under a different file name.
+
 #### Add custom Electron flags
 
-If the app doesn't start properly, you can add custom flags for your operating system. Open `inkdrop.desktop` with an editor, which is usually in `/usr/share/applications`:
+If the app doesn't start properly, you can add custom flags for your operating system. To try a flag once, pass it on the command line:
+
+```bash
+inkdrop --ozone-platform=wayland
+```
+
+To keep it, add it to the `Exec` line of the desktop entry. Where the entry is depends on how you installed the app:
+
+- `.deb` package: `/usr/share/applications/inkdrop.desktop`. Copy it to `~/.local/share/applications/` and edit the copy, because an update replaces the original.
+- AppImage or zip archive: the entry you created in [Add Inkdrop to your app launcher](#add-inkdrop-to-your-app-launcher).
 
 ```ini
 [Desktop Entry]
-Name=inkdrop
-Comment=The Note-taking App with Robust Markdown Editor
-GenericName=inkdrop
-Exec=inkdrop %U        # Edit this line
-Icon=inkdrop
+Name=Inkdrop
+Exec=/opt/Inkdrop/inkdrop %U        # Edit this line
+Terminal=false
 Type=Application
-StartupNotify=true
-Categories=GNOME;GTK;Utility;
+Icon=inkdrop
+StartupWMClass=inkdrop
+Comment=Markdown note-taking app
 MimeType=x-scheme-handler/inkdrop;
+Categories=Utility;
 ```
 
 For Wayland users, add the following flags to the `Exec` field like so:
 
 ```ini
-Exec=inkdrop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime %U
+Exec=/opt/Inkdrop/inkdrop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime %U
 ```
 
 ## Sign in to your account
