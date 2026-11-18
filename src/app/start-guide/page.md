@@ -140,6 +140,16 @@ chmod +x inkdrop-x.y.z-x86_64-linux.AppImage
 ./inkdrop-x.y.z-x86_64-linux.AppImage
 ```
 
+{% callout type="warning" title="Version 6.3.1 and earlier need FUSE 2" %}
+If the AppImage exits with `dlopen(): error loading libfuse.so.2`, your distribution doesn't have FUSE 2 installed. Do one of the following:
+
+- Install FUSE 2: `fuse2` on Arch, `libfuse2t64` on Ubuntu 24.04 or later, `libfuse2` on Debian and older Ubuntu.
+- Run it without FUSE: `APPIMAGE_EXTRACT_AND_RUN=1 ./inkdrop-x.y.z-x86_64-linux.AppImage`
+- Use the [zip archive](#zip-archive) instead.
+
+Later versions don't need FUSE 2.
+{% /callout %}
+
 #### Flatpak
 
 {% callout title="" %}
