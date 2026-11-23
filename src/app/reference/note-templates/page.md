@@ -22,6 +22,8 @@ Selecting a template here opens it for viewing or editing — it does **not** cr
 
 ## Create a note from a template
 
+{% video src="https://site-cdn.inkdrop.app/tutorial/onboarding/write-your-first-note.mp4" poster="https://site-cdn.inkdrop.app/tutorial/onboarding/write-your-first-note.jpg" /%}
+
 ![The Create a new note picker](/images/write-notes_template-picker.png)
 
 1. Create a note — click {% icon name="pencil-write" /%} in the upper-right corner of the note list, or press {% kbd s="Command+N" /%} / {% kbd s="Ctrl+N" /%}. Inkdrop opens a new, empty, untitled note.
