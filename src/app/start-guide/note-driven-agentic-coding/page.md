@@ -23,6 +23,8 @@ Your agent needs access to your notes. Set up these two first:
 
 ## The workflow
 
+{% video src="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.mp4" poster="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.jpg" /%}
+
 One note per task, five steps:
 
 1. Create a note with the **Implementation plan** template
