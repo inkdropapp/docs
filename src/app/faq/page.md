@@ -8,6 +8,20 @@ nextjs:
 
 ![FAQ #cover](/images/faq.svg)
 
+## Why not just keep Markdown files in my repo?
+
+You can, and for a single project it works.
+It gets hard once agents write a lot: plans, research and decision records pile up as loose files, with no way to tell which ones are in progress, done or abandoned.
+
+Inkdrop gives that context a **home**.
+Agents read and write your notes through the [MCP server](/reference/mcp-server).
+Each note has a status, tags and task progress that agents update as they work, so you can see where every task stands.
+Plans render with diagrams, math and highlighted code, which makes them quick to review.
+Everything syncs end-to-end encrypted to your phone, so you can read a plan and answer your agent's questions away from your desk.
+See [Note-driven agentic coding](/start-guide/note-driven-agentic-coding) for how it fits together.
+
+Your notes also outlive any one repository: the lessons from one project are there for the next.
+
 ## What platforms does Inkdrop run on?
 
 Inkdrop is available for macOS 12.0 or later, Windows 10 or later, and Ubuntu Linux 22.04 or later.
