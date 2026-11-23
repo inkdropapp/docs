@@ -18,6 +18,8 @@ It allows AI to search your notes, understand their context, and generate new no
 
 ## Set up
 
+{% video src="https://site-cdn.inkdrop.app/tutorial/onboarding/connect-your-agent.mp4" poster="https://site-cdn.inkdrop.app/tutorial/onboarding/connect-your-agent.jpg" /%}
+
 Go to **Preferences > Integrations** on macOS or **File > Settings > Integrations** on Windows and Linux, then turn on **MCP Server**.
 
 ![Preferences window](/images/mcp-server_preferences.png)
