@@ -48,6 +48,9 @@ function withMarkdocRscLayer(nextConfig = {}) {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
+  experimental: {
+    agentUpgrade: 'security',
+  },
   // Serve a plain Markdown version of every page at `<path>.md` for agents
   async rewrites() {
     return [
