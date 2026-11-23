@@ -10,15 +10,15 @@ This is the Inkdrop documentation website built with Next.js 16 App Router, Mark
 
 ```bash
 # Development
-npm run dev           # Start development server at http://localhost:3000
+pnpm run dev          # Start development server at http://localhost:3000
 
 # Build & Production
-npm run build         # Generate routes JSON and build for production
-npm start            # Run production server
+pnpm run build        # Generate routes JSON and build for production
+pnpm start           # Run production server
 
 # Code Quality
-npm run lint         # Run oxlint (react, jsx-a11y, nextjs plugins)
-npm run format       # Format with oxfmt (format:check for CI)
+pnpm run lint        # Run oxlint (react, jsx-a11y, nextjs plugins)
+pnpm run format      # Format with oxfmt (format:check for CI)
 ```
 
 ## Architecture & Structure
@@ -30,7 +30,7 @@ npm run format       # Format with oxfmt (format:check for CI)
 
 ### Key Components
 - **Navigation**: Centrally managed in `/src/lib/navigation.ts` - all navigation changes should be made here
-- **Route Generation**: Running `npm run build` automatically generates `/public/routes.json` from navigation.ts
+- **Route Generation**: Running `pnpm run build` automatically generates `/public/routes.json` from navigation.ts
 - **Markdown Processing**: Uses Markdoc with custom tags defined in `/src/markdoc/`
 - **Search**: FlexSearch implementation with Algolia Autocomplete UI in `/src/components/Search.tsx`
 
