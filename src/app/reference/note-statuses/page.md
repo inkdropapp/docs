@@ -6,7 +6,7 @@ nextjs:
     description: Keep track of issues with note statuses
 ---
 
-{% video src="https://site-cdn.inkdrop.app/docs/manual/managing-tasks-with-status.mp4" /%}
+{% video src="https://site-cdn.inkdrop.app/docs/manual/note-statuses.mp4" poster="https://site-cdn.inkdrop.app/docs/manual/note-statuses.jpg" /%}
 
 Inkdrop can have several statuses for your notes, including 'Active', 'On Hold', 'Completed', and 'Dropped'.
 And the notes with 'Completed' and 'Dropped' statuses are hidden in the note list by default when you view them via a notebook so you can focus on the active issues.
