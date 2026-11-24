@@ -46,6 +46,7 @@ const tags = {
     render: Image,
     attributes: {
       src: { type: String },
+      alt: { type: String },
       width: { type: Number },
       height: { type: Number },
       className: { type: String },
