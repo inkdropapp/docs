@@ -247,6 +247,12 @@ For Wayland users, add the following flags to the `Exec` field like so:
 Exec=/opt/Inkdrop/inkdrop --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime %U
 ```
 
+### iOS and Android
+
+Inkdrop is also available for iPhone, iPad and Android devices. Open the [download page](https://my.inkdrop.app/download) on your device and install the app from the App Store or Google Play.
+
+See [Inkdrop for mobile](/mobile) for the details.
+
 ## Sign in to your account
 
 Once you've installed Inkdrop, sign in to your account. To do that:

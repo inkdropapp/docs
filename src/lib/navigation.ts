@@ -102,6 +102,25 @@ export const navigation = [
     ],
   },
   {
+    title: 'Mobile app',
+    links: [
+      {
+        title: 'Inkdrop for mobile',
+        href: '/mobile',
+        cover: '/images/mobile_cover.jpg',
+      },
+      { title: 'Write notes on mobile', href: '/mobile/editor' },
+      {
+        title: 'Use a hardware keyboard on mobile',
+        href: '/mobile/hardware-keyboard',
+      },
+      {
+        title: 'Widgets, Siri and Spotlight',
+        href: '/mobile/widgets-siri-spotlight',
+      },
+    ],
+  },
+  {
     title: 'Artificial Intelligence',
     links: [
       {

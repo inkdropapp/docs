@@ -40,6 +40,7 @@ Your note app will now have the functionality that the plugin provides.
 ### Mobile
 
 The plugins on mobile are not supported, unfortunately, because Apple prohibits third-party code execution on iOS.
+Themes are the exception: you can [install them on mobile](/mobile#change-the-theme).
 
 ## Plugin settings
 
