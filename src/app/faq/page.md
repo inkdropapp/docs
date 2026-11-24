@@ -145,7 +145,7 @@ Learn more: [Security at Stripe](https://stripe.com/docs/security/stripe)
 
 ### What happens if the free trial expired without adding my payment information?
 
-Your account will be deactivated and you are no longer able to add/edit/remove your notes. But you can still access your data stored in local with the app in read-only mode.
+Your account will be deactivated. See [What happens if my account has been deactivated?](#what-happens-if-my-account-has-been-deactivated)
 
 ### What happens if the payment failed?
 
@@ -161,3 +161,4 @@ The payment fails if you have canceled your card, the card may have expired, or 
 Your data is kept stored on the Inkdrop server.
 You can't access your notes while deactivated.
 You can re-activate your account anytime.
+We may permanently delete accounts that stay deactivated for more than 6 months, along with their data. Since Inkdrop is not like a big company, we don't have a budget for keeping your data without your payments.
