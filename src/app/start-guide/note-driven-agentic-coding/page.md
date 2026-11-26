@@ -23,7 +23,7 @@ Your agent needs access to your notes. Set up these two first:
 
 ## The workflow
 
-{% video src="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.mp4" poster="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.jpg" /%}
+{% video src="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.mp4" poster="https://site-cdn.inkdrop.app/tutorial/onboarding/plan-with-your-agent.gif" /%}
 
 One note per task, five steps:
 
